@@ -52,38 +52,22 @@
   ],
   [
     [
-      "econ:acct:payment",
-      "02ef668633d6dfa1046f1439fc578ca3"
+      "syn:tag",
+      "trgtag"
     ],
     []
   ],
   [
     [
-      "geo:place",
-      "d71d16e51b4fa3dfc43fe74c055efe1b"
+      "econ:acct:payment",
+      "95817117702f3fb831bc6d0269a8f488"
     ],
-    [
-      [
-        "cat",
-        {
-          "user": "f3c47f8a51bdf96bebf82b00386cdd17",
-          "time": 1581541164735,
-          "data": "dog"
-        }
-      ]
-    ]
+    []
   ],
   [
     [
       "syn:tag",
       "foo"
-    ],
-    []
-  ],
-  [
-    [
-      "syn:tag",
-      "foo.bar.baz.spam"
     ],
     []
   ],
@@ -96,8 +80,38 @@
   ],
   [
     [
+      "geo:place",
+      "1133078ce0227d577727afafe950ff55"
+    ],
+    [
+      [
+        "cat",
+        {
+          "user": "ac3b70222227defa8225a29bf7b9c7a7",
+          "time": 1582211646607,
+          "data": "dog"
+        }
+      ]
+    ]
+  ],
+  [
+    [
       "syn:tag",
       "foo.bar"
+    ],
+    []
+  ],
+  [
+    [
+      "syn:tag",
+      "foo.bar.baz.spam"
+    ],
+    []
+  ],
+  [
+    [
+      "inet:ipv4",
+      84215045
     ],
     []
   ],
@@ -202,16 +216,16 @@
       [
         "car",
         {
-          "user": "f3c47f8a51bdf96bebf82b00386cdd17",
-          "time": 1581541164828,
+          "user": "ac3b70222227defa8225a29bf7b9c7a7",
+          "time": 1582211646687,
           "data": "cool"
         }
       ],
       [
         "cat",
         {
-          "user": "f3c47f8a51bdf96bebf82b00386cdd17",
-          "time": 1581541164828,
+          "user": "ac3b70222227defa8225a29bf7b9c7a7",
+          "time": 1582211646702,
           "data": "lion"
         }
       ]
@@ -219,15 +233,15 @@
   ],
   [
     [
-      "it:prod:softver",
-      "aa38f1f995aeece51f95354282735616"
+      "it:dev:str",
+      "3.4.45"
     ],
     []
   ],
   [
     [
-      "it:dev:str",
-      "3.4.45"
+      "it:prod:softver",
+      "f24018c0b9ce935599bd601e8261e3aa"
     ],
     []
   ],
@@ -310,8 +324,8 @@
       [
         "car",
         {
-          "user": "f3c47f8a51bdf96bebf82b00386cdd17",
-          "time": 1581541164882,
+          "user": "ac3b70222227defa8225a29bf7b9c7a7",
+          "time": 1582211646752,
           "data": "cat"
         }
       ]
@@ -346,7 +360,7 @@
   [
     [
       "meta:source",
-      "a77bdf221d1d182ec3c1a34240e2757c"
+      "c674a179c7b6df588d0425ac46c66092"
     ],
     []
   ],
@@ -354,7 +368,7 @@
     [
       "meta:seen",
       [
-        "a77bdf221d1d182ec3c1a34240e2757c",
+        "c674a179c7b6df588d0425ac46c66092",
         [
           "inet:ipv4",
           16909060
