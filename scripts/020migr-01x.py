@@ -66,7 +66,6 @@ async def main():
                 role2 = await core.auth.addRole('cowboys')
                 role3 = await core.auth.addRole('friends')
 
-                breakpoint()
                 await proxy.addAuthRule('friends', (True, ('view', 'read')), iden=view2.iden)
                 await proxy.addAuthRule('friends', (True, ('node:add',)), iden=view2.layers[0].iden)
                 await proxy.addAuthRule('friends', (True, ('prop:set',)), iden=view2.layers[0].iden)
@@ -83,6 +82,8 @@ async def main():
                 await fred.addRule((True, ('tag:add', 'trgtag')))
                 await fred.addRule((True, ('trigger', 'add')))
                 await fred.addRule((True, ('trigger', 'get')))
+                await fred.addRule((True, ('storm', 'queue', 'get')))
+                await fred.addRule((True, ('storm', 'queue', 'add')))
 
                 # create bobo who can write to the layer but doesn't have the trigger rules
                 bobo = await core.auth.addUser('bobo')
@@ -91,10 +92,22 @@ async def main():
                 await bobo.grant('friends')
 
                 await bobo.addRule((True, ('tag:add', 'bobotag')))
+                await bobo.addRule((True, ('storm', 'queue', 'get')))
+                await bobo.addRule((True, ('storm', 'queue', 'put')))
+                await bobo.addRule((True, ('storm', 'queue', 'boboq')))
 
                 # add triggers
                 await core.addTrigger('node:add', '[ +#trgtag ]', info={'form': 'inet:ipv4'}, user=fred)
                 await core.addTrigger('tag:add', '[ inet:ipv4=5.5.5.5 ]', info={'tag': 'foo.*.baz'})
+
+                # add queues
+                rule = (True, ('storm', 'queue', 'fredq', 'get'))
+                await proxy.addAuthRule('friends', rule)
+
+                await core.eval('queue.add rootq').list()
+                await core.eval('queue.add fredq', user=fred).list()
+                await core.eval('queue.add boboq').list()
+                assert len(await core.getCoreQueues()) == 3
 
                 # extend the data model
                 await core.addFormProp('inet:ipv4', '_rdxp', ('int', {}), {})
