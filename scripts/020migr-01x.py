@@ -48,10 +48,13 @@ async def main():
 
     with s_common.getTempDir() as dirn:
         path = os.path.join(dirn, 'cortex')
+        conf = {
+            'dedicated': True,
+        }
 
         podes = []
         nodedata = []  # [ ndef, [item1, item2, ... ]
-        async with await s_cortex.Cortex.anit(path, conf=None) as core:
+        async with await s_cortex.Cortex.anit(path, conf=conf) as core:
             async with core.getLocalProxy() as proxy:
                 # load modules
                 await core.loadCoreModule('020migr-01x.MigrMod')
@@ -188,7 +191,7 @@ async def main():
                 scmd = f'[ meta:source={guid} :name=foosrc :type=osint ]'
                 await core.nodes(scmd)
 
-                scmd = f'[ meta:seen=({guid}, (inet:ipv4, 1.2.3.4))]'
+                scmd = f'[ meta:seen=({guid}, (inet:ipv4, 1.2.3.4))] $node.data.set(jazz, bam)'
                 await core.nodes(scmd)
 
                 # verify that triggers were activated
