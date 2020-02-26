@@ -140,6 +140,13 @@ async def main():
                 await core.eval('queue.add boboq').list()
                 assert len(await core.getCoreQueues()) == 3
 
+                # add cron jobs
+                await core.addCronJob(fred, 'inet:ipv4', {'hour': 2})
+                await core.addCronJob(bobo, 'inet:ipv4', {'hour': 2})
+
+                await proxy.addAuthRule('friends', (True, ('cron', 'get')))
+                await fred.addRule((True, ('cron',)))
+
                 # extend the data model
                 await core.addFormProp('inet:ipv4', '_rdxp', ('int', {}), {})
                 await core.addFormProp('inet:ipv4', '_rdxpz', ('int', {}), {})
@@ -204,11 +211,6 @@ async def main():
                 scmd = (
                     f'[ inet:ipv4=5.6.7.8 :loc=nl :_rdxpz=7 +#foo:nah=42 ]'
                     f' $node.data.set(car, cool)'
-                )
-                await core.nodes(scmd)
-
-                scmd = (
-                    f'inet:ipv4=5.6.7.8 $node.data.set(cat, lion)'
                 )
                 await core.nodes(scmd)
 
