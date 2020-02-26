@@ -8,6 +8,20 @@
   ],
   [
     [
+      "inet:fqdn",
+      "io"
+    ],
+    []
+  ],
+  [
+    [
+      "inet:fqdn",
+      "snake.io"
+    ],
+    []
+  ],
+  [
+    [
       "crypto:currency:address",
       [
         "btc",
@@ -60,9 +74,25 @@
   [
     [
       "econ:acct:payment",
-      "90e5f39eb661d41e067cb18697f34c43"
+      "f28c6ed18f03413d2b36c1af25347689"
     ],
     []
+  ],
+  [
+    [
+      "geo:place",
+      "fe8b2b6320c8f4680b24b516bda7fa19"
+    ],
+    [
+      [
+        "cat",
+        {
+          "user": "7c407db89d04d8304211a9a1d4bd6d64",
+          "time": 1582736195736,
+          "data": "dog"
+        }
+      ]
+    ]
   ],
   [
     [
@@ -91,22 +121,6 @@
       "foo.bar"
     ],
     []
-  ],
-  [
-    [
-      "geo:place",
-      "5f099bd971a7fabea5356ca10ed4c626"
-    ],
-    [
-      [
-        "cat",
-        {
-          "user": "351b33db0b3c9cf46b36f34fb5956388",
-          "time": 1582571813111,
-          "data": "dog"
-        }
-      ]
-    ]
   ],
   [
     [
@@ -216,16 +230,16 @@
       [
         "car",
         {
-          "user": "351b33db0b3c9cf46b36f34fb5956388",
-          "time": 1582571813191,
+          "user": "7c407db89d04d8304211a9a1d4bd6d64",
+          "time": 1582736195829,
           "data": "cool"
         }
       ],
       [
         "cat",
         {
-          "user": "351b33db0b3c9cf46b36f34fb5956388",
-          "time": 1582571813206,
+          "user": "7c407db89d04d8304211a9a1d4bd6d64",
+          "time": 1582736195848,
           "data": "lion"
         }
       ]
@@ -234,7 +248,7 @@
   [
     [
       "it:prod:softver",
-      "34c40ebfddbe0fbc5e8795bb5e7063c7"
+      "422591f3929c2fe8f593e3af44fe84bc"
     ],
     []
   ],
@@ -303,13 +317,6 @@
   ],
   [
     [
-      "file:mime",
-      "x509"
-    ],
-    []
-  ],
-  [
-    [
       "hash:sha256",
       "b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5"
     ],
@@ -324,12 +331,19 @@
       [
         "car",
         {
-          "user": "351b33db0b3c9cf46b36f34fb5956388",
-          "time": 1582571813263,
+          "user": "7c407db89d04d8304211a9a1d4bd6d64",
+          "time": 1582736195908,
           "data": "cat"
         }
       ]
     ]
+  ],
+  [
+    [
+      "file:mime",
+      "x509"
+    ],
+    []
   ],
   [
     [
@@ -360,7 +374,7 @@
   [
     [
       "meta:source",
-      "d08eaa678b3fd27b23ab4839c02b2e49"
+      "7f6c3dd1f3c5438fb1c4b1fbccd6889a"
     ],
     []
   ],
@@ -368,7 +382,7 @@
     [
       "meta:seen",
       [
-        "d08eaa678b3fd27b23ab4839c02b2e49",
+        "7f6c3dd1f3c5438fb1c4b1fbccd6889a",
         [
           "inet:ipv4",
           16909060
@@ -379,8 +393,8 @@
       [
         "jazz",
         {
-          "user": "351b33db0b3c9cf46b36f34fb5956388",
-          "time": 1582571813312,
+          "user": "7c407db89d04d8304211a9a1d4bd6d64",
+          "time": 1582736195957,
           "data": "bam"
         }
       ]

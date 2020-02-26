@@ -1,4 +1,3 @@
-# generate an 0.1.x cortex
 '''
 Generate an 0.1.x cortex for testing migration to 0.2.x
 '''
@@ -10,14 +9,18 @@ import hashlib
 
 import synapse.common as s_common
 import synapse.cortex as s_cortex
+
+import synapse.lib.cell as s_cell
 import synapse.lib.module as s_module
 import synapse.lib.version as s_version
+import synapse.lib.stormsvc as s_stormsvc
 
 import synapse.tools.backup as s_backup
 
 assert s_version.version == (0, 1, 51)
 
 DESTPATH_CORTEX = 'cortexes/0.1.51-migr'
+DESTPATH_SVC = 'cortexes/0.1.51-migr/stormsvc'
 DESTPATH_ASSETS = 'assets/0.1.51-migr'
 
 class MigrMod(s_module.CoreModule):
@@ -44,10 +47,35 @@ class MigrMod(s_module.CoreModule):
         })
         return (modldef, )
 
+class MigrSvcApi(s_stormsvc.StormSvc, s_cell.CellApi):
+    _storm_svc_name = 'turtle'
+    _storm_svc_pkgs = ({
+        'name': 'turtle',
+        'version': (0, 0, 1),
+        'commands': ({'name': 'newcmd', 'storm': '[ inet:fqdn=$lib.service.get($cmdconf.svciden).test() ]'},),
+    },)
+
+    async def test(self):
+        return await self.cell.test()
+
+class MigrStormsvc(s_cell.Cell):
+    cellapi = MigrSvcApi
+    confdefs = (
+        ('myfqdn', {'type': 'str', 'defval': 'snake.io', 'doc': 'A test fqdn'}),
+    )
+
+    async def __anit__(self, dirn, conf=None):
+        await s_cell.Cell.__anit__(self, dirn, conf=conf)
+        self.myfqdn = self.conf.get('myfqdn')
+
+    async def test(self):
+        return self.myfqdn
+
 async def main():
 
     with s_common.getTempDir() as dirn:
         path = os.path.join(dirn, 'cortex')
+        svcpath = os.path.join(dirn, 'stormsvc')
         conf = {
             'dedicated': True,
         }
@@ -123,6 +151,20 @@ async def main():
                 # module forms
                 scmd = '[ migr:test=22 :bar=spam ]'
                 await core.nodes(scmd)
+
+                # stormsvc nodes
+                async with await MigrStormsvc.anit(svcpath) as svc:
+                    svc.dmon.share('turtle', svc)
+                    root = svc.auth.getUserByName('root')
+                    await root.setPasswd('root')
+                    info = await svc.dmon.listen('tcp://127.0.0.1:0/')
+                    host, port = info
+
+                    await core.nodes(f'service.add turtle tcp://root:root@127.0.0.1:{port}/turtle')
+                    await core.nodes('$lib.service.wait(turtle)')
+
+                    nodes = await core.nodes('newcmd')
+                    assert len(await core.nodes('inet:fqdn=snake.io')) == 1
 
                 # crypto
                 scmd = '[ crypto:currency:client=(1.2.3.4, (btc, 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)) ]'
@@ -211,6 +253,7 @@ async def main():
         shutil.rmtree(DESTPATH_ASSETS, ignore_errors=True)
 
         s_backup.backup(path, DESTPATH_CORTEX)
+        s_backup.backup(svcpath, DESTPATH_SVC)
 
         if not os.path.exists(DESTPATH_ASSETS):
             s_common.gendir(DESTPATH_ASSETS)
