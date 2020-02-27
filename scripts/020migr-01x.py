@@ -78,6 +78,7 @@ async def main():
         svcpath = os.path.join(dirn, 'stormsvc')
         conf = {
             'dedicated': True,
+            'lmdb:map_async': True,
         }
 
         podes = []
@@ -256,6 +257,8 @@ async def main():
 
         s_backup.backup(path, DESTPATH_CORTEX)
         s_backup.backup(svcpath, DESTPATH_SVC)
+
+        s_common.yamlsave(conf, os.path.join(DESTPATH_CORTEX, 'cell.yaml'))
 
         if not os.path.exists(DESTPATH_ASSETS):
             s_common.gendir(DESTPATH_ASSETS)
