@@ -74,25 +74,9 @@
   [
     [
       "econ:acct:payment",
-      "aa34e7c3058542df8fab948a07152d74"
+      "97d9574e94a8901d7044e327fd3dd131"
     ],
     []
-  ],
-  [
-    [
-      "geo:place",
-      "16887b97f19c8255b4294c555bd1a4ea"
-    ],
-    [
-      [
-        "cat",
-        {
-          "user": "7f35bfd1d627e7c866c8e7dfd6988a9c",
-          "time": 1582839530038,
-          "data": "dog"
-        }
-      ]
-    ]
   ],
   [
     [
@@ -107,6 +91,22 @@
       "foo.bar.baz.spam"
     ],
     []
+  ],
+  [
+    [
+      "geo:place",
+      "860c2a88dcce81e23903708efe625ffe"
+    ],
+    [
+      [
+        "cat",
+        {
+          "user": "20058c4cd2012313ee51e6b54d15640d",
+          "time": 1583199703019,
+          "data": "dog"
+        }
+      ]
+    ]
   ],
   [
     [
@@ -230,8 +230,8 @@
       [
         "car",
         {
-          "user": "7f35bfd1d627e7c866c8e7dfd6988a9c",
-          "time": 1582839530123,
+          "user": "20058c4cd2012313ee51e6b54d15640d",
+          "time": 1583199703103,
           "data": "cool"
         }
       ]
@@ -239,15 +239,15 @@
   ],
   [
     [
-      "it:dev:str",
-      "3.4.45"
+      "it:prod:softver",
+      "b1a936c49eacb84b2298a476f6325bdd"
     ],
     []
   ],
   [
     [
-      "it:prod:softver",
-      "75c3a811b08db4532753af226e9faf3e"
+      "it:dev:str",
+      "3.4.45"
     ],
     []
   ],
@@ -309,6 +309,13 @@
   ],
   [
     [
+      "file:mime",
+      "x509"
+    ],
+    []
+  ],
+  [
+    [
       "hash:sha256",
       "b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5"
     ],
@@ -323,19 +330,12 @@
       [
         "car",
         {
-          "user": "7f35bfd1d627e7c866c8e7dfd6988a9c",
-          "time": 1582839530172,
+          "user": "20058c4cd2012313ee51e6b54d15640d",
+          "time": 1583199703154,
           "data": "cat"
         }
       ]
     ]
-  ],
-  [
-    [
-      "file:mime",
-      "x509"
-    ],
-    []
   ],
   [
     [
@@ -366,7 +366,7 @@
   [
     [
       "meta:source",
-      "ca3381f281cecab4292c03e562e86eb3"
+      "03610f91554970640580f0d6f56c29a6"
     ],
     []
   ],
@@ -374,7 +374,7 @@
     [
       "meta:seen",
       [
-        "ca3381f281cecab4292c03e562e86eb3",
+        "03610f91554970640580f0d6f56c29a6",
         [
           "inet:ipv4",
           16909060
@@ -385,8 +385,8 @@
       [
         "jazz",
         {
-          "user": "7f35bfd1d627e7c866c8e7dfd6988a9c",
-          "time": 1582839530232,
+          "user": "20058c4cd2012313ee51e6b54d15640d",
+          "time": 1583199703219,
           "data": "bam"
         }
       ]
