@@ -74,21 +74,21 @@
   [
     [
       "econ:acct:payment",
-      "c638a5e6cb5e064e57ce6e804e64c173"
+      "90cb1417f381cf531e79a50b20ef600c"
     ],
     []
   ],
   [
     [
       "geo:place",
-      "1257265efe3289f20dfd54ae25b4399a"
+      "37712885660041fce2ff19a7177b7fd0"
     ],
     [
       [
         "cat",
         {
-          "user": "0270eef5dd688d284ce7d2f9bf696ea0",
-          "time": 1583342146732,
+          "user": "47fa8e131eba8fbfc22ece581b3947ad",
+          "time": 1583447524540,
           "data": "dog"
         }
       ]
@@ -175,16 +175,6 @@
   ],
   [
     [
-      "inet:dns:a",
-      [
-        "woot.com",
-        16909060
-      ]
-    ],
-    []
-  ],
-  [
-    [
       "inet:fqdn",
       "com"
     ],
@@ -194,6 +184,16 @@
     [
       "inet:fqdn",
       "woot.com"
+    ],
+    []
+  ],
+  [
+    [
+      "inet:dns:a",
+      [
+        "woot.com",
+        16909060
+      ]
     ],
     []
   ],
@@ -230,8 +230,8 @@
       [
         "car",
         {
-          "user": "0270eef5dd688d284ce7d2f9bf696ea0",
-          "time": 1583342146815,
+          "user": "47fa8e131eba8fbfc22ece581b3947ad",
+          "time": 1583447524629,
           "data": "cool"
         }
       ]
@@ -247,7 +247,7 @@
   [
     [
       "it:prod:softver",
-      "b80fd83a25c1b74b27a6c56ccf8b575c"
+      "abe75f26821165f6c795fd062afc4615"
     ],
     []
   ],
@@ -267,15 +267,15 @@
   ],
   [
     [
-      "hash:sha256",
-      "11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+      "file:bytes",
+      "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
     ],
     []
   ],
   [
     [
-      "hash:sha512",
-      "831df287c514cb066ffb8908b0b33de249c13a710fc3eb9f2eceb9f5853032f5a9656d4bafb1aec99b26a6eecd4b4c6e56a987f663c7a525a9be010964d34631"
+      "hash:sha256",
+      "11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
     ],
     []
   ],
@@ -288,8 +288,8 @@
   ],
   [
     [
-      "file:bytes",
-      "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+      "hash:sha512",
+      "831df287c514cb066ffb8908b0b33de249c13a710fc3eb9f2eceb9f5853032f5a9656d4bafb1aec99b26a6eecd4b4c6e56a987f663c7a525a9be010964d34631"
     ],
     []
   ],
@@ -330,8 +330,8 @@
       [
         "car",
         {
-          "user": "0270eef5dd688d284ce7d2f9bf696ea0",
-          "time": 1583342146879,
+          "user": "47fa8e131eba8fbfc22ece581b3947ad",
+          "time": 1583447524681,
           "data": "cat"
         }
       ]
@@ -366,7 +366,7 @@
   [
     [
       "meta:source",
-      "cd4fcc997ad7272f8e9d630f3a936f21"
+      "39e476696548004cdfaefeb955b6ccf5"
     ],
     []
   ],
@@ -374,7 +374,7 @@
     [
       "meta:seen",
       [
-        "cd4fcc997ad7272f8e9d630f3a936f21",
+        "39e476696548004cdfaefeb955b6ccf5",
         [
           "inet:ipv4",
           16909060
@@ -385,8 +385,8 @@
       [
         "jazz",
         {
-          "user": "0270eef5dd688d284ce7d2f9bf696ea0",
-          "time": 1583342146928,
+          "user": "47fa8e131eba8fbfc22ece581b3947ad",
+          "time": 1583447524745,
           "data": "bam"
         }
       ]
