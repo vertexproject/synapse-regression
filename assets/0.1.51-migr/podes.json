@@ -8,13 +8,13 @@
             "iden": "c8616b08b88f4acdad2fc446087f40c96bf8c4ca80377cac4be5ff3c882b37ef",
             "tags": {},
             "props": {
-                ".created": 1582839529901,
+                ".created": 1583443536088,
                 "bar": "spam"
             },
             "tagprops": {},
             "repr": "22",
             "reprs": {
-                ".created": "2020/02/27 21:38:49.901"
+                ".created": "2020/03/05 21:25:36.088"
             },
             "tagpropreprs": {}
         }
@@ -31,13 +31,13 @@
                 "host": "io",
                 "issuffix": 1,
                 "iszone": 0,
-                ".created": 1582839529967
+                ".created": 1583443536155
             },
             "tagprops": {},
             "reprs": {
                 "issuffix": "True",
                 "iszone": "False",
-                ".created": "2020/02/27 21:38:49.967"
+                ".created": "2020/03/05 21:25:36.155"
             },
             "tagpropreprs": {}
         }
@@ -55,14 +55,14 @@
                 "domain": "io",
                 "issuffix": 0,
                 "iszone": 1,
-                ".created": 1582839529967,
+                ".created": 1583443536155,
                 "zone": "snake.io"
             },
             "tagprops": {},
             "reprs": {
                 "issuffix": "False",
                 "iszone": "True",
-                ".created": "2020/02/27 21:38:49.967"
+                ".created": "2020/03/05 21:25:36.155"
             },
             "tagpropreprs": {}
         }
@@ -81,11 +81,11 @@
             "props": {
                 "coin": "btc",
                 "iden": "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2",
-                ".created": 1582839529997
+                ".created": 1583443536186
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:49.997"
+                ".created": "2020/03/05 21:25:36.186"
             },
             "tagpropreprs": {}
         }
@@ -111,7 +111,7 @@
                 "type": "unicast",
                 "asn": 0,
                 "loc": "??",
-                ".created": 1582839529997,
+                ".created": 1583443536186,
                 "latlong": [
                     -30.0,
                     20.22
@@ -127,7 +127,7 @@
             "repr": "1.2.3.4",
             "reprs": {
                 "asn": "0",
-                ".created": "2020/02/27 21:38:49.997",
+                ".created": "2020/03/05 21:25:36.186",
                 "latlong": "-30.0,20.22",
                 ".seen": [
                     "2005/01/01 00:00:00.000",
@@ -158,11 +158,11 @@
                     "btc",
                     "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
                 ],
-                ".created": 1582839529997
+                ".created": 1583443536186
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:49.997"
+                ".created": "2020/03/05 21:25:36.186"
             },
             "tagpropreprs": {}
         }
@@ -177,12 +177,12 @@
             "tags": {},
             "props": {
                 "name": "??",
-                ".created": 1582839529997
+                ".created": 1583443536186
             },
             "tagprops": {},
             "repr": "0",
             "reprs": {
-                ".created": "2020/02/27 21:38:49.997"
+                ".created": "2020/03/05 21:25:36.186"
             },
             "tagpropreprs": {}
         }
@@ -198,12 +198,12 @@
             "props": {
                 "proto": "tcp",
                 "ipv4": 16909060,
-                ".created": 1582839529997
+                ".created": 1583443536186
             },
             "tagprops": {},
             "reprs": {
                 "ipv4": "1.2.3.4",
-                ".created": "2020/02/27 21:38:49.997"
+                ".created": "2020/03/05 21:25:36.186"
             },
             "tagpropreprs": {}
         }
@@ -221,12 +221,12 @@
                 "depth": 0,
                 "doc": "",
                 "title": "",
-                ".created": 1582839529998
+                ".created": 1583443536187
             },
             "tagprops": {},
             "reprs": {
                 "depth": "0",
-                ".created": "2020/02/27 21:38:49.998"
+                ".created": "2020/03/05 21:25:36.187"
             },
             "tagpropreprs": {}
         }
@@ -234,13 +234,13 @@
     [
         [
             "econ:acct:payment",
-            "aa34e7c3058542df8fab948a07152d74"
+            "142e9e15ec8bf69511b2bd48c79b13d3"
         ],
         {
-            "iden": "aefe14b85730cea21ffa72d5ee0aba87d92b26fe8378ffec59bc87281eb41b14",
+            "iden": "ac5f91d048cd55e8d22bfbf679f99012f9d22dd1136b1acd4396c569c60769a8",
             "tags": {},
             "props": {
-                ".created": 1582839530015,
+                ".created": 1583443536203,
                 "from:coinaddr": [
                     "btc",
                     "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
@@ -252,7 +252,7 @@
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.015"
+                ".created": "2020/03/05 21:25:36.203"
             },
             "tagpropreprs": {}
         }
@@ -260,10 +260,10 @@
     [
         [
             "geo:place",
-            "16887b97f19c8255b4294c555bd1a4ea"
+            "3fdd7836605dc2b8fa2336c3f9647d03"
         ],
         {
-            "iden": "d31caaba81934a27b411855808cb46cebe53718dd5e5bb3e3984a7d6021fc18b",
+            "iden": "243a4044704467aba54bd9396d8f81eca8f7a5545c12fa029d89af7beafe5755",
             "tags": {
                 "foo": [
                     null,
@@ -283,7 +283,7 @@
                 ]
             },
             "props": {
-                ".created": 1582839530036,
+                ".created": 1583443536224,
                 "latlong": [
                     -30.0,
                     20.22
@@ -291,7 +291,7 @@
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.036",
+                ".created": "2020/03/05 21:25:36.224",
                 "latlong": "-30.0,20.22"
             },
             "tagpropreprs": {}
@@ -310,12 +310,12 @@
                 "depth": 0,
                 "doc": "",
                 "title": "",
-                ".created": 1582839530037
+                ".created": 1583443536224
             },
             "tagprops": {},
             "reprs": {
                 "depth": "0",
-                ".created": "2020/02/27 21:38:50.037"
+                ".created": "2020/03/05 21:25:36.224"
             },
             "tagpropreprs": {}
         }
@@ -334,12 +334,12 @@
                 "up": "foo.bar.baz",
                 "doc": "",
                 "title": "",
-                ".created": 1582839530037
+                ".created": 1583443536224
             },
             "tagprops": {},
             "reprs": {
                 "depth": "3",
-                ".created": "2020/02/27 21:38:50.037"
+                ".created": "2020/03/05 21:25:36.224"
             },
             "tagpropreprs": {}
         }
@@ -358,12 +358,12 @@
                 "up": "foo.bar",
                 "doc": "",
                 "title": "",
-                ".created": 1582839530037
+                ".created": 1583443536224
             },
             "tagprops": {},
             "reprs": {
                 "depth": "2",
-                ".created": "2020/02/27 21:38:50.037"
+                ".created": "2020/03/05 21:25:36.224"
             },
             "tagpropreprs": {}
         }
@@ -382,12 +382,12 @@
                 "up": "foo",
                 "doc": "",
                 "title": "",
-                ".created": 1582839530037
+                ".created": 1583443536224
             },
             "tagprops": {},
             "reprs": {
                 "depth": "1",
-                ".created": "2020/02/27 21:38:50.037"
+                ".created": "2020/03/05 21:25:36.224"
             },
             "tagpropreprs": {}
         }
@@ -409,13 +409,13 @@
                 "type": "unicast",
                 "asn": 0,
                 "loc": "??",
-                ".created": 1582839530038
+                ".created": 1583443536226
             },
             "tagprops": {},
             "repr": "5.5.5.5",
             "reprs": {
                 "asn": "0",
-                ".created": "2020/02/27 21:38:50.038"
+                ".created": "2020/03/05 21:25:36.226"
             },
             "tagpropreprs": {}
         }
@@ -430,11 +430,11 @@
             "tags": {},
             "props": {
                 "vendor": "??",
-                ".created": 1582839530058
+                ".created": 1583443536246
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.058"
+                ".created": "2020/03/05 21:25:36.246"
             },
             "tagpropreprs": {}
         }
@@ -454,11 +454,11 @@
                 "ssid": "BHOT-2019",
                 "bssid": "d8:38:fc:13:87:5c",
                 "loc": "??",
-                ".created": 1582839530058
+                ".created": 1583443536246
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.058"
+                ".created": "2020/03/05 21:25:36.246"
             },
             "tagpropreprs": {}
         }
@@ -472,11 +472,11 @@
             "iden": "d362a0db05dafa6348d6a4852b77082410a29ff621c2e4b681ea3ee56c3c8672",
             "tags": {},
             "props": {
-                ".created": 1582839530058
+                ".created": 1583443536246
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.058"
+                ".created": "2020/03/05 21:25:36.246"
             },
             "tagpropreprs": {}
         }
@@ -516,7 +516,7 @@
                     39.94891607
                 ],
                 "time": 1546300800000,
-                ".created": 1582839530058
+                ".created": 1583443536246
             },
             "tagprops": {},
             "repr": [
@@ -533,7 +533,7 @@
             "reprs": {
                 "latlong": "43.41483078,39.94891607",
                 "time": "2019/01/01 00:00:00.000",
-                ".created": "2020/02/27 21:38:50.058"
+                ".created": "2020/03/05 21:25:36.246"
             },
             "tagpropreprs": {}
         }
@@ -552,7 +552,7 @@
             "props": {
                 "fqdn": "woot.com",
                 "ipv4": 16909060,
-                ".created": 1582839530079
+                ".created": 1583443536261
             },
             "tagprops": {},
             "repr": [
@@ -561,7 +561,7 @@
             ],
             "reprs": {
                 "ipv4": "1.2.3.4",
-                ".created": "2020/02/27 21:38:50.079"
+                ".created": "2020/03/05 21:25:36.261"
             },
             "tagpropreprs": {}
         }
@@ -578,13 +578,13 @@
                 "host": "com",
                 "issuffix": 1,
                 "iszone": 0,
-                ".created": 1582839530079
+                ".created": 1583443536261
             },
             "tagprops": {},
             "reprs": {
                 "issuffix": "True",
                 "iszone": "False",
-                ".created": "2020/02/27 21:38:50.079"
+                ".created": "2020/03/05 21:25:36.261"
             },
             "tagpropreprs": {}
         }
@@ -602,14 +602,14 @@
                 "domain": "com",
                 "issuffix": 0,
                 "iszone": 1,
-                ".created": 1582839530079,
+                ".created": 1583443536261,
                 "zone": "woot.com"
             },
             "tagprops": {},
             "reprs": {
                 "issuffix": "False",
                 "iszone": "True",
-                ".created": "2020/02/27 21:38:50.079"
+                ".created": "2020/03/05 21:25:36.261"
             },
             "tagpropreprs": {}
         }
@@ -628,7 +628,7 @@
             "props": {
                 "fqdn": "vertex.link",
                 "ipv4": 16909060,
-                ".created": 1582839530081
+                ".created": 1583443536267
             },
             "tagprops": {},
             "repr": [
@@ -637,7 +637,7 @@
             ],
             "reprs": {
                 "ipv4": "1.2.3.4",
-                ".created": "2020/02/27 21:38:50.081"
+                ".created": "2020/03/05 21:25:36.267"
             },
             "tagpropreprs": {}
         }
@@ -654,13 +654,13 @@
                 "host": "link",
                 "issuffix": 1,
                 "iszone": 0,
-                ".created": 1582839530081
+                ".created": 1583443536267
             },
             "tagprops": {},
             "reprs": {
                 "issuffix": "True",
                 "iszone": "False",
-                ".created": "2020/02/27 21:38:50.081"
+                ".created": "2020/03/05 21:25:36.267"
             },
             "tagpropreprs": {}
         }
@@ -678,14 +678,14 @@
                 "domain": "link",
                 "issuffix": 0,
                 "iszone": 1,
-                ".created": 1582839530081,
+                ".created": 1583443536267,
                 "zone": "vertex.link"
             },
             "tagprops": {},
             "reprs": {
                 "issuffix": "False",
                 "iszone": "True",
-                ".created": "2020/02/27 21:38:50.081"
+                ".created": "2020/03/05 21:25:36.267"
             },
             "tagpropreprs": {}
         }
@@ -711,7 +711,7 @@
                 "type": "unicast",
                 "asn": 0,
                 "loc": "nl",
-                ".created": 1582839530122,
+                ".created": 1583443536308,
                 "_rdxpz": 7
             },
             "tagprops": {
@@ -722,7 +722,7 @@
             "repr": "5.6.7.8",
             "reprs": {
                 "asn": "0",
-                ".created": "2020/02/27 21:38:50.122",
+                ".created": "2020/03/05 21:25:36.308",
                 "_rdxpz": "7"
             },
             "tagpropreprs": {
@@ -741,12 +741,12 @@
             "iden": "60c4c97a6d3939bd7a4065809bf167aed32830901092f49692ec8118ec6ed094",
             "tags": {},
             "props": {
-                ".created": 1582839530134,
+                ".created": 1583443536320,
                 "norm": "3.4.45"
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.134"
+                ".created": "2020/03/05 21:25:36.320"
             },
             "tagpropreprs": {}
         }
@@ -754,13 +754,13 @@
     [
         [
             "it:prod:softver",
-            "75c3a811b08db4532753af226e9faf3e"
+            "6340c8d5a8f4647be25d2c9b1afe6f55"
         ],
         {
-            "iden": "a8ff7b185d4554a0256e58b413c0a2618a05743ef23cd28ce97a101af7932deb",
+            "iden": "8a35688138a27a58f80c864988a4c4cff06e18243a586d34678a74363d7ae74d",
             "tags": {},
             "props": {
-                ".created": 1582839530134,
+                ".created": 1583443536320,
                 "vers": "3.4.45",
                 "vers:norm": "3.4.45",
                 "semver": 3298539077677,
@@ -770,7 +770,7 @@
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.134",
+                ".created": "2020/03/05 21:25:36.320",
                 "semver": "3.4.45",
                 "semver:major": "3",
                 "semver:minor": "4",
@@ -811,7 +811,7 @@
                 "sha512": "831df287c514cb066ffb8908b0b33de249c13a710fc3eb9f2eceb9f5853032f5a9656d4bafb1aec99b26a6eecd4b4c6e56a987f663c7a525a9be010964d34631",
                 "size": 9,
                 "mime": "??",
-                ".created": 1582839530152,
+                ".created": 1583443536338,
                 "._rdxu": "22"
             },
             "tagprops": {
@@ -821,7 +821,7 @@
             },
             "reprs": {
                 "size": "9",
-                ".created": "2020/02/27 21:38:50.152"
+                ".created": "2020/03/05 21:25:36.338"
             },
             "tagpropreprs": {
                 "foo.bar": {
@@ -839,11 +839,11 @@
             "iden": "2b0cc41cc693e0c72627e6729777ef4c8a61a3a4c54c2db9e686e7cecdefb20d",
             "tags": {},
             "props": {
-                ".created": 1582839530152
+                ".created": 1583443536338
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.152"
+                ".created": "2020/03/05 21:25:36.338"
             },
             "tagpropreprs": {}
         }
@@ -857,11 +857,11 @@
             "iden": "651f18c79d22632446df4a1055f02432bfe7853a9cab18c04b0934864a892db8",
             "tags": {},
             "props": {
-                ".created": 1582839530152
+                ".created": 1583443536338
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.152"
+                ".created": "2020/03/05 21:25:36.338"
             },
             "tagpropreprs": {}
         }
@@ -875,11 +875,11 @@
             "iden": "7dc7f8040b61f939181fb8d9479d6bd4b8f85be8362e79e7d5518ad3acbdcbc6",
             "tags": {},
             "props": {
-                ".created": 1582839530152
+                ".created": 1583443536338
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.152"
+                ".created": "2020/03/05 21:25:36.338"
             },
             "tagpropreprs": {}
         }
@@ -893,11 +893,11 @@
             "iden": "ceaf0c85132515dece2a1f2345cacce30e20eb3d72a15698624142d93bad92e9",
             "tags": {},
             "props": {
-                ".created": 1582839530152
+                ".created": 1583443536338
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.152"
+                ".created": "2020/03/05 21:25:36.338"
             },
             "tagpropreprs": {}
         }
@@ -911,11 +911,11 @@
             "iden": "e375c54d17edc5658b302e6315bd5e66bd025d19c7ca7a32a68f0b02de78e1fd",
             "tags": {},
             "props": {
-                ".created": 1582839530152
+                ".created": 1583443536338
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.152"
+                ".created": "2020/03/05 21:25:36.338"
             },
             "tagpropreprs": {}
         }
@@ -933,12 +933,12 @@
                 "depth": 0,
                 "doc": "",
                 "title": "",
-                ".created": 1582839530153
+                ".created": 1583443536339
             },
             "tagprops": {},
             "reprs": {
                 "depth": "0",
-                ".created": "2020/02/27 21:38:50.153"
+                ".created": "2020/03/05 21:25:36.339"
             },
             "tagpropreprs": {}
         }
@@ -957,12 +957,30 @@
                 "up": "faz",
                 "doc": "",
                 "title": "",
-                ".created": 1582839530153
+                ".created": 1583443536339
             },
             "tagprops": {},
             "reprs": {
                 "depth": "1",
-                ".created": "2020/02/27 21:38:50.153"
+                ".created": "2020/03/05 21:25:36.339"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "file:mime",
+            "x509"
+        ],
+        {
+            "iden": "06487572bdf667a04b1740bfea164052a8b673cdd6f9110e125af2ea29e01b0a",
+            "tags": {},
+            "props": {
+                ".created": 1583443536358
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/03/05 21:25:36.358"
             },
             "tagpropreprs": {}
         }
@@ -976,11 +994,11 @@
             "iden": "2a5cbe29dd18434452b7864193091dbf6153d76a19f9520ec73afd5b176d1b6e",
             "tags": {},
             "props": {
-                ".created": 1582839530171
+                ".created": 1583443536358
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.171"
+                ".created": "2020/03/05 21:25:36.358"
             },
             "tagpropreprs": {}
         }
@@ -996,31 +1014,13 @@
             "props": {
                 "sha256": "b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5",
                 "mime": "x509",
-                ".created": 1582839530171,
+                ".created": 1583443536358,
                 "size": 375
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.171",
+                ".created": "2020/03/05 21:25:36.358",
                 "size": "375"
-            },
-            "tagpropreprs": {}
-        }
-    ],
-    [
-        [
-            "file:mime",
-            "x509"
-        ],
-        {
-            "iden": "06487572bdf667a04b1740bfea164052a8b673cdd6f9110e125af2ea29e01b0a",
-            "tags": {},
-            "props": {
-                ".created": 1582839530172
-            },
-            "tagprops": {},
-            "reprs": {
-                ".created": "2020/02/27 21:38:50.172"
             },
             "tagpropreprs": {}
         }
@@ -1039,11 +1039,11 @@
             "props": {
                 "file": "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5",
                 "mime": "x509",
-                ".created": 1582839530172
+                ".created": 1583443536359
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.172"
+                ".created": "2020/03/05 21:25:36.359"
             },
             "tagpropreprs": {}
         }
@@ -1076,7 +1076,7 @@
                     84281096
                 ],
                 "n2:form": "inet:ipv4",
-                ".created": 1582839530199
+                ".created": 1583443536402
             },
             "tagprops": {},
             "repr": [
@@ -1098,7 +1098,7 @@
                     "inet:ipv4",
                     "5.6.7.8"
                 ],
-                ".created": "2020/02/27 21:38:50.199"
+                ".created": "2020/03/05 21:25:36.402"
             },
             "tagpropreprs": {}
         }
@@ -1106,19 +1106,19 @@
     [
         [
             "meta:source",
-            "ca3381f281cecab4292c03e562e86eb3"
+            "94890e32f05500971b3338f4181c1d6f"
         ],
         {
-            "iden": "f7ec21a60964e98f9b584b7e08ed316158c1c4554902373d1610d7c0ddbd5050",
+            "iden": "d61f1a2c67c288a8fbedff204d3f6b41f774ed307ac236ce81ea1e5650c451e2",
             "tags": {},
             "props": {
-                ".created": 1582839530208,
+                ".created": 1583443536411,
                 "name": "foosrc",
                 "type": "osint"
             },
             "tagprops": {},
             "reprs": {
-                ".created": "2020/02/27 21:38:50.208"
+                ".created": "2020/03/05 21:25:36.411"
             },
             "tagpropreprs": {}
         }
@@ -1127,7 +1127,7 @@
         [
             "meta:seen",
             [
-                "ca3381f281cecab4292c03e562e86eb3",
+                "94890e32f05500971b3338f4181c1d6f",
                 [
                     "inet:ipv4",
                     16909060
@@ -1135,19 +1135,19 @@
             ]
         ],
         {
-            "iden": "75750b2640fd0b8d724fce0702b55a27fe52dbd2e19715062e0a46b5c21f767e",
+            "iden": "a70a6c55a772f5566d62856d4ea09ddf9208a0a3ce741699358b9bd1fc45bcb1",
             "tags": {},
             "props": {
-                "source": "ca3381f281cecab4292c03e562e86eb3",
+                "source": "94890e32f05500971b3338f4181c1d6f",
                 "node": [
                     "inet:ipv4",
                     16909060
                 ],
-                ".created": 1582839530232
+                ".created": 1583443536434
             },
             "tagprops": {},
             "repr": [
-                "ca3381f281cecab4292c03e562e86eb3",
+                "94890e32f05500971b3338f4181c1d6f",
                 [
                     "inet:ipv4",
                     "1.2.3.4"
@@ -1158,7 +1158,7 @@
                     "inet:ipv4",
                     "1.2.3.4"
                 ],
-                ".created": "2020/02/27 21:38:50.232"
+                ".created": "2020/03/05 21:25:36.434"
             },
             "tagpropreprs": {}
         }

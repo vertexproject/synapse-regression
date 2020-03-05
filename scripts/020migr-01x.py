@@ -101,6 +101,7 @@ async def main():
                 await proxy.addAuthRule('friends', (True, ('view', 'read')), iden=view2.iden)
                 await proxy.addAuthRule('friends', (True, ('node:add',)), iden=view2.layers[0].iden)
                 await proxy.addAuthRule('friends', (True, ('prop:set',)), iden=view2.layers[0].iden)
+                await proxy.addAuthRule('friends', (True, ('layer:lift',)), iden=view2.layers[0].iden)
 
                 await role1.addRule((True, ('baz', 'faz')))
 
