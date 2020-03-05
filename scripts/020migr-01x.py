@@ -279,7 +279,7 @@ async def main():
             lyrs = {}
             for view in core.views.values():
                 for lyr in view.layers:
-                    lyrs[lyr.iden] = lyr
+                    lyrs[lyr.iden] = (lyr, lyr.splicelog.index())
 
             # Add nodes
             scmd = f'[inet:ipv4=10.9.9.1]'
@@ -293,7 +293,11 @@ async def main():
             await core.nodes(scmd)
 
             # Remove tag from existing nodes
-            scmd = f'#foo [-#foo]'
+            scmd = f'#faz [-#faz]'
+            await core.nodes(scmd)
+
+            # Remove tag prop from exist node
+            scmd = f'#foo [-#foo.bar:score]'
             await core.nodes(scmd)
 
             # Add secondary prop to existing node
@@ -308,17 +312,20 @@ async def main():
             scmd = f'meta:seen | delnode --force'
             await core.nodes(scmd)
 
-            for node in await core.nodes('.created'):
-                splicepodes.append(node.pack(dorepr=False))
+            # delete source test node
+            await core.nodes('meta:source:name=test | delnode')
 
-            for lyriden, lyr in lyrs.items():
+            for node in await core.nodes('.created'):
+                splicepodes.append(node.pack(dorepr=True))
+
+            for lyriden, (lyr, nextoffs) in lyrs.items():
                 splices[lyriden] = {
-                    'nextoffs': lyr.splicelog.index(),
+                    'nextoffs': nextoffs,
                     'splices': [s async for s in lyr.splices(0, -1)],
                 }
 
         with open(os.path.join(DESTPATH_ASSETS, 'splicepodes.json'), 'w') as f:
-            f.write(json.dumps(podes, indent=4))
+            f.write(json.dumps(splicepodes, indent=4))
 
         with open(os.path.join(DESTPATH_ASSETS, 'splices.json'), 'w') as f:
             f.write(json.dumps(splices, indent=2))
