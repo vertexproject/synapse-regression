@@ -270,7 +270,7 @@ async def main():
         with open(os.path.join(DESTPATH_ASSETS, 'nodedata.json'), 'w') as f:
             f.write(json.dumps(nodedata, indent=2))
 
-        # generate splices that will *not* will part of saved cortex
+        # generate splices that will *not* be part of saved cortex
         splicepodes = []
         splices = {}
         async with await s_cortex.Cortex.anit(path, conf=conf) as core:
