@@ -28,16 +28,16 @@
             "iden": "8107eae5a5b0fe15c892c7365d8b6c499734f54968a3e8787585897ac8b6d9f9",
             "tags": {},
             "props": {
+                ".created": 1583786806293,
                 "host": "io",
                 "issuffix": 1,
-                "iszone": 0,
-                ".created": 1583786806293
+                "iszone": 0
             },
             "tagprops": {},
             "reprs": {
+                ".created": "2020/03/09 20:46:46.293",
                 "issuffix": "True",
-                "iszone": "False",
-                ".created": "2020/03/09 20:46:46.293"
+                "iszone": "False"
             },
             "tagpropreprs": {}
         }
@@ -51,18 +51,18 @@
             "iden": "eea0d021d4e15ff3bc5b6853b3b4d501c899a1cdf61968d0c5b371125ba248f9",
             "tags": {},
             "props": {
-                "host": "snake",
+                ".created": 1583786806293,
                 "domain": "io",
+                "host": "snake",
                 "issuffix": 0,
                 "iszone": 1,
-                ".created": 1583786806293,
                 "zone": "snake.io"
             },
             "tagprops": {},
             "reprs": {
+                ".created": "2020/03/09 20:46:46.293",
                 "issuffix": "False",
-                "iszone": "True",
-                ".created": "2020/03/09 20:46:46.293"
+                "iszone": "True"
             },
             "tagpropreprs": {}
         }
@@ -79,9 +79,9 @@
             "iden": "01171aaf1263215314c3617199f744add452704759d1492faa01fbf20b8e592d",
             "tags": {},
             "props": {
+                ".created": 1583786806317,
                 "coin": "btc",
-                "iden": "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2",
-                ".created": 1583786806317
+                "iden": "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
             },
             "tagprops": {},
             "reprs": {
@@ -98,42 +98,54 @@
         {
             "iden": "20153b758f9d5eaaa38e4f4a65c36da797c3e59e549620fa7c4895e1a920991f",
             "tags": {
+                "foo": [
+                    1325376000000,
+                    1356998400000
+                ],
                 "trgtag": [
                     null,
                     null
                 ],
-                "foo": [
-                    1325376000000,
-                    1356998400000
+                "sp": [
+                    null,
+                    null
+                ],
+                "sp.li": [
+                    null,
+                    null
+                ],
+                "sp.li.ce": [
+                    null,
+                    null
                 ]
             },
             "props": {
-                "type": "unicast",
-                "asn": 0,
-                "loc": "??",
+                "._rdxuz": "woot",
                 ".created": 1583786806317,
-                "latlong": [
-                    -30.0,
-                    20.22
-                ],
                 ".seen": [
                     1104537600000,
                     1136073600000
                 ],
                 "_rdxp": 7,
-                "._rdxuz": "woot"
+                "asn": 0,
+                "latlong": [
+                    -30.0,
+                    20.22
+                ],
+                "loc": "??",
+                "type": "unicast"
             },
             "tagprops": {},
             "repr": "1.2.3.4",
             "reprs": {
-                "asn": "0",
                 ".created": "2020/03/09 20:46:46.317",
-                "latlong": "-30.0,20.22",
                 ".seen": [
                     "2005/01/01 00:00:00.000",
                     "2006/01/01 00:00:00.000"
                 ],
-                "_rdxp": "7"
+                "_rdxp": "7",
+                "asn": "0",
+                "latlong": "-30.0,20.22"
             },
             "tagpropreprs": {}
         }
@@ -153,12 +165,12 @@
             "iden": "35297c90cf26060ff472954326335fca272a36d039fa464c9a15ddff27f9d6f7",
             "tags": {},
             "props": {
-                "inetaddr": "tcp://1.2.3.4",
+                ".created": 1583786806317,
                 "coinaddr": [
                     "btc",
                     "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
                 ],
-                ".created": 1583786806317
+                "inetaddr": "tcp://1.2.3.4"
             },
             "tagprops": {},
             "reprs": {
@@ -176,8 +188,8 @@
             "iden": "5013645cbec96767d9b5150dcf523fa0030b763ae015d391a93df6aa44c8911d",
             "tags": {},
             "props": {
-                "name": "??",
-                ".created": 1583786806317
+                ".created": 1583786806317,
+                "name": "??"
             },
             "tagprops": {},
             "repr": "0",
@@ -196,14 +208,14 @@
             "iden": "9e8fa63a1ea854a61e289d16da063bf8dacf271a7dbe9a81a85ba42b7a452419",
             "tags": {},
             "props": {
-                "proto": "tcp",
+                ".created": 1583786806317,
                 "ipv4": 16909060,
-                ".created": 1583786806317
+                "proto": "tcp"
             },
             "tagprops": {},
             "reprs": {
-                "ipv4": "1.2.3.4",
-                ".created": "2020/03/09 20:46:46.317"
+                ".created": "2020/03/09 20:46:46.317",
+                "ipv4": "1.2.3.4"
             },
             "tagpropreprs": {}
         }
@@ -217,16 +229,16 @@
             "iden": "ea54b53c3c581a379f4d4d41ffc48abe0cc7ef3f4668e163fce3974c5e3bca92",
             "tags": {},
             "props": {
+                ".created": 1583786806318,
                 "base": "trgtag",
                 "depth": 0,
                 "doc": "",
-                "title": "",
-                ".created": 1583786806318
+                "title": ""
             },
             "tagprops": {},
             "reprs": {
-                "depth": "0",
-                ".created": "2020/03/09 20:46:46.318"
+                ".created": "2020/03/09 20:46:46.318",
+                "depth": "0"
             },
             "tagpropreprs": {}
         }
@@ -287,7 +299,8 @@
                 "latlong": [
                     -30.0,
                     20.22
-                ]
+                ],
+                "desc": "foo description"
             },
             "tagprops": {},
             "reprs": {
@@ -306,16 +319,16 @@
             "iden": "372127b37ae8a2c0c70cee5c5761500fb3ea254bc49eeb6be1c22ecaafc07fb4",
             "tags": {},
             "props": {
+                ".created": 1583786806356,
                 "base": "foo",
                 "depth": 0,
                 "doc": "",
-                "title": "",
-                ".created": 1583786806356
+                "title": ""
             },
             "tagprops": {},
             "reprs": {
-                "depth": "0",
-                ".created": "2020/03/09 20:46:46.356"
+                ".created": "2020/03/09 20:46:46.356",
+                "depth": "0"
             },
             "tagpropreprs": {}
         }
@@ -329,17 +342,17 @@
             "iden": "468f4a1233aa2fd27ed8610bf84581d32ba4f98d1c5fffcec2a26d2d3d8d1e1f",
             "tags": {},
             "props": {
+                ".created": 1583786806356,
                 "base": "spam",
                 "depth": 3,
-                "up": "foo.bar.baz",
                 "doc": "",
                 "title": "",
-                ".created": 1583786806356
+                "up": "foo.bar.baz"
             },
             "tagprops": {},
             "reprs": {
-                "depth": "3",
-                ".created": "2020/03/09 20:46:46.356"
+                ".created": "2020/03/09 20:46:46.356",
+                "depth": "3"
             },
             "tagpropreprs": {}
         }
@@ -353,17 +366,17 @@
             "iden": "60914fd64361ad645fb9e36f1c72af994c370690e639e85493a25e962bd7c7df",
             "tags": {},
             "props": {
+                ".created": 1583786806356,
                 "base": "baz",
                 "depth": 2,
-                "up": "foo.bar",
                 "doc": "",
                 "title": "",
-                ".created": 1583786806356
+                "up": "foo.bar"
             },
             "tagprops": {},
             "reprs": {
-                "depth": "2",
-                ".created": "2020/03/09 20:46:46.356"
+                ".created": "2020/03/09 20:46:46.356",
+                "depth": "2"
             },
             "tagpropreprs": {}
         }
@@ -377,17 +390,17 @@
             "iden": "9f9ee37668ed62ca04e548d98bd38117c5b7852b2c9fc6c71446e494a5f65a3e",
             "tags": {},
             "props": {
+                ".created": 1583786806356,
                 "base": "bar",
                 "depth": 1,
-                "up": "foo",
                 "doc": "",
                 "title": "",
-                ".created": 1583786806356
+                "up": "foo"
             },
             "tagprops": {},
             "reprs": {
-                "depth": "1",
-                ".created": "2020/03/09 20:46:46.356"
+                ".created": "2020/03/09 20:46:46.356",
+                "depth": "1"
             },
             "tagpropreprs": {}
         }
@@ -406,16 +419,16 @@
                 ]
             },
             "props": {
-                "type": "unicast",
+                ".created": 1583786806357,
                 "asn": 0,
                 "loc": "??",
-                ".created": 1583786806357
+                "type": "unicast"
             },
             "tagprops": {},
             "repr": "5.5.5.5",
             "reprs": {
-                "asn": "0",
-                ".created": "2020/03/09 20:46:46.357"
+                ".created": "2020/03/09 20:46:46.357",
+                "asn": "0"
             },
             "tagpropreprs": {}
         }
@@ -429,8 +442,8 @@
             "iden": "43efacb253f7c74af6963376fbcc940df523f4f7e712159b94c02cfdac8ed6da",
             "tags": {},
             "props": {
-                "vendor": "??",
-                ".created": 1583786806377
+                ".created": 1583786806377,
+                "vendor": "??"
             },
             "tagprops": {},
             "reprs": {
@@ -451,10 +464,10 @@
             "iden": "497c45047b92951bcf7f714825f2816d5a4979f55dbcb2bc3852c88b6c7e944f",
             "tags": {},
             "props": {
-                "ssid": "BHOT-2019",
+                ".created": 1583786806377,
                 "bssid": "d8:38:fc:13:87:5c",
                 "loc": "??",
-                ".created": 1583786806377
+                "ssid": "BHOT-2019"
             },
             "tagprops": {},
             "reprs": {
@@ -503,6 +516,11 @@
             "iden": "edc64f7da4f42ab9a2eda2db285df4d30119dc7c4a93d0145b7466cf620db563",
             "tags": {},
             "props": {
+                ".created": 1583786806377,
+                "latlong": [
+                    43.41483078,
+                    39.94891607
+                ],
                 "ndef": [
                     "inet:wifi:ap",
                     [
@@ -511,12 +529,7 @@
                     ]
                 ],
                 "ndef:form": "inet:wifi:ap",
-                "latlong": [
-                    43.41483078,
-                    39.94891607
-                ],
-                "time": 1546300800000,
-                ".created": 1583786806377
+                "time": 1546300800000
             },
             "tagprops": {},
             "repr": [
@@ -531,9 +544,9 @@
                 "2019/01/01 00:00:00.000"
             ],
             "reprs": {
+                ".created": "2020/03/09 20:46:46.377",
                 "latlong": "43.41483078,39.94891607",
-                "time": "2019/01/01 00:00:00.000",
-                ".created": "2020/03/09 20:46:46.377"
+                "time": "2019/01/01 00:00:00.000"
             },
             "tagpropreprs": {}
         }
@@ -550,9 +563,9 @@
             "iden": "4284a59c00dc93f3bbba5af4f983236c8f40332d5a28f1245e38fa850dbfbfa4",
             "tags": {},
             "props": {
+                ".created": 1583786806396,
                 "fqdn": "woot.com",
-                "ipv4": 16909060,
-                ".created": 1583786806396
+                "ipv4": 16909060
             },
             "tagprops": {},
             "repr": [
@@ -560,8 +573,8 @@
                 "1.2.3.4"
             ],
             "reprs": {
-                "ipv4": "1.2.3.4",
-                ".created": "2020/03/09 20:46:46.396"
+                ".created": "2020/03/09 20:46:46.396",
+                "ipv4": "1.2.3.4"
             },
             "tagpropreprs": {}
         }
@@ -575,16 +588,16 @@
             "iden": "85b4e56f417fd5ea878cc0a6f9e992328babf6500aa711ecd106f07d7ab41fa5",
             "tags": {},
             "props": {
+                ".created": 1583786806396,
                 "host": "com",
                 "issuffix": 1,
-                "iszone": 0,
-                ".created": 1583786806396
+                "iszone": 0
             },
             "tagprops": {},
             "reprs": {
+                ".created": "2020/03/09 20:46:46.396",
                 "issuffix": "True",
-                "iszone": "False",
-                ".created": "2020/03/09 20:46:46.396"
+                "iszone": "False"
             },
             "tagpropreprs": {}
         }
@@ -598,18 +611,18 @@
             "iden": "d7fb3ae625e295c9279c034f5d91a7ad9132c79a9c2b16eecffc8d1609d75849",
             "tags": {},
             "props": {
-                "host": "woot",
+                ".created": 1583786806396,
                 "domain": "com",
+                "host": "woot",
                 "issuffix": 0,
                 "iszone": 1,
-                ".created": 1583786806396,
                 "zone": "woot.com"
             },
             "tagprops": {},
             "reprs": {
+                ".created": "2020/03/09 20:46:46.396",
                 "issuffix": "False",
-                "iszone": "True",
-                ".created": "2020/03/09 20:46:46.396"
+                "iszone": "True"
             },
             "tagpropreprs": {}
         }
@@ -626,9 +639,9 @@
             "iden": "02488bc284ffd0f60f474d5af66a8c0cf89789f766b51fde1d3da9b227005f47",
             "tags": {},
             "props": {
+                ".created": 1583786806398,
                 "fqdn": "vertex.link",
-                "ipv4": 16909060,
-                ".created": 1583786806398
+                "ipv4": 16909060
             },
             "tagprops": {},
             "repr": [
@@ -636,8 +649,8 @@
                 "1.2.3.4"
             ],
             "reprs": {
-                "ipv4": "1.2.3.4",
-                ".created": "2020/03/09 20:46:46.398"
+                ".created": "2020/03/09 20:46:46.398",
+                "ipv4": "1.2.3.4"
             },
             "tagpropreprs": {}
         }
@@ -651,16 +664,16 @@
             "iden": "058c7ce18e67e34ca2152da6c8f4f4dc94c580600595b02b4763a6d1bef35417",
             "tags": {},
             "props": {
+                ".created": 1583786806398,
                 "host": "link",
                 "issuffix": 1,
-                "iszone": 0,
-                ".created": 1583786806398
+                "iszone": 0
             },
             "tagprops": {},
             "reprs": {
+                ".created": "2020/03/09 20:46:46.398",
                 "issuffix": "True",
-                "iszone": "False",
-                ".created": "2020/03/09 20:46:46.398"
+                "iszone": "False"
             },
             "tagpropreprs": {}
         }
@@ -674,18 +687,18 @@
             "iden": "3ecd51e142a5acfcde42c02ff5c68378bfaf1eaf49fe9721550b6e7d6013b699",
             "tags": {},
             "props": {
-                "host": "vertex",
+                ".created": 1583786806398,
                 "domain": "link",
+                "host": "vertex",
                 "issuffix": 0,
                 "iszone": 1,
-                ".created": 1583786806398,
                 "zone": "vertex.link"
             },
             "tagprops": {},
             "reprs": {
+                ".created": "2020/03/09 20:46:46.398",
                 "issuffix": "False",
-                "iszone": "True",
-                ".created": "2020/03/09 20:46:46.398"
+                "iszone": "True"
             },
             "tagpropreprs": {}
         }
@@ -698,21 +711,20 @@
         {
             "iden": "1fc865150f408fbe00a3f3387b4f1bd952531e89dbe0763d42c1ff509f853fd6",
             "tags": {
-                "trgtag": [
+                "foo": [
                     null,
                     null
                 ],
-                "foo": [
+                "trgtag": [
                     null,
                     null
                 ]
             },
             "props": {
-                "type": "unicast",
-                "asn": 0,
-                "loc": "nl",
                 ".created": 1583786806438,
-                "_rdxpz": 7
+                "_rdxpz": 7,
+                "asn": 0,
+                "type": "unicast"
             },
             "tagprops": {
                 "foo": {
@@ -721,9 +733,9 @@
             },
             "repr": "5.6.7.8",
             "reprs": {
-                "asn": "0",
                 ".created": "2020/03/09 20:46:46.438",
-                "_rdxpz": "7"
+                "_rdxpz": "7",
+                "asn": "0"
             },
             "tagpropreprs": {
                 "foo": {
@@ -742,12 +754,12 @@
             "tags": {},
             "props": {
                 ".created": 1583786806450,
-                "vers": "3.4.45",
-                "vers:norm": "3.4.45",
                 "semver": 3298539077677,
                 "semver:major": 3,
                 "semver:minor": 4,
-                "semver:patch": 45
+                "semver:patch": 45,
+                "vers": "3.4.45",
+                "vers:norm": "3.4.45"
             },
             "tagprops": {},
             "reprs": {
@@ -859,14 +871,6 @@
         {
             "iden": "036284f71570154f673bb634f79f172079961f958c7afaf7eb2b364477cf50fb",
             "tags": {
-                "faz": [
-                    null,
-                    null
-                ],
-                "faz.baz": [
-                    null,
-                    null
-                ],
                 "foo": [
                     null,
                     null
@@ -877,29 +881,21 @@
                 ]
             },
             "props": {
+                "._rdxu": "22",
+                ".created": 1583786806480,
                 "md5": "db0e2c851f5727fefbb71dc24e93499d",
+                "mime": "??",
                 "sha1": "206030366322d35c992ee40151510c51353f9e32",
                 "sha256": "11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1",
                 "sha512": "831df287c514cb066ffb8908b0b33de249c13a710fc3eb9f2eceb9f5853032f5a9656d4bafb1aec99b26a6eecd4b4c6e56a987f663c7a525a9be010964d34631",
-                "size": 9,
-                "mime": "??",
-                ".created": 1583786806480,
-                "._rdxu": "22"
+                "size": 9
             },
-            "tagprops": {
-                "foo.bar": {
-                    "score": 9
-                }
-            },
+            "tagprops": {},
             "reprs": {
-                "size": "9",
-                ".created": "2020/03/09 20:46:46.480"
+                ".created": "2020/03/09 20:46:46.480",
+                "size": "9"
             },
-            "tagpropreprs": {
-                "foo.bar": {
-                    "score": "9"
-                }
-            }
+            "tagpropreprs": {}
         }
     ],
     [
@@ -911,16 +907,16 @@
             "iden": "4b64b95f2f84013a37dff6e43fbf39b02102125fa02d7579bd971f6d3e4d0767",
             "tags": {},
             "props": {
+                ".created": 1583786806480,
                 "base": "faz",
                 "depth": 0,
                 "doc": "",
-                "title": "",
-                ".created": 1583786806480
+                "title": ""
             },
             "tagprops": {},
             "reprs": {
-                "depth": "0",
-                ".created": "2020/03/09 20:46:46.480"
+                ".created": "2020/03/09 20:46:46.480",
+                "depth": "0"
             },
             "tagpropreprs": {}
         }
@@ -952,17 +948,17 @@
             "iden": "cd5110eb6176d4ec35f17067848119625b8d995999d8a5b2349a15addeaa9735",
             "tags": {},
             "props": {
+                ".created": 1583786806480,
                 "base": "baz",
                 "depth": 1,
-                "up": "faz",
                 "doc": "",
                 "title": "",
-                ".created": 1583786806480
+                "up": "faz"
             },
             "tagprops": {},
             "reprs": {
-                "depth": "1",
-                ".created": "2020/03/09 20:46:46.480"
+                ".created": "2020/03/09 20:46:46.480",
+                "depth": "1"
             },
             "tagpropreprs": {}
         }
@@ -1012,9 +1008,9 @@
             "iden": "b9b4e9f405fe1d32255b990fa413541963a00cfcd1fb4bb67a49c905a364be0d",
             "tags": {},
             "props": {
-                "sha256": "b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5",
-                "mime": "x509",
                 ".created": 1583786806501,
+                "mime": "x509",
+                "sha256": "b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5",
                 "size": 375
             },
             "tagprops": {},
@@ -1037,9 +1033,9 @@
             "iden": "cc4b9f6acb5d7e7746ee80264659954ee96fc14e5f8807003db07added71b865",
             "tags": {},
             "props": {
+                ".created": 1583786806501,
                 "file": "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5",
-                "mime": "x509",
-                ".created": 1583786806501
+                "mime": "x509"
             },
             "tagprops": {},
             "reprs": {
@@ -1066,6 +1062,7 @@
             "iden": "3a738a2124679c4392743ddc8d45f3153929aaafcf9488eac51debda712ae6bf",
             "tags": {},
             "props": {
+                ".created": 1583786806517,
                 "n1": [
                     "inet:ipv4",
                     16909060
@@ -1075,8 +1072,7 @@
                     "inet:ipv4",
                     84281096
                 ],
-                "n2:form": "inet:ipv4",
-                ".created": 1583786806517
+                "n2:form": "inet:ipv4"
             },
             "tagprops": {},
             "repr": [
@@ -1090,6 +1086,7 @@
                 ]
             ],
             "reprs": {
+                ".created": "2020/03/09 20:46:46.517",
                 "n1": [
                     "inet:ipv4",
                     "1.2.3.4"
@@ -1097,8 +1094,7 @@
                 "n2": [
                     "inet:ipv4",
                     "5.6.7.8"
-                ],
-                ".created": "2020/03/09 20:46:46.517"
+                ]
             },
             "tagpropreprs": {}
         }
@@ -1125,40 +1121,141 @@
     ],
     [
         [
-            "meta:seen",
-            [
-                "0e7972288a8d306294ec201ddfc55e4c",
-                [
-                    "inet:ipv4",
-                    16909060
+            "inet:ipv4",
+            168364289
+        ],
+        {
+            "iden": "bbe7eb420e9f0b98857269e65d0e2a9e5c000781c9d6b1abf6715af8c961a8bf",
+            "tags": {
+                "trgtag": [
+                    null,
+                    null
                 ]
+            },
+            "props": {
+                "type": "private",
+                "asn": 0,
+                "loc": "??",
+                ".created": 1583786806953
+            },
+            "tagprops": {},
+            "repr": "10.9.9.1",
+            "reprs": {
+                "asn": "0",
+                ".created": "2020/03/09 20:46:46.953"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "file:bytes",
+            "guid:be1992295845f582a71fffd5fdf8a466"
+        ],
+        {
+            "iden": "023f82629f4fb3f00e563e02d02fa19d28b8e3d01aa017855a6ef8b5a2343cac",
+            "tags": {},
+            "props": {
+                "mime": "x509",
+                ".created": 1583786807024
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/03/09 20:46:47.024"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "file:ismime",
+            [
+                "guid:be1992295845f582a71fffd5fdf8a466",
+                "x509"
             ]
         ],
         {
-            "iden": "364fe94de1f200c35ef83e773a57ace01d00c0643b7b0b0b1958c98ce2865cdb",
+            "iden": "dee0ee04cfdb233eafe6fd512d6af08bbf6c84753fc4313644c247a68ab2291c",
             "tags": {},
             "props": {
-                "source": "0e7972288a8d306294ec201ddfc55e4c",
-                "node": [
-                    "inet:ipv4",
-                    16909060
-                ],
-                ".created": 1583786806549
+                "file": "guid:be1992295845f582a71fffd5fdf8a466",
+                "mime": "x509",
+                ".created": 1583786807025
             },
             "tagprops": {},
-            "repr": [
-                "0e7972288a8d306294ec201ddfc55e4c",
-                [
-                    "inet:ipv4",
-                    "1.2.3.4"
-                ]
-            ],
             "reprs": {
-                "node": [
-                    "inet:ipv4",
-                    "1.2.3.4"
-                ],
-                ".created": "2020/03/09 20:46:46.549"
+                ".created": "2020/03/09 20:46:47.025"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "syn:tag",
+            "sp.li"
+        ],
+        {
+            "iden": "3b1b1572b94c46b8da6d9f3ce64879efb11dd95acb2a41af735afeddbf0d80c8",
+            "tags": {},
+            "props": {
+                "base": "li",
+                "depth": 1,
+                "up": "sp",
+                "doc": "",
+                "title": "",
+                ".created": 1583786807036
+            },
+            "tagprops": {},
+            "reprs": {
+                "depth": "1",
+                ".created": "2020/03/09 20:46:47.036"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "syn:tag",
+            "sp.li.ce"
+        ],
+        {
+            "iden": "567a6b5f83bcded042e8d7674400198106b3286c388766092a2aff290f97b0ed",
+            "tags": {},
+            "props": {
+                "base": "ce",
+                "depth": 2,
+                "up": "sp.li",
+                "doc": "",
+                "title": "",
+                ".created": 1583786807036
+            },
+            "tagprops": {},
+            "reprs": {
+                "depth": "2",
+                ".created": "2020/03/09 20:46:47.036"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "syn:tag",
+            "sp"
+        ],
+        {
+            "iden": "7e5c801f236efd457487163d9f03f0d280ccca9e09c6df58ef253da8b36e8b84",
+            "tags": {},
+            "props": {
+                "base": "sp",
+                "depth": 0,
+                "doc": "",
+                "title": "",
+                ".created": 1583786807036
+            },
+            "tagprops": {},
+            "reprs": {
+                "depth": "0",
+                ".created": "2020/03/09 20:46:47.036"
             },
             "tagpropreprs": {}
         }

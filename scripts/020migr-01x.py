@@ -270,5 +270,66 @@ async def main():
         with open(os.path.join(DESTPATH_ASSETS, 'nodedata.json'), 'w') as f:
             f.write(json.dumps(nodedata, indent=2))
 
+        # generate splices that will *not* be part of saved cortex
+        splicepodes = []
+        splices = {}
+        async with await s_cortex.Cortex.anit(path, conf=conf) as core:
+            await core.loadCoreModule('020migr-01x.MigrMod')
+            await core.loadCoreModule('synapse.tests.utils.TestModule')
+
+            lyrs = {}
+            for view in core.views.values():
+                for lyr in view.layers:
+                    lyrs[lyr.iden] = (lyr, lyr.splicelog.index())
+
+            # Add nodes
+            scmd = f'[inet:ipv4=10.9.9.1]'
+            await core.nodes(scmd)
+
+            scmd = f'[file:bytes="*" :mime=x509]'
+            await core.nodes(scmd)
+
+            # Add tag to existing nodes
+            scmd = f'inet:ipv4=1.2.3.4 [+#sp.li.ce]'
+            await core.nodes(scmd)
+
+            # Remove tag from existing nodes
+            scmd = f'#faz [-#faz]'
+            await core.nodes(scmd)
+
+            # Remove tag prop from exist node
+            scmd = f'#foo [-#foo.bar:score]'
+            await core.nodes(scmd)
+
+            # Add secondary prop to existing node
+            scmd = f'geo:place [:desc="foo description"]'
+            await core.nodes(scmd)
+
+            # Remove secondary prop from existing
+            scmd = f'inet:ipv4=5.6.7.8 [-:loc]'
+            await core.nodes(scmd)
+
+            # Delete a node
+            scmd = f'meta:seen | delnode --force'
+            await core.nodes(scmd)
+
+            # delete source test node
+            await core.nodes('meta:source:name=test | delnode')
+
+            for node in await core.nodes('.created'):
+                splicepodes.append(node.pack(dorepr=True))
+
+            for lyriden, (lyr, nextoffs) in lyrs.items():
+                splices[lyriden] = {
+                    'nextoffs': nextoffs,
+                    'splices': [s async for s in lyr.splices(0, -1)],
+                }
+
+        with open(os.path.join(DESTPATH_ASSETS, 'splicepodes.json'), 'w') as f:
+            f.write(json.dumps(splicepodes, indent=4))
+
+        with open(os.path.join(DESTPATH_ASSETS, 'splices.json'), 'w') as f:
+            f.write(json.dumps(splices, indent=2))
+
 if __name__ == '__main__':
     asyncio.run(main())

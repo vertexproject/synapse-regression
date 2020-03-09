@@ -1,0 +1,4453 @@
+{
+  "46fb0d104232304b7ac8a41e4db49d6c": {
+    "nextoffs": 243,
+    "splices": [
+      [
+        "node:add",
+        {
+          "ndef": [
+            "meta:source",
+            "8f1401de15918358d5247e21ca29a814"
+          ],
+          "time": 1583786806099,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "dcb60de3942df258c88fe23142cb64ef"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "meta:source",
+            "8f1401de15918358d5247e21ca29a814"
+          ],
+          "prop": "name",
+          "valu": "test",
+          "time": 1583786806099,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "dcb60de3942df258c88fe23142cb64ef"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "meta:source",
+            "8f1401de15918358d5247e21ca29a814"
+          ],
+          "prop": ".created",
+          "valu": 1583786806099,
+          "time": 1583786806099,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "dcb60de3942df258c88fe23142cb64ef"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "migr:test",
+            22
+          ],
+          "time": 1583786806224,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "3bbdc89bf8975dbc7ccea40b625656de"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "migr:test",
+            22
+          ],
+          "prop": ".created",
+          "valu": 1583786806224,
+          "time": 1583786806224,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "3bbdc89bf8975dbc7ccea40b625656de"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "migr:test",
+            22
+          ],
+          "prop": "bar",
+          "valu": "spam",
+          "time": 1583786806224,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "3bbdc89bf8975dbc7ccea40b625656de"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "snake.io"
+          ],
+          "time": 1583786806293,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fb653fbb5b924938b400ec8513df7b7f"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "io"
+          ],
+          "time": 1583786806293,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fb653fbb5b924938b400ec8513df7b7f"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "snake.io"
+          ],
+          "prop": "host",
+          "valu": "snake",
+          "time": 1583786806293,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fb653fbb5b924938b400ec8513df7b7f"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "snake.io"
+          ],
+          "prop": "domain",
+          "valu": "io",
+          "time": 1583786806293,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fb653fbb5b924938b400ec8513df7b7f"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "io"
+          ],
+          "prop": "host",
+          "valu": "io",
+          "time": 1583786806293,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fb653fbb5b924938b400ec8513df7b7f"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "io"
+          ],
+          "prop": "issuffix",
+          "valu": 0,
+          "time": 1583786806293,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fb653fbb5b924938b400ec8513df7b7f"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "io"
+          ],
+          "prop": "iszone",
+          "valu": 0,
+          "time": 1583786806293,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fb653fbb5b924938b400ec8513df7b7f"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "io"
+          ],
+          "prop": ".created",
+          "valu": 1583786806293,
+          "time": 1583786806293,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fb653fbb5b924938b400ec8513df7b7f"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "snake.io"
+          ],
+          "prop": "issuffix",
+          "valu": 0,
+          "time": 1583786806293,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fb653fbb5b924938b400ec8513df7b7f"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "snake.io"
+          ],
+          "prop": "iszone",
+          "valu": 0,
+          "time": 1583786806293,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fb653fbb5b924938b400ec8513df7b7f"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "snake.io"
+          ],
+          "prop": ".created",
+          "valu": 1583786806293,
+          "time": 1583786806293,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fb653fbb5b924938b400ec8513df7b7f"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "io"
+          ],
+          "prop": "issuffix",
+          "valu": 1,
+          "oldv": 0,
+          "time": 1583786806293,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fb653fbb5b924938b400ec8513df7b7f"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "snake.io"
+          ],
+          "prop": "iszone",
+          "valu": 1,
+          "oldv": 0,
+          "time": 1583786806293,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fb653fbb5b924938b400ec8513df7b7f"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "snake.io"
+          ],
+          "prop": "zone",
+          "valu": "snake.io",
+          "time": 1583786806293,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fb653fbb5b924938b400ec8513df7b7f"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "crypto:currency:client",
+            [
+              "tcp://1.2.3.4",
+              [
+                "btc",
+                "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+              ]
+            ]
+          ],
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:client",
+            "tcp://1.2.3.4"
+          ],
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:ipv4",
+            16909060
+          ],
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:asn",
+            0
+          ],
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "crypto:currency:address",
+            [
+              "btc",
+              "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+            ]
+          ],
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "crypto:currency:client",
+            [
+              "tcp://1.2.3.4",
+              [
+                "btc",
+                "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+              ]
+            ]
+          ],
+          "prop": "inetaddr",
+          "valu": "tcp://1.2.3.4",
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:client",
+            "tcp://1.2.3.4"
+          ],
+          "prop": "proto",
+          "valu": "tcp",
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:client",
+            "tcp://1.2.3.4"
+          ],
+          "prop": "ipv4",
+          "valu": 16909060,
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            16909060
+          ],
+          "prop": "type",
+          "valu": "unicast",
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            16909060
+          ],
+          "prop": "asn",
+          "valu": 0,
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:asn",
+            0
+          ],
+          "prop": "name",
+          "valu": "??",
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:asn",
+            0
+          ],
+          "prop": ".created",
+          "valu": 1583786806317,
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            16909060
+          ],
+          "prop": "loc",
+          "valu": "??",
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            16909060
+          ],
+          "prop": ".created",
+          "valu": 1583786806317,
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:client",
+            "tcp://1.2.3.4"
+          ],
+          "prop": ".created",
+          "valu": 1583786806317,
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "crypto:currency:client",
+            [
+              "tcp://1.2.3.4",
+              [
+                "btc",
+                "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+              ]
+            ]
+          ],
+          "prop": "coinaddr",
+          "valu": [
+            "btc",
+            "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+          ],
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "crypto:currency:address",
+            [
+              "btc",
+              "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+            ]
+          ],
+          "prop": "coin",
+          "valu": "btc",
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "crypto:currency:address",
+            [
+              "btc",
+              "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+            ]
+          ],
+          "prop": "iden",
+          "valu": "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2",
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "crypto:currency:address",
+            [
+              "btc",
+              "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+            ]
+          ],
+          "prop": ".created",
+          "valu": 1583786806317,
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "crypto:currency:client",
+            [
+              "tcp://1.2.3.4",
+              [
+                "btc",
+                "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+              ]
+            ]
+          ],
+          "prop": ".created",
+          "valu": 1583786806317,
+          "time": 1583786806317,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "2f4c2d51405aaaae3c492e68d6ee22f4"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "syn:tag",
+            "trgtag"
+          ],
+          "time": 1583786806318,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "46475a90c552628045a296b33674ee11"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "trgtag"
+          ],
+          "prop": "base",
+          "valu": "trgtag",
+          "time": 1583786806318,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "46475a90c552628045a296b33674ee11"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "trgtag"
+          ],
+          "prop": "depth",
+          "valu": 0,
+          "time": 1583786806318,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "46475a90c552628045a296b33674ee11"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "trgtag"
+          ],
+          "prop": "doc",
+          "valu": "",
+          "time": 1583786806318,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "46475a90c552628045a296b33674ee11"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "trgtag"
+          ],
+          "prop": "title",
+          "valu": "",
+          "time": 1583786806318,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "46475a90c552628045a296b33674ee11"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "trgtag"
+          ],
+          "prop": ".created",
+          "valu": 1583786806318,
+          "time": 1583786806318,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "46475a90c552628045a296b33674ee11"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "inet:ipv4",
+            16909060
+          ],
+          "tag": "trgtag",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786806318,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "46475a90c552628045a296b33674ee11"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "econ:acct:payment",
+            "f66e4e3e8958f97010abb6164ccbf5d0"
+          ],
+          "time": 1583786806334,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "c2ee98c595426695cc596d8e86bdcdf8"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "econ:acct:payment",
+            "f66e4e3e8958f97010abb6164ccbf5d0"
+          ],
+          "prop": ".created",
+          "valu": 1583786806334,
+          "time": 1583786806334,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "c2ee98c595426695cc596d8e86bdcdf8"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "econ:acct:payment",
+            "f66e4e3e8958f97010abb6164ccbf5d0"
+          ],
+          "prop": "from:coinaddr",
+          "valu": [
+            "btc",
+            "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+          ],
+          "time": 1583786806335,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "c2ee98c595426695cc596d8e86bdcdf8"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "econ:acct:payment",
+            "f66e4e3e8958f97010abb6164ccbf5d0"
+          ],
+          "prop": "to:coinaddr",
+          "valu": [
+            "btc",
+            "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+          ],
+          "time": 1583786806335,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "c2ee98c595426695cc596d8e86bdcdf8"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "geo:place",
+            "0e63b4654d69ae437d1611e318fd2844"
+          ],
+          "time": 1583786806355,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "geo:place",
+            "0e63b4654d69ae437d1611e318fd2844"
+          ],
+          "prop": ".created",
+          "valu": 1583786806355,
+          "time": 1583786806355,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "geo:place",
+            "0e63b4654d69ae437d1611e318fd2844"
+          ],
+          "prop": "latlong",
+          "valu": [
+            -30.0,
+            20.22
+          ],
+          "time": 1583786806355,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar.baz.spam"
+          ],
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar.baz"
+          ],
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar"
+          ],
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo"
+          ],
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar.baz.spam"
+          ],
+          "prop": "base",
+          "valu": "spam",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar.baz.spam"
+          ],
+          "prop": "depth",
+          "valu": 3,
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar.baz.spam"
+          ],
+          "prop": "up",
+          "valu": "foo.bar.baz",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar.baz"
+          ],
+          "prop": "base",
+          "valu": "baz",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar.baz"
+          ],
+          "prop": "depth",
+          "valu": 2,
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar.baz"
+          ],
+          "prop": "up",
+          "valu": "foo.bar",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar"
+          ],
+          "prop": "base",
+          "valu": "bar",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar"
+          ],
+          "prop": "depth",
+          "valu": 1,
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar"
+          ],
+          "prop": "up",
+          "valu": "foo",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo"
+          ],
+          "prop": "base",
+          "valu": "foo",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo"
+          ],
+          "prop": "depth",
+          "valu": 0,
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo"
+          ],
+          "prop": "doc",
+          "valu": "",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo"
+          ],
+          "prop": "title",
+          "valu": "",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo"
+          ],
+          "prop": ".created",
+          "valu": 1583786806356,
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar"
+          ],
+          "prop": "doc",
+          "valu": "",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar"
+          ],
+          "prop": "title",
+          "valu": "",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar"
+          ],
+          "prop": ".created",
+          "valu": 1583786806356,
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar.baz"
+          ],
+          "prop": "doc",
+          "valu": "",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar.baz"
+          ],
+          "prop": "title",
+          "valu": "",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar.baz"
+          ],
+          "prop": ".created",
+          "valu": 1583786806356,
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar.baz.spam"
+          ],
+          "prop": "doc",
+          "valu": "",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar.baz.spam"
+          ],
+          "prop": "title",
+          "valu": "",
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "foo.bar.baz.spam"
+          ],
+          "prop": ".created",
+          "valu": 1583786806356,
+          "time": 1583786806356,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "geo:place",
+            "0e63b4654d69ae437d1611e318fd2844"
+          ],
+          "tag": "foo",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786806357,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "geo:place",
+            "0e63b4654d69ae437d1611e318fd2844"
+          ],
+          "tag": "foo.bar",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786806357,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "geo:place",
+            "0e63b4654d69ae437d1611e318fd2844"
+          ],
+          "tag": "foo.bar.baz",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786806357,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84215045
+          ],
+          "time": 1583786806357,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8d6ef296423aff0ed07450eb8236f569"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84215045
+          ],
+          "prop": "type",
+          "valu": "unicast",
+          "time": 1583786806357,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8d6ef296423aff0ed07450eb8236f569"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84215045
+          ],
+          "prop": "asn",
+          "valu": 0,
+          "time": 1583786806357,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8d6ef296423aff0ed07450eb8236f569"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84215045
+          ],
+          "prop": "loc",
+          "valu": "??",
+          "time": 1583786806357,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8d6ef296423aff0ed07450eb8236f569"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84215045
+          ],
+          "prop": ".created",
+          "valu": 1583786806357,
+          "time": 1583786806357,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8d6ef296423aff0ed07450eb8236f569"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84215045
+          ],
+          "tag": "trgtag",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786806357,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "6112a27971173bebc9d12e0858aaf373"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "geo:place",
+            "0e63b4654d69ae437d1611e318fd2844"
+          ],
+          "tag": "foo.bar.baz.spam",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786806358,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "710e4ee28afd64dc8f2045c2bfd1ef94"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "geo:nloc",
+            [
+              [
+                "inet:wifi:ap",
+                [
+                  "BHOT-2019",
+                  "d8:38:fc:13:87:5c"
+                ]
+              ],
+              [
+                43.41483078,
+                39.94891607
+              ],
+              1546300800000
+            ]
+          ],
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:wifi:ap",
+            [
+              "BHOT-2019",
+              "d8:38:fc:13:87:5c"
+            ]
+          ],
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:wifi:ssid",
+            "BHOT-2019"
+          ],
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:mac",
+            "d8:38:fc:13:87:5c"
+          ],
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "geo:nloc",
+            [
+              [
+                "inet:wifi:ap",
+                [
+                  "BHOT-2019",
+                  "d8:38:fc:13:87:5c"
+                ]
+              ],
+              [
+                43.41483078,
+                39.94891607
+              ],
+              1546300800000
+            ]
+          ],
+          "prop": "ndef",
+          "valu": [
+            "inet:wifi:ap",
+            [
+              "BHOT-2019",
+              "d8:38:fc:13:87:5c"
+            ]
+          ],
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:wifi:ap",
+            [
+              "BHOT-2019",
+              "d8:38:fc:13:87:5c"
+            ]
+          ],
+          "prop": "ssid",
+          "valu": "BHOT-2019",
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:wifi:ssid",
+            "BHOT-2019"
+          ],
+          "prop": ".created",
+          "valu": 1583786806377,
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:wifi:ap",
+            [
+              "BHOT-2019",
+              "d8:38:fc:13:87:5c"
+            ]
+          ],
+          "prop": "bssid",
+          "valu": "d8:38:fc:13:87:5c",
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:mac",
+            "d8:38:fc:13:87:5c"
+          ],
+          "prop": "vendor",
+          "valu": "??",
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:mac",
+            "d8:38:fc:13:87:5c"
+          ],
+          "prop": ".created",
+          "valu": 1583786806377,
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:wifi:ap",
+            [
+              "BHOT-2019",
+              "d8:38:fc:13:87:5c"
+            ]
+          ],
+          "prop": "loc",
+          "valu": "??",
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:wifi:ap",
+            [
+              "BHOT-2019",
+              "d8:38:fc:13:87:5c"
+            ]
+          ],
+          "prop": ".created",
+          "valu": 1583786806377,
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "geo:nloc",
+            [
+              [
+                "inet:wifi:ap",
+                [
+                  "BHOT-2019",
+                  "d8:38:fc:13:87:5c"
+                ]
+              ],
+              [
+                43.41483078,
+                39.94891607
+              ],
+              1546300800000
+            ]
+          ],
+          "prop": "ndef:form",
+          "valu": "inet:wifi:ap",
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "geo:nloc",
+            [
+              [
+                "inet:wifi:ap",
+                [
+                  "BHOT-2019",
+                  "d8:38:fc:13:87:5c"
+                ]
+              ],
+              [
+                43.41483078,
+                39.94891607
+              ],
+              1546300800000
+            ]
+          ],
+          "prop": "ndef:form",
+          "valu": "inet:wifi:ap",
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "geo:nloc",
+            [
+              [
+                "inet:wifi:ap",
+                [
+                  "BHOT-2019",
+                  "d8:38:fc:13:87:5c"
+                ]
+              ],
+              [
+                43.41483078,
+                39.94891607
+              ],
+              1546300800000
+            ]
+          ],
+          "prop": "latlong",
+          "valu": [
+            43.41483078,
+            39.94891607
+          ],
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "geo:nloc",
+            [
+              [
+                "inet:wifi:ap",
+                [
+                  "BHOT-2019",
+                  "d8:38:fc:13:87:5c"
+                ]
+              ],
+              [
+                43.41483078,
+                39.94891607
+              ],
+              1546300800000
+            ]
+          ],
+          "prop": "time",
+          "valu": 1546300800000,
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "geo:nloc",
+            [
+              [
+                "inet:wifi:ap",
+                [
+                  "BHOT-2019",
+                  "d8:38:fc:13:87:5c"
+                ]
+              ],
+              [
+                43.41483078,
+                39.94891607
+              ],
+              1546300800000
+            ]
+          ],
+          "prop": ".created",
+          "valu": 1583786806377,
+          "time": 1583786806377,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5ba719b97fc16a84d03d16277f7a492a"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:dns:a",
+            [
+              "woot.com",
+              16909060
+            ]
+          ],
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "woot.com"
+          ],
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "com"
+          ],
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:dns:a",
+            [
+              "woot.com",
+              16909060
+            ]
+          ],
+          "prop": "fqdn",
+          "valu": "woot.com",
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "woot.com"
+          ],
+          "prop": "host",
+          "valu": "woot",
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "woot.com"
+          ],
+          "prop": "domain",
+          "valu": "com",
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "com"
+          ],
+          "prop": "host",
+          "valu": "com",
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "com"
+          ],
+          "prop": "issuffix",
+          "valu": 0,
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "com"
+          ],
+          "prop": "iszone",
+          "valu": 0,
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "com"
+          ],
+          "prop": ".created",
+          "valu": 1583786806396,
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "woot.com"
+          ],
+          "prop": "issuffix",
+          "valu": 0,
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "woot.com"
+          ],
+          "prop": "iszone",
+          "valu": 0,
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "woot.com"
+          ],
+          "prop": ".created",
+          "valu": 1583786806396,
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:dns:a",
+            [
+              "woot.com",
+              16909060
+            ]
+          ],
+          "prop": "ipv4",
+          "valu": 16909060,
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:dns:a",
+            [
+              "woot.com",
+              16909060
+            ]
+          ],
+          "prop": ".created",
+          "valu": 1583786806396,
+          "time": 1583786806396,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "com"
+          ],
+          "prop": "issuffix",
+          "valu": 1,
+          "oldv": 0,
+          "time": 1583786806397,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "woot.com"
+          ],
+          "prop": "iszone",
+          "valu": 1,
+          "oldv": 0,
+          "time": 1583786806397,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "woot.com"
+          ],
+          "prop": "zone",
+          "valu": "woot.com",
+          "time": 1583786806397,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:dns:a",
+            [
+              "vertex.link",
+              16909060
+            ]
+          ],
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "vertex.link"
+          ],
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "link"
+          ],
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:dns:a",
+            [
+              "vertex.link",
+              16909060
+            ]
+          ],
+          "prop": "fqdn",
+          "valu": "vertex.link",
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "vertex.link"
+          ],
+          "prop": "host",
+          "valu": "vertex",
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "vertex.link"
+          ],
+          "prop": "domain",
+          "valu": "link",
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "link"
+          ],
+          "prop": "host",
+          "valu": "link",
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "link"
+          ],
+          "prop": "issuffix",
+          "valu": 0,
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "link"
+          ],
+          "prop": "iszone",
+          "valu": 0,
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "link"
+          ],
+          "prop": ".created",
+          "valu": 1583786806398,
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "vertex.link"
+          ],
+          "prop": "issuffix",
+          "valu": 0,
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "vertex.link"
+          ],
+          "prop": "iszone",
+          "valu": 0,
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "vertex.link"
+          ],
+          "prop": ".created",
+          "valu": 1583786806398,
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:dns:a",
+            [
+              "vertex.link",
+              16909060
+            ]
+          ],
+          "prop": "ipv4",
+          "valu": 16909060,
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:dns:a",
+            [
+              "vertex.link",
+              16909060
+            ]
+          ],
+          "prop": ".created",
+          "valu": 1583786806398,
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "link"
+          ],
+          "prop": "issuffix",
+          "valu": 1,
+          "oldv": 0,
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "vertex.link"
+          ],
+          "prop": "iszone",
+          "valu": 1,
+          "oldv": 0,
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:fqdn",
+            "vertex.link"
+          ],
+          "prop": "zone",
+          "valu": "vertex.link",
+          "time": 1583786806398,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "8fc19e79305b8d0ca08de4ae8ca81e8c"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            16909060
+          ],
+          "prop": "latlong",
+          "valu": [
+            -30.0,
+            20.22
+          ],
+          "time": 1583786806418,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "b505a562a8304af26f8d10f44f1679b6"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            16909060
+          ],
+          "prop": ".seen",
+          "valu": [
+            1104537600000,
+            1136073600000
+          ],
+          "time": 1583786806419,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "b505a562a8304af26f8d10f44f1679b6"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            16909060
+          ],
+          "prop": "_rdxp",
+          "valu": 7,
+          "time": 1583786806419,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "b505a562a8304af26f8d10f44f1679b6"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            16909060
+          ],
+          "prop": "._rdxuz",
+          "valu": "woot",
+          "time": 1583786806419,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "b505a562a8304af26f8d10f44f1679b6"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "inet:ipv4",
+            16909060
+          ],
+          "tag": "foo",
+          "valu": [
+            1325376000000,
+            1356998400000
+          ],
+          "oldv": null,
+          "time": 1583786806419,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "b505a562a8304af26f8d10f44f1679b6"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84281096
+          ],
+          "time": 1583786806438,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "b990259d64e39af714b6a143011afdde"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84281096
+          ],
+          "prop": "type",
+          "valu": "unicast",
+          "time": 1583786806438,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "b990259d64e39af714b6a143011afdde"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84281096
+          ],
+          "prop": "asn",
+          "valu": 0,
+          "time": 1583786806438,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "b990259d64e39af714b6a143011afdde"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84281096
+          ],
+          "prop": "loc",
+          "valu": "??",
+          "time": 1583786806438,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "b990259d64e39af714b6a143011afdde"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84281096
+          ],
+          "prop": ".created",
+          "valu": 1583786806438,
+          "time": 1583786806438,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "b990259d64e39af714b6a143011afdde"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84281096
+          ],
+          "tag": "trgtag",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786806439,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "a7458cad441b37b124d49de0f08557f5"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84281096
+          ],
+          "prop": "loc",
+          "valu": "nl",
+          "oldv": "??",
+          "time": 1583786806439,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "b990259d64e39af714b6a143011afdde"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84281096
+          ],
+          "prop": "_rdxpz",
+          "valu": 7,
+          "time": 1583786806439,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "b990259d64e39af714b6a143011afdde"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84281096
+          ],
+          "tag": "foo",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786806439,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "b990259d64e39af714b6a143011afdde"
+        }
+      ],
+      [
+        "tag:prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84281096
+          ],
+          "tag": "foo",
+          "prop": "nah",
+          "valu": 42,
+          "curv": null,
+          "time": 1583786806439,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "b990259d64e39af714b6a143011afdde"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "it:prod:softver",
+            "7bb0990561f00396447562cbaeb7803e"
+          ],
+          "time": 1583786806450,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "4a679f471fd33a6d8f114982a5f46ec7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "it:prod:softver",
+            "7bb0990561f00396447562cbaeb7803e"
+          ],
+          "prop": ".created",
+          "valu": 1583786806450,
+          "time": 1583786806450,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "4a679f471fd33a6d8f114982a5f46ec7"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "it:dev:str",
+            "3.4.45"
+          ],
+          "time": 1583786806451,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "4a679f471fd33a6d8f114982a5f46ec7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "it:prod:softver",
+            "7bb0990561f00396447562cbaeb7803e"
+          ],
+          "prop": "vers",
+          "valu": "3.4.45",
+          "time": 1583786806451,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "4a679f471fd33a6d8f114982a5f46ec7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "it:dev:str",
+            "3.4.45"
+          ],
+          "prop": ".created",
+          "valu": 1583786806451,
+          "time": 1583786806451,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "4a679f471fd33a6d8f114982a5f46ec7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "it:dev:str",
+            "3.4.45"
+          ],
+          "prop": "norm",
+          "valu": "3.4.45",
+          "time": 1583786806451,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "4a679f471fd33a6d8f114982a5f46ec7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "it:prod:softver",
+            "7bb0990561f00396447562cbaeb7803e"
+          ],
+          "prop": "vers:norm",
+          "valu": "3.4.45",
+          "time": 1583786806451,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "4a679f471fd33a6d8f114982a5f46ec7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "it:prod:softver",
+            "7bb0990561f00396447562cbaeb7803e"
+          ],
+          "prop": "semver",
+          "valu": 3298539077677,
+          "time": 1583786806451,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "4a679f471fd33a6d8f114982a5f46ec7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "it:prod:softver",
+            "7bb0990561f00396447562cbaeb7803e"
+          ],
+          "prop": "semver:major",
+          "valu": 3,
+          "time": 1583786806451,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "4a679f471fd33a6d8f114982a5f46ec7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "it:prod:softver",
+            "7bb0990561f00396447562cbaeb7803e"
+          ],
+          "prop": "semver:minor",
+          "valu": 4,
+          "time": 1583786806451,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "4a679f471fd33a6d8f114982a5f46ec7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "it:prod:softver",
+            "7bb0990561f00396447562cbaeb7803e"
+          ],
+          "prop": "semver:patch",
+          "valu": 45,
+          "time": 1583786806451,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "4a679f471fd33a6d8f114982a5f46ec7"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "hash:md5",
+            "db0e2c851f5727fefbb71dc24e93499d"
+          ],
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "hash:sha1",
+            "206030366322d35c992ee40151510c51353f9e32"
+          ],
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "hash:sha256",
+            "11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "hash:sha512",
+            "831df287c514cb066ffb8908b0b33de249c13a710fc3eb9f2eceb9f5853032f5a9656d4bafb1aec99b26a6eecd4b4c6e56a987f663c7a525a9be010964d34631"
+          ],
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "file:mime",
+            "??"
+          ],
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "prop": "md5",
+          "valu": "db0e2c851f5727fefbb71dc24e93499d",
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "hash:md5",
+            "db0e2c851f5727fefbb71dc24e93499d"
+          ],
+          "prop": ".created",
+          "valu": 1583786806469,
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "prop": "sha1",
+          "valu": "206030366322d35c992ee40151510c51353f9e32",
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "hash:sha1",
+            "206030366322d35c992ee40151510c51353f9e32"
+          ],
+          "prop": ".created",
+          "valu": 1583786806469,
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "prop": "sha256",
+          "valu": "11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1",
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "hash:sha256",
+            "11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "prop": ".created",
+          "valu": 1583786806469,
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "prop": "sha512",
+          "valu": "831df287c514cb066ffb8908b0b33de249c13a710fc3eb9f2eceb9f5853032f5a9656d4bafb1aec99b26a6eecd4b4c6e56a987f663c7a525a9be010964d34631",
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "hash:sha512",
+            "831df287c514cb066ffb8908b0b33de249c13a710fc3eb9f2eceb9f5853032f5a9656d4bafb1aec99b26a6eecd4b4c6e56a987f663c7a525a9be010964d34631"
+          ],
+          "prop": ".created",
+          "valu": 1583786806469,
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "prop": "size",
+          "valu": 9,
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "prop": "mime",
+          "valu": "??",
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:mime",
+            "??"
+          ],
+          "prop": ".created",
+          "valu": 1583786806480,
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "prop": ".created",
+          "valu": 1583786806480,
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "prop": "._rdxu",
+          "valu": "22",
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "syn:tag",
+            "faz.baz"
+          ],
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "syn:tag",
+            "faz"
+          ],
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "faz.baz"
+          ],
+          "prop": "base",
+          "valu": "baz",
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "faz.baz"
+          ],
+          "prop": "depth",
+          "valu": 1,
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "faz.baz"
+          ],
+          "prop": "up",
+          "valu": "faz",
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "faz"
+          ],
+          "prop": "base",
+          "valu": "faz",
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "faz"
+          ],
+          "prop": "depth",
+          "valu": 0,
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "faz"
+          ],
+          "prop": "doc",
+          "valu": "",
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "faz"
+          ],
+          "prop": "title",
+          "valu": "",
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "faz"
+          ],
+          "prop": ".created",
+          "valu": 1583786806480,
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "faz.baz"
+          ],
+          "prop": "doc",
+          "valu": "",
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "faz.baz"
+          ],
+          "prop": "title",
+          "valu": "",
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "faz.baz"
+          ],
+          "prop": ".created",
+          "valu": 1583786806480,
+          "time": 1583786806480,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "tag": "faz",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786806481,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "tag": "faz.baz",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786806481,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "tag": "foo",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786806481,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "tag": "foo.bar",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786806481,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "tag:prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "tag": "foo.bar",
+          "prop": "score",
+          "valu": 9,
+          "curv": null,
+          "time": 1583786806481,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "7484331f37d8a20d5eafa03acaf6ebec"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5"
+          ],
+          "time": 1583786806501,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "72eafddac3da89a23b36cb732623c7c3"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "hash:sha256",
+            "b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5"
+          ],
+          "time": 1583786806501,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "72eafddac3da89a23b36cb732623c7c3"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5"
+          ],
+          "prop": "sha256",
+          "valu": "b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5",
+          "time": 1583786806501,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "72eafddac3da89a23b36cb732623c7c3"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "hash:sha256",
+            "b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5"
+          ],
+          "prop": ".created",
+          "valu": 1583786806500,
+          "time": 1583786806501,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "72eafddac3da89a23b36cb732623c7c3"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5"
+          ],
+          "prop": "mime",
+          "valu": "??",
+          "time": 1583786806501,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "72eafddac3da89a23b36cb732623c7c3"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5"
+          ],
+          "prop": ".created",
+          "valu": 1583786806501,
+          "time": 1583786806501,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "72eafddac3da89a23b36cb732623c7c3"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "file:mime",
+            "x509"
+          ],
+          "time": 1583786806501,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "72eafddac3da89a23b36cb732623c7c3"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5"
+          ],
+          "prop": "mime",
+          "valu": "x509",
+          "oldv": "??",
+          "time": 1583786806501,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "72eafddac3da89a23b36cb732623c7c3"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:mime",
+            "x509"
+          ],
+          "prop": ".created",
+          "valu": 1583786806501,
+          "time": 1583786806501,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "72eafddac3da89a23b36cb732623c7c3"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "file:ismime",
+            [
+              "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5",
+              "x509"
+            ]
+          ],
+          "time": 1583786806501,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "72eafddac3da89a23b36cb732623c7c3"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:ismime",
+            [
+              "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5",
+              "x509"
+            ]
+          ],
+          "prop": "file",
+          "valu": "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5",
+          "time": 1583786806501,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "72eafddac3da89a23b36cb732623c7c3"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:ismime",
+            [
+              "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5",
+              "x509"
+            ]
+          ],
+          "prop": "mime",
+          "valu": "x509",
+          "time": 1583786806501,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "72eafddac3da89a23b36cb732623c7c3"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:ismime",
+            [
+              "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5",
+              "x509"
+            ]
+          ],
+          "prop": ".created",
+          "valu": 1583786806501,
+          "time": 1583786806501,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "72eafddac3da89a23b36cb732623c7c3"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5"
+          ],
+          "prop": "size",
+          "valu": 375,
+          "time": 1583786806501,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "72eafddac3da89a23b36cb732623c7c3"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "edge:has",
+            [
+              [
+                "inet:ipv4",
+                16909060
+              ],
+              [
+                "inet:ipv4",
+                84281096
+              ]
+            ]
+          ],
+          "time": 1583786806517,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "dfbe8db7eda174a31430df6c7bacfca7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "edge:has",
+            [
+              [
+                "inet:ipv4",
+                16909060
+              ],
+              [
+                "inet:ipv4",
+                84281096
+              ]
+            ]
+          ],
+          "prop": "n1",
+          "valu": [
+            "inet:ipv4",
+            16909060
+          ],
+          "time": 1583786806517,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "dfbe8db7eda174a31430df6c7bacfca7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "edge:has",
+            [
+              [
+                "inet:ipv4",
+                16909060
+              ],
+              [
+                "inet:ipv4",
+                84281096
+              ]
+            ]
+          ],
+          "prop": "n1:form",
+          "valu": "inet:ipv4",
+          "time": 1583786806517,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "dfbe8db7eda174a31430df6c7bacfca7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "edge:has",
+            [
+              [
+                "inet:ipv4",
+                16909060
+              ],
+              [
+                "inet:ipv4",
+                84281096
+              ]
+            ]
+          ],
+          "prop": "n1:form",
+          "valu": "inet:ipv4",
+          "time": 1583786806517,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "dfbe8db7eda174a31430df6c7bacfca7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "edge:has",
+            [
+              [
+                "inet:ipv4",
+                16909060
+              ],
+              [
+                "inet:ipv4",
+                84281096
+              ]
+            ]
+          ],
+          "prop": "n2",
+          "valu": [
+            "inet:ipv4",
+            84281096
+          ],
+          "time": 1583786806517,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "dfbe8db7eda174a31430df6c7bacfca7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "edge:has",
+            [
+              [
+                "inet:ipv4",
+                16909060
+              ],
+              [
+                "inet:ipv4",
+                84281096
+              ]
+            ]
+          ],
+          "prop": "n2:form",
+          "valu": "inet:ipv4",
+          "time": 1583786806517,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "dfbe8db7eda174a31430df6c7bacfca7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "edge:has",
+            [
+              [
+                "inet:ipv4",
+                16909060
+              ],
+              [
+                "inet:ipv4",
+                84281096
+              ]
+            ]
+          ],
+          "prop": "n2:form",
+          "valu": "inet:ipv4",
+          "time": 1583786806517,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "dfbe8db7eda174a31430df6c7bacfca7"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "edge:has",
+            [
+              [
+                "inet:ipv4",
+                16909060
+              ],
+              [
+                "inet:ipv4",
+                84281096
+              ]
+            ]
+          ],
+          "prop": ".created",
+          "valu": 1583786806517,
+          "time": 1583786806517,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "dfbe8db7eda174a31430df6c7bacfca7"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "meta:source",
+            "0e7972288a8d306294ec201ddfc55e4c"
+          ],
+          "time": 1583786806527,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "62b7ce3eaa689acfcec01505c707da26"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "meta:source",
+            "0e7972288a8d306294ec201ddfc55e4c"
+          ],
+          "prop": ".created",
+          "valu": 1583786806527,
+          "time": 1583786806527,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "62b7ce3eaa689acfcec01505c707da26"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "meta:source",
+            "0e7972288a8d306294ec201ddfc55e4c"
+          ],
+          "prop": "name",
+          "valu": "foosrc",
+          "time": 1583786806527,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "62b7ce3eaa689acfcec01505c707da26"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "meta:source",
+            "0e7972288a8d306294ec201ddfc55e4c"
+          ],
+          "prop": "type",
+          "valu": "osint",
+          "time": 1583786806527,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "62b7ce3eaa689acfcec01505c707da26"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "meta:seen",
+            [
+              "0e7972288a8d306294ec201ddfc55e4c",
+              [
+                "inet:ipv4",
+                16909060
+              ]
+            ]
+          ],
+          "time": 1583786806549,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fd7ba2cdc0fb34fa2b472e2be036327e"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "meta:seen",
+            [
+              "0e7972288a8d306294ec201ddfc55e4c",
+              [
+                "inet:ipv4",
+                16909060
+              ]
+            ]
+          ],
+          "prop": "source",
+          "valu": "0e7972288a8d306294ec201ddfc55e4c",
+          "time": 1583786806549,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fd7ba2cdc0fb34fa2b472e2be036327e"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "meta:seen",
+            [
+              "0e7972288a8d306294ec201ddfc55e4c",
+              [
+                "inet:ipv4",
+                16909060
+              ]
+            ]
+          ],
+          "prop": "node",
+          "valu": [
+            "inet:ipv4",
+            16909060
+          ],
+          "time": 1583786806549,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fd7ba2cdc0fb34fa2b472e2be036327e"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "meta:seen",
+            [
+              "0e7972288a8d306294ec201ddfc55e4c",
+              [
+                "inet:ipv4",
+                16909060
+              ]
+            ]
+          ],
+          "prop": ".created",
+          "valu": 1583786806549,
+          "time": 1583786806549,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "fd7ba2cdc0fb34fa2b472e2be036327e"
+        }
+      ],
+      [
+        "prop:del",
+        {
+          "ndef": [
+            "meta:source",
+            "8f1401de15918358d5247e21ca29a814"
+          ],
+          "prop": "name",
+          "valu": "test",
+          "time": 1583786806577,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "6397991a234a69be6d2b457da8872d6f"
+        }
+      ],
+      [
+        "prop:del",
+        {
+          "ndef": [
+            "meta:source",
+            "8f1401de15918358d5247e21ca29a814"
+          ],
+          "prop": ".created",
+          "valu": 1583786806099,
+          "time": 1583786806578,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "6397991a234a69be6d2b457da8872d6f"
+        }
+      ],
+      [
+        "node:del",
+        {
+          "ndef": [
+            "meta:source",
+            "8f1401de15918358d5247e21ca29a814"
+          ],
+          "time": 1583786806578,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "6397991a234a69be6d2b457da8872d6f"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "meta:source",
+            "8f1401de15918358d5247e21ca29a814"
+          ],
+          "time": 1583786806945,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "dcb60de3942df258c88fe23142cb64ef"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "meta:source",
+            "8f1401de15918358d5247e21ca29a814"
+          ],
+          "prop": "name",
+          "valu": "test",
+          "time": 1583786806945,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "dcb60de3942df258c88fe23142cb64ef"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "meta:source",
+            "8f1401de15918358d5247e21ca29a814"
+          ],
+          "prop": ".created",
+          "valu": 1583786806945,
+          "time": 1583786806945,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "dcb60de3942df258c88fe23142cb64ef"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "inet:ipv4",
+            168364289
+          ],
+          "time": 1583786806953,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "bfae10b80adc88a9cac135503e81b462"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            168364289
+          ],
+          "prop": "type",
+          "valu": "private",
+          "time": 1583786806953,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "bfae10b80adc88a9cac135503e81b462"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            168364289
+          ],
+          "prop": "asn",
+          "valu": 0,
+          "time": 1583786806953,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "bfae10b80adc88a9cac135503e81b462"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            168364289
+          ],
+          "prop": "loc",
+          "valu": "??",
+          "time": 1583786806953,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "bfae10b80adc88a9cac135503e81b462"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "inet:ipv4",
+            168364289
+          ],
+          "prop": ".created",
+          "valu": 1583786806953,
+          "time": 1583786806953,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "bfae10b80adc88a9cac135503e81b462"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "inet:ipv4",
+            168364289
+          ],
+          "tag": "trgtag",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786806953,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "5888e32656912f20afab0096e0cf94b1"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "file:bytes",
+            "guid:be1992295845f582a71fffd5fdf8a466"
+          ],
+          "time": 1583786807024,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "edabfe2dbff1de053ec302328bdd0737"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "guid:be1992295845f582a71fffd5fdf8a466"
+          ],
+          "prop": "mime",
+          "valu": "??",
+          "time": 1583786807024,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "edabfe2dbff1de053ec302328bdd0737"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "guid:be1992295845f582a71fffd5fdf8a466"
+          ],
+          "prop": ".created",
+          "valu": 1583786807024,
+          "time": 1583786807024,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "edabfe2dbff1de053ec302328bdd0737"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:bytes",
+            "guid:be1992295845f582a71fffd5fdf8a466"
+          ],
+          "prop": "mime",
+          "valu": "x509",
+          "oldv": "??",
+          "time": 1583786807024,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "edabfe2dbff1de053ec302328bdd0737"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "file:ismime",
+            [
+              "guid:be1992295845f582a71fffd5fdf8a466",
+              "x509"
+            ]
+          ],
+          "time": 1583786807025,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "edabfe2dbff1de053ec302328bdd0737"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:ismime",
+            [
+              "guid:be1992295845f582a71fffd5fdf8a466",
+              "x509"
+            ]
+          ],
+          "prop": "file",
+          "valu": "guid:be1992295845f582a71fffd5fdf8a466",
+          "time": 1583786807025,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "edabfe2dbff1de053ec302328bdd0737"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:ismime",
+            [
+              "guid:be1992295845f582a71fffd5fdf8a466",
+              "x509"
+            ]
+          ],
+          "prop": "mime",
+          "valu": "x509",
+          "time": 1583786807025,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "edabfe2dbff1de053ec302328bdd0737"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "file:ismime",
+            [
+              "guid:be1992295845f582a71fffd5fdf8a466",
+              "x509"
+            ]
+          ],
+          "prop": ".created",
+          "valu": 1583786807025,
+          "time": 1583786807025,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "edabfe2dbff1de053ec302328bdd0737"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp.li.ce"
+          ],
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp.li"
+          ],
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "node:add",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp"
+          ],
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp.li.ce"
+          ],
+          "prop": "base",
+          "valu": "ce",
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp.li.ce"
+          ],
+          "prop": "depth",
+          "valu": 2,
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp.li.ce"
+          ],
+          "prop": "up",
+          "valu": "sp.li",
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp.li"
+          ],
+          "prop": "base",
+          "valu": "li",
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp.li"
+          ],
+          "prop": "depth",
+          "valu": 1,
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp.li"
+          ],
+          "prop": "up",
+          "valu": "sp",
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp"
+          ],
+          "prop": "base",
+          "valu": "sp",
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp"
+          ],
+          "prop": "depth",
+          "valu": 0,
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp"
+          ],
+          "prop": "doc",
+          "valu": "",
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp"
+          ],
+          "prop": "title",
+          "valu": "",
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp"
+          ],
+          "prop": ".created",
+          "valu": 1583786807036,
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp.li"
+          ],
+          "prop": "doc",
+          "valu": "",
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp.li"
+          ],
+          "prop": "title",
+          "valu": "",
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp.li"
+          ],
+          "prop": ".created",
+          "valu": 1583786807036,
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp.li.ce"
+          ],
+          "prop": "doc",
+          "valu": "",
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp.li.ce"
+          ],
+          "prop": "title",
+          "valu": "",
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "syn:tag",
+            "sp.li.ce"
+          ],
+          "prop": ".created",
+          "valu": 1583786807036,
+          "time": 1583786807036,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "inet:ipv4",
+            16909060
+          ],
+          "tag": "sp",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786807037,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "inet:ipv4",
+            16909060
+          ],
+          "tag": "sp.li",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786807037,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "tag:add",
+        {
+          "ndef": [
+            "inet:ipv4",
+            16909060
+          ],
+          "tag": "sp.li.ce",
+          "valu": [
+            null,
+            null
+          ],
+          "oldv": null,
+          "time": 1583786807037,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "0089c0cde507d34550b96c77fe764f7a"
+        }
+      ],
+      [
+        "tag:del",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "tag": "faz.baz",
+          "valu": [
+            null,
+            null
+          ],
+          "time": 1583786807046,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "71c89d020f0bfc81c3a91ec201888b3f"
+        }
+      ],
+      [
+        "tag:del",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "tag": "faz",
+          "valu": [
+            null,
+            null
+          ],
+          "time": 1583786807046,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "71c89d020f0bfc81c3a91ec201888b3f"
+        }
+      ],
+      [
+        "tag:prop:del",
+        {
+          "ndef": [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+          ],
+          "tag": "foo.bar",
+          "prop": "score",
+          "valu": 9,
+          "time": 1583786807055,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "35dc2d7080ac60752608609bfe736508"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "geo:place",
+            "0e63b4654d69ae437d1611e318fd2844"
+          ],
+          "prop": "desc",
+          "valu": "foo description",
+          "time": 1583786807067,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "bb60b243643f271daef77354f8d65b31"
+        }
+      ],
+      [
+        "prop:del",
+        {
+          "ndef": [
+            "inet:ipv4",
+            84281096
+          ],
+          "prop": "loc",
+          "valu": "nl",
+          "time": 1583786807077,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "838f93bb66c04b259e3fdc05a057d0d2"
+        }
+      ],
+      [
+        "prop:del",
+        {
+          "ndef": [
+            "meta:seen",
+            [
+              "0e7972288a8d306294ec201ddfc55e4c",
+              [
+                "inet:ipv4",
+                16909060
+              ]
+            ]
+          ],
+          "prop": ".created",
+          "valu": 1583786806549,
+          "time": 1583786807092,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "ec40defbcb9890a3ad85d5c0c40f92d0"
+        }
+      ],
+      [
+        "prop:del",
+        {
+          "ndef": [
+            "meta:seen",
+            [
+              "0e7972288a8d306294ec201ddfc55e4c",
+              [
+                "inet:ipv4",
+                16909060
+              ]
+            ]
+          ],
+          "prop": "node",
+          "valu": [
+            "inet:ipv4",
+            16909060
+          ],
+          "time": 1583786807092,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "ec40defbcb9890a3ad85d5c0c40f92d0"
+        }
+      ],
+      [
+        "prop:del",
+        {
+          "ndef": [
+            "meta:seen",
+            [
+              "0e7972288a8d306294ec201ddfc55e4c",
+              [
+                "inet:ipv4",
+                16909060
+              ]
+            ]
+          ],
+          "prop": "source",
+          "valu": "0e7972288a8d306294ec201ddfc55e4c",
+          "time": 1583786807092,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "ec40defbcb9890a3ad85d5c0c40f92d0"
+        }
+      ],
+      [
+        "node:del",
+        {
+          "ndef": [
+            "meta:seen",
+            [
+              "0e7972288a8d306294ec201ddfc55e4c",
+              [
+                "inet:ipv4",
+                16909060
+              ]
+            ]
+          ],
+          "time": 1583786807092,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "ec40defbcb9890a3ad85d5c0c40f92d0"
+        }
+      ],
+      [
+        "prop:del",
+        {
+          "ndef": [
+            "meta:source",
+            "8f1401de15918358d5247e21ca29a814"
+          ],
+          "prop": "name",
+          "valu": "test",
+          "time": 1583786807094,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "6397991a234a69be6d2b457da8872d6f"
+        }
+      ],
+      [
+        "prop:del",
+        {
+          "ndef": [
+            "meta:source",
+            "8f1401de15918358d5247e21ca29a814"
+          ],
+          "prop": ".created",
+          "valu": 1583786806945,
+          "time": 1583786807094,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "6397991a234a69be6d2b457da8872d6f"
+        }
+      ],
+      [
+        "node:del",
+        {
+          "ndef": [
+            "meta:source",
+            "8f1401de15918358d5247e21ca29a814"
+          ],
+          "time": 1583786807094,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "6397991a234a69be6d2b457da8872d6f"
+        }
+      ]
+    ]
+  },
+  "bcf96c2647569cbf5dfa357968b77bc5": {
+    "nextoffs": 2,
+    "splices": [
+      [
+        "node:add",
+        {
+          "ndef": [
+            "test:int",
+            10
+          ],
+          "time": 1583786806152,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "3167cf1d4d12d2306839d37b83d18499"
+        }
+      ],
+      [
+        "prop:set",
+        {
+          "ndef": [
+            "test:int",
+            10
+          ],
+          "prop": ".created",
+          "valu": 1583786806152,
+          "time": 1583786806152,
+          "user": "b2f5ac2072458956ba2d901bc1a9640d",
+          "prov": "3167cf1d4d12d2306839d37b83d18499"
+        }
+      ]
+    ]
+  }
+}
