@@ -13,15 +13,16 @@ import synapse.cortex as s_cortex
 import synapse.lib.cell as s_cell
 import synapse.lib.module as s_module
 import synapse.lib.version as s_version
+import synapse.lib.modelrev as s_modelrev
 import synapse.lib.stormsvc as s_stormsvc
 
 import synapse.tools.backup as s_backup
 
-assert s_version.version == (0, 1, 51)
+assert s_version.version == (0, 1, 53)
 
-DESTPATH_CORTEX = 'cortexes/0.1.51-migr'
-DESTPATH_SVC = 'cortexes/0.1.51-migr/stormsvc'
-DESTPATH_ASSETS = 'assets/0.1.51-migr'
+DESTPATH_CORTEX = 'cortexes/0.1.53-migr'
+DESTPATH_SVC = 'cortexes/0.1.53-migr/stormsvc'
+DESTPATH_ASSETS = 'assets/0.1.53-migr'
 
 class MigrMod(s_module.CoreModule):
 
@@ -251,6 +252,10 @@ async def main():
                 for node in await core.nodes('.created'):
                     podes.append(node.pack(dorepr=True))
                     nodedata.append((node.ndef, [nd async for nd in node.iterData()]))
+
+        # startup core so modelrev gets set on all layers
+        async with await s_cortex.Cortex.anit(path, conf=conf) as core:
+            await core.stat()
 
         # only run from checkout dir
         shutil.rmtree(DESTPATH_CORTEX, ignore_errors=True)
