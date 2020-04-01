@@ -18,11 +18,11 @@ import synapse.lib.stormsvc as s_stormsvc
 
 import synapse.tools.backup as s_backup
 
-assert s_version.version == (0, 1, 53)
+assert s_version.version == (0, 1, 56)
 
-DESTPATH_CORTEX = 'cortexes/0.1.53-migr'
-DESTPATH_SVC = 'cortexes/0.1.53-migr/stormsvc'
-DESTPATH_ASSETS = 'assets/0.1.53-migr'
+DESTPATH_CORTEX = 'cortexes/0.1.56-migr'
+DESTPATH_SVC = 'cortexes/0.1.56-migr/stormsvc'
+DESTPATH_ASSETS = 'assets/0.1.56-migr'
 
 class MigrMod(s_module.CoreModule):
 
@@ -114,6 +114,7 @@ async def main():
                 await proxy.addAuthRule('fred', (True, ('view', 'read')), iden=view2.iden)
 
                 await fred.addRule((True, ('tag:add', 'trgtag')))
+                await fred.addRule((True, ('tag:add', 'trgtagdel')))
                 await fred.addRule((True, ('trigger', 'add')))
                 await fred.addRule((True, ('trigger', 'get')))
                 await fred.addRule((True, ('storm', 'queue', 'get')))
@@ -132,7 +133,10 @@ async def main():
 
                 # add triggers
                 await core.addTrigger('node:add', '[ +#trgtag ]', info={'form': 'inet:ipv4'}, user=fred)
+                await core.addTrigger('node:del', '[ inet:ipv4=7.7.7.7 ]', info={'form': 'file:bytes'})
                 await core.addTrigger('tag:add', '[ inet:ipv4=5.5.5.5 ]', info={'tag': 'foo.*.baz'})
+                await core.addTrigger('tag:del', '[ +#trgtagdel ]', info={'tag': 'faz.baz'}, user=fred)
+                await core.addTrigger('prop:set', '[ +#proptrgtag ]', info={'prop': 'file:bytes:name'})
 
                 # add queues
                 rule = (True, ('storm', 'queue', 'fredq', 'get'))

@@ -1,0 +1,1290 @@
+[
+    [
+        [
+            "migr:test",
+            22
+        ],
+        {
+            "iden": "c8616b08b88f4acdad2fc446087f40c96bf8c4ca80377cac4be5ff3c882b37ef",
+            "tags": {},
+            "props": {
+                ".created": 1585767122220,
+                "bar": "spam"
+            },
+            "tagprops": {},
+            "repr": "22",
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.220"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:fqdn",
+            "io"
+        ],
+        {
+            "iden": "8107eae5a5b0fe15c892c7365d8b6c499734f54968a3e8787585897ac8b6d9f9",
+            "tags": {},
+            "props": {
+                ".created": 1585767122375,
+                "host": "io",
+                "issuffix": 1,
+                "iszone": 0
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.375",
+                "issuffix": "True",
+                "iszone": "False"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:fqdn",
+            "snake.io"
+        ],
+        {
+            "iden": "eea0d021d4e15ff3bc5b6853b3b4d501c899a1cdf61968d0c5b371125ba248f9",
+            "tags": {},
+            "props": {
+                ".created": 1585767122375,
+                "domain": "io",
+                "host": "snake",
+                "issuffix": 0,
+                "iszone": 1,
+                "zone": "snake.io"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.375",
+                "issuffix": "False",
+                "iszone": "True"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "crypto:currency:address",
+            [
+                "btc",
+                "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+            ]
+        ],
+        {
+            "iden": "01171aaf1263215314c3617199f744add452704759d1492faa01fbf20b8e592d",
+            "tags": {},
+            "props": {
+                ".created": 1585767122420,
+                "coin": "btc",
+                "iden": "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.420"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:ipv4",
+            16909060
+        ],
+        {
+            "iden": "20153b758f9d5eaaa38e4f4a65c36da797c3e59e549620fa7c4895e1a920991f",
+            "tags": {
+                "foo": [
+                    1325376000000,
+                    1356998400000
+                ],
+                "trgtag": [
+                    null,
+                    null
+                ],
+                "sp": [
+                    null,
+                    null
+                ],
+                "sp.li": [
+                    null,
+                    null
+                ],
+                "sp.li.ce": [
+                    null,
+                    null
+                ]
+            },
+            "props": {
+                "._rdxuz": "woot",
+                ".created": 1585767122420,
+                ".seen": [
+                    1104537600000,
+                    1136073600000
+                ],
+                "_rdxp": 7,
+                "asn": 0,
+                "latlong": [
+                    -30.0,
+                    20.22
+                ],
+                "loc": "??",
+                "type": "unicast"
+            },
+            "tagprops": {},
+            "repr": "1.2.3.4",
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.420",
+                ".seen": [
+                    "2005/01/01 00:00:00.000",
+                    "2006/01/01 00:00:00.000"
+                ],
+                "_rdxp": "7",
+                "asn": "0",
+                "latlong": "-30.0,20.22"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "crypto:currency:client",
+            [
+                "tcp://1.2.3.4",
+                [
+                    "btc",
+                    "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+                ]
+            ]
+        ],
+        {
+            "iden": "35297c90cf26060ff472954326335fca272a36d039fa464c9a15ddff27f9d6f7",
+            "tags": {},
+            "props": {
+                ".created": 1585767122420,
+                "coinaddr": [
+                    "btc",
+                    "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+                ],
+                "inetaddr": "tcp://1.2.3.4"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.420"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:asn",
+            0
+        ],
+        {
+            "iden": "5013645cbec96767d9b5150dcf523fa0030b763ae015d391a93df6aa44c8911d",
+            "tags": {},
+            "props": {
+                ".created": 1585767122420,
+                "name": "??"
+            },
+            "tagprops": {},
+            "repr": "0",
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.420"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:client",
+            "tcp://1.2.3.4"
+        ],
+        {
+            "iden": "9e8fa63a1ea854a61e289d16da063bf8dacf271a7dbe9a81a85ba42b7a452419",
+            "tags": {},
+            "props": {
+                ".created": 1585767122420,
+                "ipv4": 16909060,
+                "proto": "tcp"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.420",
+                "ipv4": "1.2.3.4"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "syn:tag",
+            "trgtag"
+        ],
+        {
+            "iden": "ea54b53c3c581a379f4d4d41ffc48abe0cc7ef3f4668e163fce3974c5e3bca92",
+            "tags": {},
+            "props": {
+                ".created": 1585767122422,
+                "base": "trgtag",
+                "depth": 0,
+                "doc": "",
+                "title": ""
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.422",
+                "depth": "0"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "econ:acct:payment",
+            "b9cbe616ebd340a5dbc000d824f585f4"
+        ],
+        {
+            "iden": "b6d4ad271608ddcd5bda435f5d14f35ba56d1c240808d7a2c29b8eae7d18ec70",
+            "tags": {},
+            "props": {
+                ".created": 1585767122455,
+                "from:coinaddr": [
+                    "btc",
+                    "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+                ],
+                "to:coinaddr": [
+                    "btc",
+                    "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+                ]
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.455"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "geo:place",
+            "8168a2ac8655c0a30abe0866901204d2"
+        ],
+        {
+            "iden": "92d556ba83d669056193ee49434400a95b924e47f105b15ecb3c06f6945ef28d",
+            "tags": {
+                "foo": [
+                    null,
+                    null
+                ],
+                "foo.bar": [
+                    null,
+                    null
+                ],
+                "foo.bar.baz": [
+                    null,
+                    null
+                ],
+                "foo.bar.baz.spam": [
+                    null,
+                    null
+                ]
+            },
+            "props": {
+                ".created": 1585767122495,
+                "latlong": [
+                    -30.0,
+                    20.22
+                ],
+                "desc": "foo description"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.495",
+                "latlong": "-30.0,20.22"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "syn:tag",
+            "foo"
+        ],
+        {
+            "iden": "372127b37ae8a2c0c70cee5c5761500fb3ea254bc49eeb6be1c22ecaafc07fb4",
+            "tags": {},
+            "props": {
+                ".created": 1585767122497,
+                "base": "foo",
+                "depth": 0,
+                "doc": "",
+                "title": ""
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.497",
+                "depth": "0"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "syn:tag",
+            "foo.bar.baz.spam"
+        ],
+        {
+            "iden": "468f4a1233aa2fd27ed8610bf84581d32ba4f98d1c5fffcec2a26d2d3d8d1e1f",
+            "tags": {},
+            "props": {
+                ".created": 1585767122497,
+                "base": "spam",
+                "depth": 3,
+                "doc": "",
+                "title": "",
+                "up": "foo.bar.baz"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.497",
+                "depth": "3"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "syn:tag",
+            "foo.bar.baz"
+        ],
+        {
+            "iden": "60914fd64361ad645fb9e36f1c72af994c370690e639e85493a25e962bd7c7df",
+            "tags": {},
+            "props": {
+                ".created": 1585767122497,
+                "base": "baz",
+                "depth": 2,
+                "doc": "",
+                "title": "",
+                "up": "foo.bar"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.497",
+                "depth": "2"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "syn:tag",
+            "foo.bar"
+        ],
+        {
+            "iden": "9f9ee37668ed62ca04e548d98bd38117c5b7852b2c9fc6c71446e494a5f65a3e",
+            "tags": {},
+            "props": {
+                ".created": 1585767122497,
+                "base": "bar",
+                "depth": 1,
+                "doc": "",
+                "title": "",
+                "up": "foo"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.497",
+                "depth": "1"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:ipv4",
+            84215045
+        ],
+        {
+            "iden": "50cfaedbdda486040cf41597b2cf71a3bce99e3d7989d07beb5b4e9b37131a07",
+            "tags": {
+                "trgtag": [
+                    null,
+                    null
+                ]
+            },
+            "props": {
+                ".created": 1585767122499,
+                "asn": 0,
+                "loc": "??",
+                "type": "unicast"
+            },
+            "tagprops": {},
+            "repr": "5.5.5.5",
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.499",
+                "asn": "0"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:mac",
+            "d8:38:fc:13:87:5c"
+        ],
+        {
+            "iden": "43efacb253f7c74af6963376fbcc940df523f4f7e712159b94c02cfdac8ed6da",
+            "tags": {},
+            "props": {
+                ".created": 1585767122537,
+                "vendor": "??"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.537"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:wifi:ap",
+            [
+                "BHOT-2019",
+                "d8:38:fc:13:87:5c"
+            ]
+        ],
+        {
+            "iden": "497c45047b92951bcf7f714825f2816d5a4979f55dbcb2bc3852c88b6c7e944f",
+            "tags": {},
+            "props": {
+                ".created": 1585767122537,
+                "bssid": "d8:38:fc:13:87:5c",
+                "loc": "??",
+                "ssid": "BHOT-2019"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.537"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:wifi:ssid",
+            "BHOT-2019"
+        ],
+        {
+            "iden": "d362a0db05dafa6348d6a4852b77082410a29ff621c2e4b681ea3ee56c3c8672",
+            "tags": {},
+            "props": {
+                ".created": 1585767122537
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.537"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "geo:nloc",
+            [
+                [
+                    "inet:wifi:ap",
+                    [
+                        "BHOT-2019",
+                        "d8:38:fc:13:87:5c"
+                    ]
+                ],
+                [
+                    43.41483078,
+                    39.94891608
+                ],
+                1546300800000
+            ]
+        ],
+        {
+            "iden": "334898582db5ee333ed788e5e528e8ddb2eac0c704bb8d9a2473ce89a48c78d9",
+            "tags": {},
+            "props": {
+                ".created": 1585767122538,
+                "latlong": [
+                    43.41483078,
+                    39.94891608
+                ],
+                "ndef": [
+                    "inet:wifi:ap",
+                    [
+                        "BHOT-2019",
+                        "d8:38:fc:13:87:5c"
+                    ]
+                ],
+                "ndef:form": "inet:wifi:ap",
+                "time": 1546300800000
+            },
+            "tagprops": {},
+            "repr": [
+                [
+                    "inet:wifi:ap",
+                    [
+                        "BHOT-2019",
+                        "d8:38:fc:13:87:5c"
+                    ]
+                ],
+                "43.41483078,39.94891608",
+                "2019/01/01 00:00:00.000"
+            ],
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.538",
+                "latlong": "43.41483078,39.94891608",
+                "time": "2019/01/01 00:00:00.000"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:dns:a",
+            [
+                "woot.com",
+                16909060
+            ]
+        ],
+        {
+            "iden": "4284a59c00dc93f3bbba5af4f983236c8f40332d5a28f1245e38fa850dbfbfa4",
+            "tags": {},
+            "props": {
+                ".created": 1585767122575,
+                "fqdn": "woot.com",
+                "ipv4": 16909060
+            },
+            "tagprops": {},
+            "repr": [
+                "woot.com",
+                "1.2.3.4"
+            ],
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.575",
+                "ipv4": "1.2.3.4"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:fqdn",
+            "com"
+        ],
+        {
+            "iden": "85b4e56f417fd5ea878cc0a6f9e992328babf6500aa711ecd106f07d7ab41fa5",
+            "tags": {},
+            "props": {
+                ".created": 1585767122575,
+                "host": "com",
+                "issuffix": 1,
+                "iszone": 0
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.575",
+                "issuffix": "True",
+                "iszone": "False"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:fqdn",
+            "woot.com"
+        ],
+        {
+            "iden": "d7fb3ae625e295c9279c034f5d91a7ad9132c79a9c2b16eecffc8d1609d75849",
+            "tags": {},
+            "props": {
+                ".created": 1585767122575,
+                "domain": "com",
+                "host": "woot",
+                "issuffix": 0,
+                "iszone": 1,
+                "zone": "woot.com"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.575",
+                "issuffix": "False",
+                "iszone": "True"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:dns:a",
+            [
+                "vertex.link",
+                16909060
+            ]
+        ],
+        {
+            "iden": "02488bc284ffd0f60f474d5af66a8c0cf89789f766b51fde1d3da9b227005f47",
+            "tags": {},
+            "props": {
+                ".created": 1585767122578,
+                "fqdn": "vertex.link",
+                "ipv4": 16909060
+            },
+            "tagprops": {},
+            "repr": [
+                "vertex.link",
+                "1.2.3.4"
+            ],
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.578",
+                "ipv4": "1.2.3.4"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:fqdn",
+            "link"
+        ],
+        {
+            "iden": "058c7ce18e67e34ca2152da6c8f4f4dc94c580600595b02b4763a6d1bef35417",
+            "tags": {},
+            "props": {
+                ".created": 1585767122578,
+                "host": "link",
+                "issuffix": 1,
+                "iszone": 0
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.578",
+                "issuffix": "True",
+                "iszone": "False"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:fqdn",
+            "vertex.link"
+        ],
+        {
+            "iden": "3ecd51e142a5acfcde42c02ff5c68378bfaf1eaf49fe9721550b6e7d6013b699",
+            "tags": {},
+            "props": {
+                ".created": 1585767122578,
+                "domain": "link",
+                "host": "vertex",
+                "issuffix": 0,
+                "iszone": 1,
+                "zone": "vertex.link"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.578",
+                "issuffix": "False",
+                "iszone": "True"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:ipv4",
+            84281096
+        ],
+        {
+            "iden": "1fc865150f408fbe00a3f3387b4f1bd952531e89dbe0763d42c1ff509f853fd6",
+            "tags": {
+                "foo": [
+                    null,
+                    null
+                ],
+                "trgtag": [
+                    null,
+                    null
+                ]
+            },
+            "props": {
+                ".created": 1585767122660,
+                "_rdxpz": 7,
+                "asn": 0,
+                "type": "unicast"
+            },
+            "tagprops": {
+                "foo": {
+                    "nah": 42
+                }
+            },
+            "repr": "5.6.7.8",
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.660",
+                "_rdxpz": "7",
+                "asn": "0"
+            },
+            "tagpropreprs": {
+                "foo": {
+                    "nah": "42"
+                }
+            }
+        }
+    ],
+    [
+        [
+            "it:prod:softver",
+            "1406a04ba7852c6953b5b5314c95ada8"
+        ],
+        {
+            "iden": "a2a6bd50ac4dd4cc0a61bd552ff8c3cb175ce6730e53bdb4cd819b8daf421d3f",
+            "tags": {},
+            "props": {
+                ".created": 1585767122696,
+                "semver": 3298539077677,
+                "semver:major": 3,
+                "semver:minor": 4,
+                "semver:patch": 45,
+                "vers": "3.4.45",
+                "vers:norm": "3.4.45"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.696",
+                "semver": "3.4.45",
+                "semver:major": "3",
+                "semver:minor": "4",
+                "semver:patch": "45"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "it:dev:str",
+            "3.4.45"
+        ],
+        {
+            "iden": "60c4c97a6d3939bd7a4065809bf167aed32830901092f49692ec8118ec6ed094",
+            "tags": {},
+            "props": {
+                ".created": 1585767122697,
+                "norm": "3.4.45"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.697"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "file:bytes",
+            "sha256:11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+        ],
+        {
+            "iden": "036284f71570154f673bb634f79f172079961f958c7afaf7eb2b364477cf50fb",
+            "tags": {
+                "foo": [
+                    null,
+                    null
+                ],
+                "foo.bar": [
+                    null,
+                    null
+                ],
+                "trgtagdel": [
+                    null,
+                    null
+                ]
+            },
+            "props": {
+                "._rdxu": "22",
+                ".created": 1585767122743,
+                "md5": "db0e2c851f5727fefbb71dc24e93499d",
+                "mime": "??",
+                "sha1": "206030366322d35c992ee40151510c51353f9e32",
+                "sha256": "11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1",
+                "sha512": "831df287c514cb066ffb8908b0b33de249c13a710fc3eb9f2eceb9f5853032f5a9656d4bafb1aec99b26a6eecd4b4c6e56a987f663c7a525a9be010964d34631",
+                "size": 9
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.743",
+                "size": "9"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "hash:md5",
+            "db0e2c851f5727fefbb71dc24e93499d"
+        ],
+        {
+            "iden": "2b0cc41cc693e0c72627e6729777ef4c8a61a3a4c54c2db9e686e7cecdefb20d",
+            "tags": {},
+            "props": {
+                ".created": 1585767122743
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.743"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "hash:sha256",
+            "11fb5c7e122a3538703d568492c8509f05e3041e40d67d0d9c0c671ea4d7b1e1"
+        ],
+        {
+            "iden": "651f18c79d22632446df4a1055f02432bfe7853a9cab18c04b0934864a892db8",
+            "tags": {},
+            "props": {
+                ".created": 1585767122743
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.743"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "file:mime",
+            "??"
+        ],
+        {
+            "iden": "7dc7f8040b61f939181fb8d9479d6bd4b8f85be8362e79e7d5518ad3acbdcbc6",
+            "tags": {},
+            "props": {
+                ".created": 1585767122743
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.743"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "hash:sha1",
+            "206030366322d35c992ee40151510c51353f9e32"
+        ],
+        {
+            "iden": "ceaf0c85132515dece2a1f2345cacce30e20eb3d72a15698624142d93bad92e9",
+            "tags": {},
+            "props": {
+                ".created": 1585767122743
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.743"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "hash:sha512",
+            "831df287c514cb066ffb8908b0b33de249c13a710fc3eb9f2eceb9f5853032f5a9656d4bafb1aec99b26a6eecd4b4c6e56a987f663c7a525a9be010964d34631"
+        ],
+        {
+            "iden": "e375c54d17edc5658b302e6315bd5e66bd025d19c7ca7a32a68f0b02de78e1fd",
+            "tags": {},
+            "props": {
+                ".created": 1585767122743
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.743"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "syn:tag",
+            "faz"
+        ],
+        {
+            "iden": "4b64b95f2f84013a37dff6e43fbf39b02102125fa02d7579bd971f6d3e4d0767",
+            "tags": {},
+            "props": {
+                ".created": 1585767122746,
+                "base": "faz",
+                "depth": 0,
+                "doc": "",
+                "title": ""
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.746",
+                "depth": "0"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "syn:tag",
+            "faz.baz"
+        ],
+        {
+            "iden": "cd5110eb6176d4ec35f17067848119625b8d995999d8a5b2349a15addeaa9735",
+            "tags": {},
+            "props": {
+                ".created": 1585767122746,
+                "base": "baz",
+                "depth": 1,
+                "doc": "",
+                "title": "",
+                "up": "faz"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.746",
+                "depth": "1"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "hash:sha256",
+            "b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5"
+        ],
+        {
+            "iden": "2a5cbe29dd18434452b7864193091dbf6153d76a19f9520ec73afd5b176d1b6e",
+            "tags": {},
+            "props": {
+                ".created": 1585767122789
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.789"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "file:bytes",
+            "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5"
+        ],
+        {
+            "iden": "b9b4e9f405fe1d32255b990fa413541963a00cfcd1fb4bb67a49c905a364be0d",
+            "tags": {},
+            "props": {
+                ".created": 1585767122789,
+                "mime": "x509",
+                "sha256": "b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5",
+                "size": 375
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.789",
+                "size": "375"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "file:mime",
+            "x509"
+        ],
+        {
+            "iden": "06487572bdf667a04b1740bfea164052a8b673cdd6f9110e125af2ea29e01b0a",
+            "tags": {},
+            "props": {
+                ".created": 1585767122790
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.790"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "file:ismime",
+            [
+                "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5",
+                "x509"
+            ]
+        ],
+        {
+            "iden": "cc4b9f6acb5d7e7746ee80264659954ee96fc14e5f8807003db07added71b865",
+            "tags": {},
+            "props": {
+                ".created": 1585767122790,
+                "file": "sha256:b38e904315b2528f0fc031a6880cc1ca0879643c82ead11bd7fb8be6ab0af1e5",
+                "mime": "x509"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.790"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "edge:has",
+            [
+                [
+                    "inet:ipv4",
+                    16909060
+                ],
+                [
+                    "inet:ipv4",
+                    84281096
+                ]
+            ]
+        ],
+        {
+            "iden": "3a738a2124679c4392743ddc8d45f3153929aaafcf9488eac51debda712ae6bf",
+            "tags": {},
+            "props": {
+                ".created": 1585767122823,
+                "n1": [
+                    "inet:ipv4",
+                    16909060
+                ],
+                "n1:form": "inet:ipv4",
+                "n2": [
+                    "inet:ipv4",
+                    84281096
+                ],
+                "n2:form": "inet:ipv4"
+            },
+            "tagprops": {},
+            "repr": [
+                [
+                    "inet:ipv4",
+                    "1.2.3.4"
+                ],
+                [
+                    "inet:ipv4",
+                    "5.6.7.8"
+                ]
+            ],
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.823",
+                "n1": [
+                    "inet:ipv4",
+                    "1.2.3.4"
+                ],
+                "n2": [
+                    "inet:ipv4",
+                    "5.6.7.8"
+                ]
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "meta:source",
+            "b4ece8bd701c9722a7296386338909d8"
+        ],
+        {
+            "iden": "f141822cdb90e9d5fb542d55847da307937a5cec4230982635da6bc2779d86cf",
+            "tags": {},
+            "props": {
+                ".created": 1585767122854,
+                "name": "foosrc",
+                "type": "osint"
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:02.854"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "inet:ipv4",
+            168364289
+        ],
+        {
+            "iden": "bbe7eb420e9f0b98857269e65d0e2a9e5c000781c9d6b1abf6715af8c961a8bf",
+            "tags": {
+                "trgtag": [
+                    null,
+                    null
+                ]
+            },
+            "props": {
+                "type": "private",
+                "asn": 0,
+                "loc": "??",
+                ".created": 1585767124246
+            },
+            "tagprops": {},
+            "repr": "10.9.9.1",
+            "reprs": {
+                "asn": "0",
+                ".created": "2020/04/01 18:52:04.246"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "file:bytes",
+            "guid:044c5a26dccbfad7d1717759286d4ee1"
+        ],
+        {
+            "iden": "d0d63bbc9457ef5220e5e45e5d025fa238c78db0a1b6197a336276f92d0aed4b",
+            "tags": {},
+            "props": {
+                "mime": "x509",
+                ".created": 1585767124274
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:04.274"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "file:ismime",
+            [
+                "guid:044c5a26dccbfad7d1717759286d4ee1",
+                "x509"
+            ]
+        ],
+        {
+            "iden": "3f8c776f4b9fc702449aea48ad7d692e7e6c0616c9153f3e481f3bb6cad18aa7",
+            "tags": {},
+            "props": {
+                "file": "guid:044c5a26dccbfad7d1717759286d4ee1",
+                "mime": "x509",
+                ".created": 1585767124275
+            },
+            "tagprops": {},
+            "reprs": {
+                ".created": "2020/04/01 18:52:04.275"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "syn:tag",
+            "sp.li"
+        ],
+        {
+            "iden": "3b1b1572b94c46b8da6d9f3ce64879efb11dd95acb2a41af735afeddbf0d80c8",
+            "tags": {},
+            "props": {
+                "base": "li",
+                "depth": 1,
+                "up": "sp",
+                "doc": "",
+                "title": "",
+                ".created": 1585767124298
+            },
+            "tagprops": {},
+            "reprs": {
+                "depth": "1",
+                ".created": "2020/04/01 18:52:04.298"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "syn:tag",
+            "sp.li.ce"
+        ],
+        {
+            "iden": "567a6b5f83bcded042e8d7674400198106b3286c388766092a2aff290f97b0ed",
+            "tags": {},
+            "props": {
+                "base": "ce",
+                "depth": 2,
+                "up": "sp.li",
+                "doc": "",
+                "title": "",
+                ".created": 1585767124298
+            },
+            "tagprops": {},
+            "reprs": {
+                "depth": "2",
+                ".created": "2020/04/01 18:52:04.298"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "syn:tag",
+            "sp"
+        ],
+        {
+            "iden": "7e5c801f236efd457487163d9f03f0d280ccca9e09c6df58ef253da8b36e8b84",
+            "tags": {},
+            "props": {
+                "base": "sp",
+                "depth": 0,
+                "doc": "",
+                "title": "",
+                ".created": 1585767124298
+            },
+            "tagprops": {},
+            "reprs": {
+                "depth": "0",
+                ".created": "2020/04/01 18:52:04.298"
+            },
+            "tagpropreprs": {}
+        }
+    ],
+    [
+        [
+            "syn:tag",
+            "trgtagdel"
+        ],
+        {
+            "iden": "f616ce447ab67efd66b768ee185f7662a756fce9c01a5957fd204dbde563cfc4",
+            "tags": {},
+            "props": {
+                "base": "trgtagdel",
+                "depth": 0,
+                "doc": "",
+                "title": "",
+                ".created": 1585767124320
+            },
+            "tagprops": {},
+            "reprs": {
+                "depth": "0",
+                ".created": "2020/04/01 18:52:04.320"
+            },
+            "tagpropreprs": {}
+        }
+    ]
+]
