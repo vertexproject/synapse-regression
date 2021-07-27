@@ -1,0 +1,59 @@
+
+
+function make_views() {
+    $baseview=$lib.view.get()
+    $baselayer=$lib.layer.get()
+
+    // Make a fork and some forks
+    $fork1a=$baseview.fork(name=base1a)
+    $fork1b=$baseview.fork(name=base1b)
+    $fork2a=$fork1a.fork(name=base2a)
+
+    $stacklayer=$lib.layer.add()
+
+    $stackview=$lib.view.add(($baselayer.iden, $stacklayer.iden), name=stackview)
+    $stackview1a=$stackview.fork(name=stackview1a)
+
+
+    $ret = $lib.dict(baseview=$baseview.iden, fork1a=$fork1a.iden, fork1b=$fork1b.iden, fork2a=$fork2a.iden, stackview=$stackview.iden, stackview1a=$stackview1a.iden)
+    return ( $ret )
+}
+
+
+$views=$make_views()
+/*
+function get_view(name) {
+    for $view in $lib.view.list() {
+        $p = $view.pack()
+        if ($p.name = $name) {
+            return ( $view.iden )
+        }
+    }
+    $lib.exit('No view found for name={name}', name=$name)
+}
+
+
+$baseview=$get_view(default)
+$fork1a=$get_view(base1a)
+$fork2a=$get_view(base2a)
+$fork1b=$get_view(base1b)
+
+$stackview=$get_view(stackview)
+$stackview1a=$get_view(stackview1a)
+*/
+
+view.exec $views.baseview { [inet:dns:query=(1.2.3.4, woot.com, 1)] } |
+view.exec $views.baseview { [inet:dns:query=(1.2.3.4, 1.2.3.4, 1)] } |
+view.exec $views.fork1a { [inet:dns:query=(1.2.3.4, "::ffff:1.2.3.4", 1)] } |
+
+view.exec $views.fork1a { [inet:dns:request=(r1,) :query=(1.2.3.5, stuff.com, 1)] } |
+view.exec $views.fork2a { [inet:dns:request=(r2,) :query=(1.2.3.5, 8.6.7.5, 1)] } |
+view.exec $views.fork1b { [inet:dns:request=(r3,) :query=(1.2.3.5, "::ffff:3.0.9.1", 1)] } |
+
+view.exec $views.stackview { [inet:asnet4=(8080, (10.1.1.1,10.2.3.4))] } |
+view.exec $views.stackview1a { [inet:asnet6=(1138, ("::ffff:192.168.1.1","::ffff:192.168.1.255"))] } |
+
+view.exec $views.baseview { [inet:whois:iprec=(r1,) :net4=(1.0.0.1, 1.0.0.4) :net6=('::ffff:1.1.0.1','::ffff:1.1.0.4')] } |
+
+view.exec $views.baseview { [it:app:snort:hit=(h1,) :src='udp://1.2.2.1:80' :dst='tcp://80.80.80.80:80/'] } |
+view.exec $views.baseview { [it:app:snort:hit=(h2,) :src='udp://[::ffff:1.2.2.2]:80' :dst='tcp://[::ffff:80.80.80.81]:80'] }
