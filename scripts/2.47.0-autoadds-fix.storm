@@ -6,7 +6,7 @@ function make_views() {
     $stacklayer=$lib.layer.add()
 
     // Make a stacked view
-    $stackview=$lib.view.add(($baselayer.iden, $stacklayer.iden), name=stackview)
+    $stackview=$lib.view.add(($stacklayer.iden, $baselayer.iden), name=stackview)
 
     // Make several forks out of a clean order
     $fork1a=$baseview.fork(name=base1a)
