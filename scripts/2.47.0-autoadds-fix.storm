@@ -3,19 +3,19 @@
 function make_views() {
     $baseview=$lib.view.get()
     $baselayer=$lib.layer.get()
-
-    // Make a fork and some forks
-    $fork1a=$baseview.fork(name=base1a)
-    $fork1b=$baseview.fork(name=base1b)
-    $fork2a=$fork1a.fork(name=base2a)
-
     $stacklayer=$lib.layer.add()
 
+    // Make a stacked view
     $stackview=$lib.view.add(($baselayer.iden, $stacklayer.iden), name=stackview)
-    $stackview1a=$stackview.fork(name=stackview1a)
 
+    // Make several forks out of a clean order
+    $fork1a=$baseview.fork(name=base1a)
+    $stackview1a=$stackview.fork(name=stackview1a)
+    $fork2a=$fork1a.fork(name=base2a)
+    $fork1b=$baseview.fork(name=base1b)
 
     $ret = $lib.dict(baseview=$baseview.iden, fork1a=$fork1a.iden, fork1b=$fork1b.iden, fork2a=$fork2a.iden, stackview=$stackview.iden, stackview1a=$stackview1a.iden)
+
     return ( $ret )
 }
 
