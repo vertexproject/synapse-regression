@@ -21,26 +21,6 @@ function make_views() {
 
 
 $views=$make_views()
-/*
-function get_view(name) {
-    for $view in $lib.view.list() {
-        $p = $view.pack()
-        if ($p.name = $name) {
-            return ( $view.iden )
-        }
-    }
-    $lib.exit('No view found for name={name}', name=$name)
-}
-
-
-$baseview=$get_view(default)
-$fork1a=$get_view(base1a)
-$fork2a=$get_view(base2a)
-$fork1b=$get_view(base1b)
-
-$stackview=$get_view(stackview)
-$stackview1a=$get_view(stackview1a)
-*/
 
 view.exec $views.baseview { [inet:dns:query=(1.2.3.4, woot.com, 1)] } |
 view.exec $views.baseview { [inet:dns:query=(1.2.3.4, 1.2.3.4, 1)] } |
