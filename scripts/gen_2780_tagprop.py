@@ -17,6 +17,17 @@ class GenCore(s_t_utils.SynTest):
             await core.nodes('$lib.model.ext.addTagProp(comment, (str, $lib.dict()), $lib.dict())')
             nodes = await core.nodes('[ inet:ipv4=1.2.3.1 :asn=10 +#bar ]')
             nodes = await core.nodes('[ inet:ipv4=1.2.3.2 :asn=10 +#foo:comment=foo ]')
+
+            # Partially corrupted sode - add two comment values to the sode
+            nodes = await core.nodes('[ inet:ipv4=1.2.3.3 :asn=20 +#foo:comment=bar ]')
+            buid = nodes[0].buid
+
+            layr = core.getLayer()
+            sode = await layr.getStorNode(buid)
+            sode['tagprops'][('foo', 'comment')] = ('baz', 1)
+            layr.setSodeDirty(buid, sode, sode.get('form'))
+
+            # Fully corrupted sode
             nodes = await core.nodes('[ inet:ipv4=1.2.3.4 :asn=20 +#foo:comment=words ]')
             buid = nodes[0].buid
 
