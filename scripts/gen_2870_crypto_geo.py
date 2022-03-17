@@ -19,7 +19,13 @@ class GenCore(s_t_utils.SynTest):
 
             nodes = await core.nodes('[(geo:place=(t0,)) (geo:place=(t1,) :name=" Big Hollywood  sign ")]')
             nodes = await core.nodes('[(crypto:currency:block=(vcoin, 1234) :hash=0x73f82fa9fd7f65fc30c3d4d24b5942c4 )]')
+            valu = nodes[0].get('hash')  # type: str
+            self.true(valu.startswith('0x'))
+
             nodes = await core.nodes('[(crypto:currency:transaction=(t1,) :hash=0x0c3d4d24b5942c473f82fa9fd7f65fc3 )]')
+            valu = nodes[0].get('hash')  # type: str
+            self.true(valu.startswith('0x'))
+
             nodes = await core.nodes('[(crypto:currency:transaction=(t2,) :inputs=((i1,), (i2,),) :outputs=((o1,), (o2,),) )]')
             nodes = await core.nodes('[(crypto:currency:transaction=(t3,) :inputs=((i3,), (i2,),) :outputs=((o3,), (o2,),) )]')
             nodes = await core.nodes('[(crypto:payment:input=(i4,) )]')
