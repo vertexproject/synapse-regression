@@ -10,15 +10,18 @@ CVSSV3 = 'AV:N/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:L/E:U/RL:O/RC:U/CR:L/IR:X/AR:X/MAV:X
 
 async def main():
 
-    modldir = '/tmp/v/model-0.2.21'
+    tmpdir = '/tmp/v/model-0.2.21'
+    modldir = 'cortexes/model-0.2.21'
 
+    shutil.rmtree(tmpdir, ignore_errors=True)
     shutil.rmtree(modldir, ignore_errors=True)
 
-    async with await s_cortex.Cortex.anit(modldir) as core:
+    async with await s_cortex.Cortex.anit(tmpdir) as core:
 
-        await core.nodes(f'[risk:vuln=(foo,) :cvss:v2="{CVSSV2}" :cvss:v3="{CVSSV3}"]')
+        await core.nodes(f'[ risk:vuln=(foo,) :cvss:v2="{CVSSV2}" :cvss:v3="{CVSSV3}" ]')
+        await core.nodes(f'[ risk:vuln=* :name="Woot  Woot" ]')
 
-    s_backup.backup(modldir, 'cortexes/model-0.2.21')
+    s_backup.backup(tmpdir, modldir)
 
 if __name__ == '__main__':
     asyncio.run(main())
