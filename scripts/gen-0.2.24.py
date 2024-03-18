@@ -50,6 +50,8 @@ async def main():
         await layr._saveDirtySodes()
 
         await core.nodes('[ risk:mitigation=(foo,) :name="  Foo Bar  " ]')
+        await core.nodes('[ it:mitre:attack:mitigation=M0100 :name="  PatchStuff  " ]')
+        await core.nodes('[ it:mitre:attack:technique=T0100 :name="  LockPicking  " ]')
 
     s_backup.backup(tmpdir, modldir)
 
