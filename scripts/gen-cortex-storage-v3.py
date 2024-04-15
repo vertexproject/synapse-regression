@@ -7,8 +7,10 @@ import synapse.tools.backup as s_backup
 
 async def main():
 
-    tmpdir = '/tmp/v/model-0.2.25'
-    modldir = 'cortexes/model-0.2.25'
+    name = 'cortex-storage-v3'
+
+    tmpdir = f'/tmp/v/{name}'
+    modldir = f'cortexes/{name}'
 
     shutil.rmtree(tmpdir, ignore_errors=True)
     shutil.rmtree(modldir, ignore_errors=True)
