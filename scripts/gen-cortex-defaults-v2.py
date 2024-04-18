@@ -7,7 +7,7 @@ import synapse.tools.backup as s_backup
 
 async def main():
 
-    name = 'cortex-storage-v3'
+    name = 'cortex-defaults-v2'
 
     tmpdir = f'/tmp/v/{name}'
     modldir = f'cortexes/{name}'
