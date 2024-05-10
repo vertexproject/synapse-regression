@@ -64,6 +64,9 @@ async def main():
             it:sec:cpe="cpe:/o:zyxel:nas326_firmware:5.21%28AAZF.14%29C0"
             it:sec:cpe="cpe:/a:10web:social_feed_for_instagram:1.0.0::~~premium~wordpress~~"
             it:sec:cpe="cpe:/a:acurax:under_construction_%2f_maintenance_mode:-::~~~wordpress~~"
+            ( it:sec:cpe="cpe:2.3:h:d\\-link:dir\\-850l:*:*:*:*:*:*:*:*"
+                :v2_2="cpe:/h:d-link:dir-850l"
+            )
 
             +#test.cpe.23invalid
             +#test.cpe.22valid
