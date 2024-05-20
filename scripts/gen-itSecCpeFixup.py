@@ -7,7 +7,7 @@ import synapse.tools.backup as s_backup
 
 async def main():
 
-    name = 'itSecCpeFixup'
+    name = 'itSecCpe_2_170_0'
     tmpdir = f'/tmp/v/{name}'
     modldir = f'cortexes/{name}'
 
