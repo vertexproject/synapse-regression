@@ -1,6 +1,7 @@
 import shutil
 import asyncio
 
+import synapse.common as s_common
 import synapse.cortex as s_cortex
 
 import synapse.tools.backup as s_backup
@@ -69,6 +70,18 @@ async def main():
              "storm": "$lib.print(hello)",
           }],
          }))''')
+
+        viewiden = core.getView().iden
+        gate = core.auth.getAuthGate(viewiden)
+
+        usernode = await gate.node.open(('users', s_common.guid('newpuser')))
+        await usernode.set({})
+
+        rolenode = await gate.node.open(('roles', s_common.guid('newprole')))
+        await rolenode.set({})
+
+        roles = visi.info.get('roles')
+        await visi.info.set('roles', roles + (s_common.guid('newprole'),))
 
     s_backup.backup(tmpdir, modldir)
 
