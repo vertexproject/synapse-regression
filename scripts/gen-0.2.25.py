@@ -32,7 +32,7 @@ async def main():
                 :title = 'Vice President of the United States'
             )
 
-            ( ou:position=('Vice President of the United States',)
+            ( ou:position=('Speaker of the House, United States Congress',)
                 :title = '  Speaker of the House, United  States  Congress'
             )
         ]
