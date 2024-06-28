@@ -23,6 +23,18 @@ async def main():
             ( ou:conference=(REcon,) :name="REcon 2024  Conference  " )
             ( ou:conference=(Blackhat,) :name=Blackhat )
             ( ou:conference=(SummerCon,) :name=SummerCon )
+
+            ( ou:position=('President of the United States',)
+                :title = 'President of the United States'
+            )
+
+            ( ou:position=('Vice President of the United States',)
+                :title = 'Vice President of the United States'
+            )
+
+            ( ou:position=('Vice President of the United States',)
+                :title = '  Speaker of the House, United  States  Congress'
+            )
         ]
         '''
         await core.nodes(q)
