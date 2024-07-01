@@ -18,22 +18,16 @@ async def main():
 
         q = '''
         [
-            ( ou:conference=(SleuthCon,) :name=SleuthCon )
-            ( ou:conference=(Defconf,) :name=Defcon )
-            ( ou:conference=(REcon,) :name="REcon 2024  Conference  " )
-            ( ou:conference=(Blackhat,) :name=Blackhat )
-            ( ou:conference=(SummerCon,) :name=SummerCon )
+            ( ou:conference=(sleuthcon,) :name=SleuthCon :names+="SleuthCon 2024")
+            ( ou:conference=(defcon,) :name=Defcon :names+="Defcon   2024")
+            ( ou:conference=(recon,) :name=REcon :names+="REcon 2024  Conference  " )
 
-            ( ou:position=('President of the United States',)
-                :title = 'President of the United States'
+            ( ou:position=(potus,)
+                :title = 'President of the    United States'
             )
 
-            ( ou:position=('Vice President of the United States',)
-                :title = 'Vice President of the United States'
-            )
-
-            ( ou:position=('Speaker of the House, United States Congress',)
-                :title = '  Speaker of the House, United  States  Congress'
+            ( ou:position=(vpotus,)
+                :title = ' Vice  President  of  the  United States   '
             )
         ]
         '''
