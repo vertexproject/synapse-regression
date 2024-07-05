@@ -33,6 +33,8 @@ async def main():
         '''
         await core.nodes(q)
 
+        await core.nodes(f'[ econ:acct:payment=* :currency=usd ]')
+
     s_backup.backup(tmpdir, modldir)
 
 if __name__ == '__main__':
