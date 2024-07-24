@@ -12,7 +12,7 @@ async def main():
 
     maxver = (2, 169, 0)
     if s_version.version > (2, 169, 0):
-        verstr = '.'.join(maxver)
+        verstr = '.'.join(map(str, maxver))
         mesg = f'This regression cortex MUST be generated with a cortex LTE {verstr}, not {s_version.verstring}.'
         raise s_exc.BadVersion(mesg=mesg, curv=s_version.verstring, maxver=maxver)
 
@@ -47,6 +47,11 @@ async def main():
 
         $node.data.set('cpe22', 'valid')
         $node.data.set('cpe23', 'valid')
+
+        { +it:sec:cpe
+            $ndef = ($node.form(), $node.repr())
+            [( risk:vulnerable=(22valid, 23valid, $ndef) :node=$ndef )]
+        }
         '''
         await core.callStorm(q)
 
@@ -68,6 +73,11 @@ async def main():
 
         $node.data.set('cpe22', 'invalid')
         $node.data.set('cpe23', 'invalid')
+
+        { +it:sec:cpe
+            $ndef = ($node.form(), $node.repr())
+            [( risk:vulnerable=(22invalid, 23invalid, $ndef) :node=$ndef )]
+        }
         '''
         await core.callStorm(q)
 
@@ -85,6 +95,11 @@ async def main():
 
         $node.data.set('cpe22', 'invalid')
         $node.data.set('cpe23', 'valid')
+
+        { +it:sec:cpe
+            $ndef = ($node.form(), $node.repr())
+            [( risk:vulnerable=(22invalid, 23valid, $ndef) :node=$ndef )]
+        }
         '''
         await core.callStorm(q)
 
@@ -105,8 +120,17 @@ async def main():
 
         $node.data.set('cpe22', 'valid')
         $node.data.set('cpe23', 'invalid')
+
+        { +it:sec:cpe
+            $ndef = ($node.form(), $node.repr())
+            [( risk:vulnerable=(22valid, 23invalid, $ndef) :node=$ndef )]
+        }
         '''
         await core.callStorm(q)
+
+        # Creating the risk:vulnerable node causes a re-norm of this node and
+        # overwrites the valid v2_2 prop. Fix it here.
+        await core.callStorm('it:sec:cpe="cpe:2.3:h:d\\-link:dir\\-850l:*:*:*:*:*:*:*:*" [ :v2_2="cpe:/h:d-link:dir-850l" ]')
 
         fork00 = await core.callStorm('return($lib.view.get().fork().iden)')
         infork00 = {'view': fork00}
@@ -151,6 +175,7 @@ async def main():
             // 22valid, 23valid
             [( inet:flow=(flow, 22v, 23v)
                 :dst:cpes+={ it:sec:cpe="cpe:2.3:a:abine:donottrackme_-_mobile_privacy:1.1.8:*:*:*:*:android:*:*" }
+                :dst:cpes+={ it:sec:cpe="cpe:2.3:a:abine:donottrackme_-_mobile_privacy:1.1.8:*:*:*:*:android:*:*" }
                 +#test.flow.22valid
                 +#test.flow.23valid
             )]
@@ -158,6 +183,7 @@ async def main():
             // 22valid, 23invalid
             [( inet:flow=(flow, 22v, 23i)
                 :dst:cpes+={ it:sec:cpe="cpe:/a:10web:social_feed_for_instagram:1.0.0::~~premium~wordpress~~" }
+                :dst:cpes+={ it:sec:cpe="cpe:/o:zyxel:nas326_firmware:5.21%28AAZF.14%29C0" }
                 +#test.flow.22valid
                 +#test.flow.23invalid
             )]
@@ -165,6 +191,7 @@ async def main():
             // 22invalid, 23valid
             [( inet:flow=(flow, 22i, 23v)
                 :src:cpes+={ it:sec:cpe="cpe:2.3:a:abinitio:control\\>center:-:*:*:*:*:*:*:*" }
+                :src:cpes+={ it:sec:cpe="cpe:2.3:a:1c:1c\\:enterprise:-:*:*:*:*:*:*:*" }
                 +#test.flow.22invalid
                 +#test.flow.23valid
             )]
@@ -172,6 +199,7 @@ async def main():
             // 22invalid, 23invalid
             [( inet:flow=(flow, 22i, 23i)
                 :src:cpes+={ it:sec:cpe="cpe:2.3:a:openbsd:openssh:7.4\r\n:*:*:*:*:*:*:*" }
+                :src:cpes+={ it:sec:cpe="cpe:2.3:a:openbsd:openssh:8.2p1 ubuntu-4ubuntu0.2:*:*:*:*:*:*:*" }
                 +#test.flow.22invalid
                 +#test.flow.23invalid
             )]
@@ -218,6 +246,38 @@ async def main():
         q = r'''
             it:sec:cpe#test.cpe.23invalid
             [ <(seen)+ {[ meta:source=(cpe, 23, invalid) :name="cpe.23.invalid" ]} ]
+        '''
+        await core.callStorm(q, opts=infork00)
+
+        q = r'''
+            it:sec:cpe#test.cpe.22invalid
+
+            $cpe = $node
+            $source = { meta:source:name="cpe.22.invalid" }
+
+            [ meta:seen=($source, $cpe.ndef()) ]
+
+            // Add another degree of references that we have to deal with in the migration
+            { +meta:seen
+                $seen = $node
+                [( it:sec:vuln:scan:result=(meta:seen, $seen.iden()) :asset=$seen.ndef() )]
+            }
+        '''
+        await core.callStorm(q, opts=infork00)
+
+        q = r'''
+            it:sec:cpe#test.cpe.23invalid
+
+            $cpe = $node
+            $source = { meta:source:name="cpe.23.invalid" }
+
+            [ meta:seen=($source, $cpe.ndef()) ]
+
+            // Add another degree of references that we have to deal with in the migration
+            { +meta:seen
+                $seen = $node
+                [( it:sec:vuln:scan:result=(meta:seen, $seen.iden()) :asset=$seen.ndef() )]
+            }
         '''
         await core.callStorm(q, opts=infork00)
 
