@@ -49,7 +49,7 @@ async def main():
         $node.data.set('cpe23', 'valid')
 
         { +it:sec:cpe
-            $ndef = ($node.form(), $node.repr())
+            $ndef = $node.ndef()
             [( risk:vulnerable=(22valid, 23valid, $ndef) :node=$ndef )]
         }
         '''
@@ -75,7 +75,7 @@ async def main():
         $node.data.set('cpe23', 'invalid')
 
         { +it:sec:cpe
-            $ndef = ($node.form(), $node.repr())
+            $ndef = $node.ndef()
             [( risk:vulnerable=(22invalid, 23invalid, $ndef) :node=$ndef )]
         }
         '''
@@ -97,7 +97,7 @@ async def main():
         $node.data.set('cpe23', 'valid')
 
         { +it:sec:cpe
-            $ndef = ($node.form(), $node.repr())
+            $ndef = $node.ndef()
             [( risk:vulnerable=(22invalid, 23valid, $ndef) :node=$ndef )]
         }
         '''
@@ -122,7 +122,7 @@ async def main():
         $node.data.set('cpe23', 'invalid')
 
         { +it:sec:cpe
-            $ndef = ($node.form(), $node.repr())
+            $ndef = $node.ndef()
             [( risk:vulnerable=(22valid, 23invalid, $ndef) :node=$ndef )]
         }
         '''
@@ -174,7 +174,7 @@ async def main():
         q = r'''
             // 22valid, 23valid
             [( inet:flow=(flow, 22v, 23v)
-                :dst:cpes+={ it:sec:cpe="cpe:2.3:a:abine:donottrackme_-_mobile_privacy:1.1.8:*:*:*:*:android:*:*" }
+                :dst:cpes+={ it:sec:cpe="cpe:2.3:a:01generator:pireospay:-:*:*:*:*:prestashop:*:*" }
                 :dst:cpes+={ it:sec:cpe="cpe:2.3:a:abine:donottrackme_-_mobile_privacy:1.1.8:*:*:*:*:android:*:*" }
                 +#test.flow.22valid
                 +#test.flow.23valid
@@ -187,7 +187,7 @@ async def main():
                 +#test.flow.22valid
                 +#test.flow.23invalid
             )]
-
+        
             // 22invalid, 23valid
             [( inet:flow=(flow, 22i, 23v)
                 :src:cpes+={ it:sec:cpe="cpe:2.3:a:abinitio:control\\>center:-:*:*:*:*:*:*:*" }
