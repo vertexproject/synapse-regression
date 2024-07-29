@@ -39,6 +39,8 @@ async def main():
                 :v2_2="cpe:/a:abine:donottrackme_-_mobile_privacy:1.1.8::~~~android~~"
             )
 
+            .seen = (2020, 2021)
+
             +#test.cpe.23valid
             +#test.cpe.22valid
 
@@ -65,6 +67,8 @@ async def main():
                 :v2_2="cpe:/a:openbsd:openssh:7.4\r\n"
             )
 
+            .seen = (2020, 2021)
+
             +#test.cpe.23invalid
             +#test.cpe.22invalid
 
@@ -86,6 +90,8 @@ async def main():
             it:sec:cpe="cpe:2.3:a:1c:1c\\:enterprise:-:*:*:*:*:*:*:*"
             it:sec:cpe="cpe:2.3:a:abinitio:control\\>center:-:*:*:*:*:*:*:*"
             it:sec:cpe="cpe:/o:zyxel:nas542_firmware:5.21\%28aazf.15\%29co"
+
+            .seen = (2020, 2021)
 
             +#test.cpe.23valid
             +#test.cpe.22invalid
@@ -111,6 +117,8 @@ async def main():
             ( it:sec:cpe="cpe:2.3:h:d\\-link:dir\\-850l:*:*:*:*:*:*:*:*"
                 :v2_2="cpe:/h:d-link:dir-850l"
             )
+
+            .seen = (2020, 2021)
 
             +#test.cpe.23invalid
             +#test.cpe.22valid
@@ -187,7 +195,7 @@ async def main():
                 +#test.flow.22valid
                 +#test.flow.23invalid
             )]
-        
+
             // 22invalid, 23valid
             [( inet:flow=(flow, 22i, 23v)
                 :src:cpes+={ it:sec:cpe="cpe:2.3:a:abinitio:control\\>center:-:*:*:*:*:*:*:*" }
