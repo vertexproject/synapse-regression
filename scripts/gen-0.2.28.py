@@ -16,7 +16,7 @@ async def main():
         mesg = f'This regression cortex MUST be generated with a cortex LTE {verstr}, not {s_version.verstring}.'
         raise s_exc.BadVersion(mesg=mesg, curv=s_version.verstring, maxver=maxver)
 
-    name = 'model-0.2.27'
+    name = 'model-0.2.28'
     tmpdir = f'/tmp/v/{name}'
     modldir = f'cortexes/{name}'
 
@@ -28,6 +28,8 @@ async def main():
         # Add extended model forms that have secondary props of
         await core.addForm('_ext:model:form', 'str', {}, {})
         await core.addFormProp('_ext:model:form', 'cpe', ('it:sec:cpe', {}), {})
+        await core.addFormProp('it:sec:cpe', '_cpe22valid', ('bool', {}), {})
+        await core.addFormProp('it:sec:cpe', '_cpe23valid', ('bool', {}), {})
 
         # CPE2.3 valid, CPE2.2 valid
         q = r'''[
@@ -38,6 +40,9 @@ async def main():
             ( it:sec:cpe="cpe:2.3:a:abine:donottrackme_-_mobile_privacy:1.1.8:*:*:*:*:android:*:*"
                 :v2_2="cpe:/a:abine:donottrackme_-_mobile_privacy:1.1.8::~~~android~~"
             )
+
+            :_cpe22valid = (true)
+            :_cpe23valid = (true)
 
             .seen = (2020, 2021)
 
@@ -67,6 +72,9 @@ async def main():
                 :v2_2="cpe:/a:openbsd:openssh:7.4\r\n"
             )
 
+            :_cpe22valid = (false)
+            :_cpe23valid = (false)
+
             .seen = (2020, 2021)
 
             +#test.cpe.23invalid
@@ -90,6 +98,9 @@ async def main():
             it:sec:cpe="cpe:2.3:a:1c:1c\\:enterprise:-:*:*:*:*:*:*:*"
             it:sec:cpe="cpe:2.3:a:abinitio:control\\>center:-:*:*:*:*:*:*:*"
             it:sec:cpe="cpe:/o:zyxel:nas542_firmware:5.21\%28aazf.15\%29co"
+
+            :_cpe22valid = (false)
+            :_cpe23valid = (true)
 
             .seen = (2020, 2021)
 
@@ -117,6 +128,9 @@ async def main():
             ( it:sec:cpe="cpe:2.3:h:d\\-link:dir\\-850l:*:*:*:*:*:*:*:*"
                 :v2_2="cpe:/h:d-link:dir-850l"
             )
+
+            :_cpe22valid = (true)
+            :_cpe23valid = (false)
 
             .seen = (2020, 2021)
 
