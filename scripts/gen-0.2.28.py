@@ -158,6 +158,10 @@ async def main():
         infork00 = {'view': fork00}
         print(f'{fork00=}')
 
+        fork01 = await core.callStorm('return($lib.view.get().fork().iden)', opts=infork00)
+        infork01 = {'view': fork01}
+        print(f'{fork01=}')
+
         q = r'''
             // 22valid, 23valid
             [( it:prod:soft=(prod, 22v, 23v)
@@ -302,6 +306,20 @@ async def main():
             }
         '''
         await core.callStorm(q, opts=infork00)
+
+        # Primary and v2_2 valid in lower layer, v2_2 invalid in fork
+        q = r'''
+            it:sec:cpe="cpe:2.3:a:01generator:pireospay:-:*:*:*:*:prestashop:*:*"
+            [ :v2_2 = "cpe:/a:01generator:pireospay\r\n:-::~~~prestashop~~" ]
+        '''
+        await core.callStorm(q, opts=infork01)
+
+        # Primary and v2_2 invalid in lower layer, v2_2 valid in fork
+        q = r'''
+            it:sec:cpe="cpe:2.3:a:openbsd:openssh:7.4\r\n:*:*:*:*:*:*:*"
+            [ :v2_2 = "cpe:/a:openbsd:openssh:7.4" ]
+        '''
+        await core.callStorm(q, opts=infork01)
 
     s_backup.backup(tmpdir, modldir)
 
