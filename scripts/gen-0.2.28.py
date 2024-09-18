@@ -31,6 +31,18 @@ async def main():
         await core.addFormProp('it:sec:cpe', '_cpe22valid', ('bool', {}), {})
         await core.addFormProp('it:sec:cpe', '_cpe23valid', ('bool', {}), {})
 
+        fork00 = await core.callStorm('return($lib.view.get().fork().iden)')
+        infork00 = {'view': fork00}
+        print(f'{fork00=}')
+
+        fork01 = await core.callStorm('return($lib.view.get().fork().iden)', opts=infork00)
+        infork01 = {'view': fork01}
+        print(f'{fork01=}')
+
+        fork02 = await core.callStorm('return($lib.view.get().fork().iden)', opts=infork01)
+        infork02 = {'view': fork02}
+        print(f'{fork02=}')
+
         # CPE2.3 valid, CPE2.2 valid
         q = r'''[
             ( it:sec:cpe="cpe:2.3:a:01generator:pireospay:-:*:*:*:*:prestashop:*:*"
@@ -60,7 +72,7 @@ async def main():
             [( risk:vulnerable=(22valid, 23valid, $ndef) :node=$ndef )]
         }
         '''
-        await core.callStorm(q)
+        await core.callStorm(q, opts=infork00)
 
         # CPE2.3 invalid, CPE2.2 invalid
         q = r'''[
@@ -91,7 +103,7 @@ async def main():
             [( risk:vulnerable=(22invalid, 23invalid, $ndef) :node=$ndef )]
         }
         '''
-        await core.callStorm(q)
+        await core.callStorm(q, opts=infork00)
 
         # CPE2.3 valid, CPE2.2 invalid
         q = r'''[
@@ -118,7 +130,7 @@ async def main():
             [( risk:vulnerable=(22invalid, 23valid, $ndef) :node=$ndef )]
         }
         '''
-        await core.callStorm(q)
+        await core.callStorm(q, opts=infork00)
 
         # CPE2.3 invalid, CPE2.2 valid
         q = r'''[
@@ -148,19 +160,11 @@ async def main():
             [( risk:vulnerable=(22valid, 23invalid, $ndef) :node=$ndef )]
         }
         '''
-        await core.callStorm(q)
+        await core.callStorm(q, opts=infork00)
 
         # Creating the risk:vulnerable node causes a re-norm of this node and
         # overwrites the valid v2_2 prop. Fix it here.
-        await core.callStorm('it:sec:cpe="cpe:2.3:h:d\\-link:dir\\-850l:*:*:*:*:*:*:*:*" [ :v2_2="cpe:/h:d-link:dir-850l" ]')
-
-        fork00 = await core.callStorm('return($lib.view.get().fork().iden)')
-        infork00 = {'view': fork00}
-        print(f'{fork00=}')
-
-        fork01 = await core.callStorm('return($lib.view.get().fork().iden)', opts=infork00)
-        infork01 = {'view': fork01}
-        print(f'{fork01=}')
+        await core.callStorm('it:sec:cpe="cpe:2.3:h:d\\-link:dir\\-850l:*:*:*:*:*:*:*:*" [ :v2_2="cpe:/h:d-link:dir-850l" ]', opts=infork00)
 
         q = r'''
             // 22valid, 23valid
@@ -195,7 +199,7 @@ async def main():
                 +#test.prod.23invalid
             )]
         '''
-        await core.callStorm(q, opts=infork00)
+        await core.callStorm(q, opts=infork01)
 
         q = r'''
             // 22valid, 23valid
@@ -230,7 +234,7 @@ async def main():
                 +#test.flow.23invalid
             )]
         '''
-        await core.callStorm(q, opts=infork00)
+        await core.callStorm(q, opts=infork01)
 
         q = r'''
             // 22valid, 23valid
@@ -261,19 +265,19 @@ async def main():
                 +#test.ext.23invalid
             )]
         '''
-        await core.callStorm(q, opts=infork00)
+        await core.callStorm(q, opts=infork01)
 
         q = r'''
             it:sec:cpe#test.cpe.22invalid
             [ <(seen)+ {[ meta:source=(cpe, 22, invalid) :name="cpe.22.invalid" ]} ]
         '''
-        await core.callStorm(q, opts=infork00)
+        await core.callStorm(q, opts=infork01)
 
         q = r'''
             it:sec:cpe#test.cpe.23invalid
             [ <(seen)+ {[ meta:source=(cpe, 23, invalid) :name="cpe.23.invalid" ]} ]
         '''
-        await core.callStorm(q, opts=infork00)
+        await core.callStorm(q, opts=infork01)
 
         q = r'''
             it:sec:cpe#test.cpe.22invalid
@@ -289,7 +293,7 @@ async def main():
                 [( it:sec:vuln:scan:result=(meta:seen, $seen.iden()) :asset=$seen.ndef() )]
             }
         '''
-        await core.callStorm(q, opts=infork00)
+        await core.callStorm(q, opts=infork01)
 
         q = r'''
             it:sec:cpe#test.cpe.23invalid
@@ -305,21 +309,21 @@ async def main():
                 [( it:sec:vuln:scan:result=(meta:seen, $seen.iden()) :asset=$seen.ndef() )]
             }
         '''
-        await core.callStorm(q, opts=infork00)
+        await core.callStorm(q, opts=infork01)
 
         # Primary and v2_2 valid in lower layer, v2_2 invalid in fork
         q = r'''
             it:sec:cpe="cpe:2.3:a:01generator:pireospay:-:*:*:*:*:prestashop:*:*"
             [ :v2_2 = "cpe:/a:01generator:pireospay\r\n:-::~~~prestashop~~" ]
         '''
-        await core.callStorm(q, opts=infork01)
+        await core.callStorm(q, opts=infork02)
 
         # Primary and v2_2 invalid in lower layer, v2_2 valid in fork
         q = r'''
             it:sec:cpe="cpe:2.3:a:openbsd:openssh:7.4\r\n:*:*:*:*:*:*:*"
             [ :v2_2 = "cpe:/a:openbsd:openssh:7.4" ]
         '''
-        await core.callStorm(q, opts=infork01)
+        await core.callStorm(q, opts=infork02)
 
     s_backup.backup(tmpdir, modldir)
 
