@@ -30,6 +30,7 @@ async def main():
         await core.addFormProp('_ext:model:form', 'cpe', ('it:sec:cpe', {}), {})
         await core.addFormProp('it:sec:cpe', '_cpe22valid', ('bool', {}), {})
         await core.addFormProp('it:sec:cpe', '_cpe23valid', ('bool', {}), {})
+        await core.addTagProp('score', ('int', {}), {})
 
         fork00 = await core.callStorm('return($lib.view.get().fork().iden)')
         infork00 = {'view': fork00}
@@ -60,6 +61,7 @@ async def main():
 
             +#test.cpe.23valid
             +#test.cpe.22valid
+            +#test.tagprop:score = 11
 
             +(refs)> {[ risk:vuln=(risk, vuln) ]}
         ]
@@ -91,6 +93,7 @@ async def main():
 
             +#test.cpe.23invalid
             +#test.cpe.22invalid
+            +#test.tagprop:score = 0
 
             +(refs)> {[ risk:vuln=(risk, vuln) ]}
         ]
@@ -118,6 +121,7 @@ async def main():
 
             +#test.cpe.23valid
             +#test.cpe.22invalid
+            +#test.tagprop:score = 10
 
             +(refs)> {[ risk:vuln=(risk, vuln) ]}
         ]
@@ -148,6 +152,7 @@ async def main():
 
             +#test.cpe.23invalid
             +#test.cpe.22valid
+            +#test.tagprop:score = 1
 
             +(refs)> {[ risk:vuln=(risk, vuln) ]}
         ]
@@ -341,6 +346,7 @@ async def main():
 
                 -#test.cpe.22invalid
                 +#test.cpe.22valid
+                +#test.tagprop:score = 11
             ]
 
             $node.data.set('cpe22', 'wasinvalid')
@@ -364,6 +370,7 @@ async def main():
 
                 -#test.cpe.23invalid
                 +#test.cpe.23valid
+                +#test.tagprop:score = 11
             ]
 
             $node.data.set('cpe22', 'valid')
