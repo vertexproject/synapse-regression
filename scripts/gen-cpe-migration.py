@@ -326,7 +326,7 @@ async def main():
         # Primary and v2_2 invalid in lower layer, v2_2 valid in fork
         q = r'''
             it:sec:cpe="cpe:2.3:a:openbsd:openssh:7.4\r\n:*:*:*:*:*:*:*"
-            [ :v2_2 = "cpe:/a:openbsd:openssh:7.4" ]
+            [ :v2_2 = "cpe:/a:openbsd:openssh_server:7.4" ]
         '''
         await core.callStorm(q, opts=infork02)
 
