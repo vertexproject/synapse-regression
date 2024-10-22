@@ -32,17 +32,28 @@ async def main():
         await core.addFormProp('it:sec:cpe', '_cpe23valid', ('bool', {}), {})
         await core.addTagProp('score', ('int', {}), {})
 
-        fork00 = await core.callStorm('return($lib.view.get().fork().iden)')
+        fork00 = await core.callStorm('return($lib.view.get().fork(name=fork00).iden)')
         infork00 = {'view': fork00}
         print(f'{fork00=}')
 
-        fork01 = await core.callStorm('return($lib.view.get().fork().iden)', opts=infork00)
+        fork01 = await core.callStorm('return($lib.view.get().fork(name=fork01).iden)', opts=infork00)
         infork01 = {'view': fork01}
         print(f'{fork01=}')
 
-        fork02 = await core.callStorm('return($lib.view.get().fork().iden)', opts=infork01)
+        fork02 = await core.callStorm('return($lib.view.get().fork(name=fork02).iden)', opts=infork01)
         infork02 = {'view': fork02}
         print(f'{fork02=}')
+
+        fork03 = await core.callStorm('return($lib.view.get().fork(name=fork03).iden)')
+        infork03 = {'view': fork03}
+        print(f'{fork03=}')
+
+        layer00 = await core.callStorm('return($lib.view.get().layers.0.iden)')
+        layer03 = await core.callStorm('return($lib.view.get().layers.0.iden)', opts=infork03)
+
+        # We need layer00 to be processed first so the node in layer00 will be marked as migratable and the same node in
+        # layer03 will be marked as remove.
+        assert layer00 < layer03, f'{layer00=}, {layer03=}'
 
         # CPE2.3 valid, CPE2.2 valid
         q = r'''[
@@ -86,11 +97,20 @@ async def main():
                 :v2_2="cpe:/a:openbsd:openssh:7.4\r\n"
             )
 
+            ( it:sec:cpe="cpe:2.3:a:openbsd:openssh:7.4\r\n:*:*:*:*:*:*:*"
+                :v2_2="cpe:/a:openbsd:openssh:7.4\r\n"
+            )
+
+            ( it:sec:cpe="cpe:2.3:a:%40ianwalter:merge:*:*:*:*:*:*:*:*"
+                :v2_2="cpe:/a:@ianwalter:merge"
+            )
+
             :_cpe22valid = (false)
             :_cpe23valid = (false)
 
             .seen = (2020, 2021)
 
+            +#test.cpe.ival = (2020, 2021)
             +#test.cpe.23invalid
             +#test.cpe.22invalid
             +#test.tagprop:score = 0
@@ -235,6 +255,7 @@ async def main():
             [( inet:flow=(flow, 22i, 23i)
                 :src:cpes+={ it:sec:cpe="cpe:2.3:a:openbsd:openssh:7.4\r\n:*:*:*:*:*:*:*" }
                 :src:cpes+={ it:sec:cpe="cpe:2.3:a:openbsd:openssh:8.2p1 ubuntu-4ubuntu0.2:*:*:*:*:*:*:*" }
+                :dst:cpes+={ it:sec:cpe="cpe:2.3:a:openbsd:openssh:8.2p1 ubuntu-4ubuntu0.2:*:*:*:*:*:*:*" }
                 +#test.flow.22invalid
                 +#test.flow.23invalid
             )]
@@ -377,6 +398,13 @@ async def main():
             $node.data.set('cpe23', 'wasinvalid')
         '''
         await core.callStorm(q, opts=infork02)
+
+        q = r'''[
+            it:sec:cpe="cpe:2.3:a:%40ianwalter:merge:*:*:*:*:*:*:*:*"
+                :v2_2="cpe:/a:%40ianwalter:merge"
+        ]
+        '''
+        await core.callStorm(q, opts=infork00)
 
     s_backup.backup(tmpdir, modldir)
 
