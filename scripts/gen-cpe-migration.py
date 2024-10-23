@@ -51,9 +51,9 @@ async def main():
         layer00 = await core.callStorm('return($lib.view.get().layers.0.iden)')
         layer03 = await core.callStorm('return($lib.view.get().layers.0.iden)', opts=infork03)
 
-        # We need layer00 to be processed first so the node in layer00 will be marked as migratable and the same node in
-        # layer03 will be marked as remove.
-        assert layer00 < layer03, f'{layer00=}, {layer03=}'
+        # We need layer03 to be processed first so the node in layer00 will be marked as migratable and the same node in
+        # layer00 will be marked as remove.
+        assert layer03 < layer00, f'{layer00=}, {layer03=}'
 
         # CPE2.3 valid, CPE2.2 valid
         q = r'''[
@@ -400,11 +400,16 @@ async def main():
         await core.callStorm(q, opts=infork02)
 
         q = r'''[
-            it:sec:cpe="cpe:2.3:a:%40ianwalter:merge:*:*:*:*:*:*:*:*"
+            ( it:sec:cpe="cpe:2.3:a:openbsd:openssh:8.2p1 ubuntu-4ubuntu0.2:*:*:*:*:*:*:*"
+                :v2_2="cpe:/a:openbsd:openssh:8.2p1 ubuntu-4ubuntu0.2"
+            )
+
+            ( it:sec:cpe="cpe:2.3:a:%40ianwalter:merge:*:*:*:*:*:*:*:*"
                 :v2_2="cpe:/a:%40ianwalter:merge"
+            )
         ]
         '''
-        await core.callStorm(q, opts=infork00)
+        await core.callStorm(q, opts=infork03)
 
     s_backup.backup(tmpdir, modldir)
 
