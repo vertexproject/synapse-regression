@@ -6,6 +6,12 @@ import synapse.tools.backup as s_backup
 
 async def main():
 
+    maxver = (2, 210, 0)
+    if s_version.version > (2, 210, 0):
+        verstr = '.'.join(map(str, maxver))
+        mesg = f'This regression cortex MUST be generated with a cortex LTE {verstr}, not {s_version.verstring}.'
+        raise s_exc.BadVersion(mesg=mesg, curv=s_version.verstring, maxver=maxver)
+
     tmpdir = '/tmp/v/regress'
     modldir = 'cortexes/axon-axon_v2'
 
