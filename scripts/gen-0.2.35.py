@@ -61,6 +61,10 @@ async def main():
         infork00 = {'view': fork00, 'vars': {'md5_00': md5_00, 'md5_01': md5_01, 'sha256': sha256}}
         print(f'{fork00=}')
 
+        fork01 = await core.callStorm('return($lib.view.get().fork(name=fork01).iden)', opts=infork00)
+        infork01 = {'view': fork01, 'vars': {'md5_00': md5_00, 'md5_01': md5_01, 'sha256': sha256}}
+        print(f'{fork01=}')
+
         # invalid inet:client
         # invalid inet:server
         # invalid inet:url
@@ -70,13 +74,20 @@ async def main():
                 [
                     .seen = (2019, 2022)
 
+                    +#test.foo00 = (2019, 2022)
+                    +#test.foo01 = (2020, 2021)
+                    +#test.foo02
+                    +#test.foo03 = (2020, 2026)
                     +#test.invalid
                     +#test.tagprop:score = 0
+                    +#test.same:score = 10
 
                     <(seen)+ {[ meta:source=(regression, 0.2.35, invalid) :type=synapse.regression ]}
                 ]
 
                 $node.data.set('addr', 'invalid')
+                $node.data.set('same', 'same')
+                $node.data.set('only', 'value')
                 return()
             }
 
@@ -126,12 +137,18 @@ async def main():
                 [
                     .seen = (2020, 2021)
 
+                    +#test.foo00 = (2020, 2021)
+                    +#test.foo01 = (2019, 2022)
+                    +#test.foo02 = (2020, 2026)
+                    +#test.foo03
                     +#test.valid
                     +#test.tagprop:score = 1
+                    +#test.same:score = 10
 
                     <(seen)+ {[ meta:source=(regression, 0.2.35, valid) :type=synapse.regression ]}
                 ]
                 $node.data.set('addr', 'valid')
+                $node.data.set('same', 'same')
                 return()
             }
 
@@ -185,6 +202,13 @@ async def main():
         '''
         with mock.patch('synapse.common.now', now):
             await core.callStorm(q, opts=infork00)
+
+        q = r'''
+            $_ = { inet:client="tcp://::1" [ :port=80 .seen=(2019, 2020) ] }
+            $_ = { inet:server="tcp://::2" [ :port=80 ] }
+        '''
+        with mock.patch('synapse.common.now', now):
+            await core.callStorm(q, opts=infork01)
 
     s_backup.backup(tmpdir, modldir)
 
