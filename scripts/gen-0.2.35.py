@@ -203,6 +203,10 @@ async def main():
         with mock.patch('synapse.common.now', now):
             await core.callStorm(q, opts=infork00)
 
+        # Strip the ports for the RO port migration
+        await core.nodes('inet:client:port [ -:port ]', opts=infork00)
+        await core.nodes('inet:server:port [ -:port ]', opts=infork00)
+
         q = r'''
             $_ = { inet:client="tcp://::1" [ :port=80 .seen=(2019, 2020) ] }
             $_ = { inet:server="tcp://::2" [ :port=80 ] }
