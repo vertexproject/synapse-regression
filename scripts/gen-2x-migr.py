@@ -78,12 +78,12 @@ async def main():
             url = core2.getLocalUrl('*/layer')
 
             conf = {'upstream': url}
-            ldef = await core.addLayer(ldef=conf)
+            await core.addLayer(ldef=conf)
 
             conf = {'mirror': url}
-            ldef = await core.addLayer(ldef=conf)
+            await core.addLayer(ldef=conf)
 
-            await core.nodes('''[ 
+            await core.nodes('''[
                 inet:url="  http://vertex.link:80?test=true  "
                     +(refs)> {[ meta:event:taxonomy=whitespace.url ]}
                     <(refs)+ {[ meta:event:taxonomy=merged.one ]}
@@ -130,13 +130,43 @@ async def main():
                     :input:lang=en
                     :output=vert
                     :output:lang=fr
+                    :engine={[ it:prod:softver=* :name=covertransengine ]}
             ]''')
+
+            # Extended model elements: a form (with a node), a form prop, a univ
+            # prop, and a tag prop. These exercise the extended-model migration
+            # and the extended-form path in the layer buid scan.
+            await core.addForm('_cover:ext', 'int', {}, {})
+            await core.addFormProp('it:dev:str', '_coverprop', ('int', {}), {})
+            await core.addUnivProp('_coveruniv', ('int', {}), {})
+            await core.addTagProp('coverscore', ('int', {}), {})
+
+            await core.nodes('[ _cover:ext=42 ]')
+
+            # Surviving node with an ndef-typed secondary prop pointing at a
+            # renamed form (hash:md5 -> crypto:hash:md5).
+            await core.nodes('[ ou:asset=(coverasset,) :node=(hash:md5, d41d8cd98f00b204e9800998ecf8427e) ]')
+
+            # A deleted form (edge:refs) with ndef props; skipped during migration.
+            await core.nodes('[ edge:refs=((inet:fqdn, vertex.link), (inet:fqdn, woot.com)) ]')
+
+            # A surviving node carrying a tag, a tagprop, nodedata, an extended
+            # prop, a light edge with a verb invalid for the forms, and an edge to
+            # a migrated-form node (inet:ipv4 buid changes during migration).
+            await core.nodes('''[ it:dev:str=coverstr
+                :_coverprop=7
+                +#cover.tag=2021
+                +#cover.tag:coverscore=42
+                +(_coveredge)> {[ it:dev:str=coverdst ]}
+                +(refs)> {[ inet:ipv4=1.2.3.4 ]}
+            ]''')
+            await core.nodes('it:dev:str=coverstr $node.data.set(coverkey, (foo, bar))')
 
             # CronJobs with should get 'user' populated with 'creator'
             viewiden = await core.callStorm('return($lib.view.get().fork().iden)')
             opts = {'view': viewiden}
 
-            normcron = await core.callStorm('$lib.cron.add(hour=1, query="$foo=ok")', opts)
+            await core.callStorm('$lib.cron.add(hour=1, query="$foo=ok")', opts)
 
             # Cron with no view should get user's default view
             user1 = await core.addUser('cronuserview')
@@ -166,7 +196,7 @@ async def main():
             await core.callStorm(q, opts=opts)
 
             # Cron with no view and deleted user gets removed
-            user3 = await core.addUser(f'deluser')
+            user3 = await core.addUser('deluser')
             user3iden = user3.get('iden')
             await core.callStorm('$lib.auth.users.byname(deluser).addRule(((true), (cron, add)))')
             await core.callStorm('$lib.auth.users.byname(deluser).addRule(((true), (view, read)))')
@@ -217,6 +247,11 @@ async def main():
             await core.nodes('''
                 $lib.inet.http.oauth.v2.addProvider($providerconf)
             ''', opts={'vars': {'providerconf': providerconf00}})
+
+    # Write a deprecated/unknown confdef into cell.yaml to be stripped during migration.
+    conf = s_common.yamlload(tmpdir, 'cell.yaml') or {}
+    conf['nonexist:confdef'] = 'remove-me'
+    s_common.yamlsave(conf, tmpdir, 'cell.yaml')
 
     s_backup.backup(tmpdir, modldir)
 
