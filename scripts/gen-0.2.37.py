@@ -12,8 +12,9 @@ import synapse.tools.backup as s_backup
 async def main():
 
     # This script MUST be run with the pre-migration model, where the
-    # econ:bank:swift:bic regex is anchored only at the start and therefore
-    # accepts trailing characters after a valid BIC. Run with Synapse <= 2.250.0.
+    # econ:bank:aba:rtn, econ:bank:iban and econ:bank:swift:bic regexes are
+    # anchored only at the start and therefore accept trailing characters after
+    # an otherwise valid value. Run with Synapse <= 2.250.0.
     maxver = (2, 250, 0)
     if s_version.version > maxver:
         verstr = '.'.join(map(str, maxver))
@@ -51,6 +52,23 @@ async def main():
 
         # A valid 11 character BIC which the migration must leave alone.
         await core.nodes('[ econ:bank:swift:bic=DEUTDEFFXXX :business={ gen.ou.org vertex } ]')
+
+        # Invalid ABA RTN and IBAN values, both referenced by an econ:bank:account.
+        # Neither referring property is read-only, so the account must survive the
+        # migration with the property deleted rather than being removed with them.
+        await core.nodes('''[
+            econ:bank:account=*
+                :aba:rtn=1234567890
+                :iban=GB29NWBK60161331926819!!
+                :number=12345
+        ]''')
+
+        # An invalid ABA RTN carrying properties, with no account referencing it.
+        await core.nodes('[ econ:bank:aba:rtn=123456789junk :bank={ gen.ou.org bigbank } ]')
+
+        # Valid values of both types which the migration must leave alone.
+        await core.nodes('[ econ:bank:aba:rtn=987654321 ]')
+        await core.nodes('[ econ:bank:iban=VV09WootWoot ]')
 
         # An invalid BIC in a forked view, so the migration is exercised across
         # more than one layer.
