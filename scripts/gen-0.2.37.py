@@ -66,6 +66,19 @@ async def main():
         # An invalid ABA RTN carrying properties, with no account referencing it.
         await core.nodes('[ econ:bank:aba:rtn=123456789junk :bank={ gen.ou.org bigbank } ]')
 
+        # A meta:seen referencing an invalid IBAN. meta:seen:node is a read-only
+        # ndef, so the migration must recursively remove the meta:seen node and
+        # queue it under its own record rather than leaving a dangling reference.
+        await core.nodes('[ meta:source=9e9a0e4d3e2b4b1e8f0a1c2d3e4f5a6b :name="migration test source" ]')
+        await core.nodes('''
+            econ:bank:iban=GB29NWBK60161331926819!!
+
+            $iban = $node
+            $source = { meta:source:name="migration test source" }
+
+            [ meta:seen=($source, $iban.ndef()) ]
+        ''')
+
         # Valid values of both types which the migration must leave alone.
         await core.nodes('[ econ:bank:aba:rtn=987654321 ]')
         await core.nodes('[ econ:bank:iban=VV09WootWoot ]')
