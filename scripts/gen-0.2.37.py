@@ -92,6 +92,18 @@ async def main():
         ''')
         await core.nodes('[ econ:bank:swift:bic=BNPAFRPPXXXjunk ]', opts={'view': fork})
 
+        # Give the base layer's invalid BIC a tag and nodedata in the fork's own
+        # layer, so one node has sodes in more than one layer. The fork layer holds
+        # no primary value for it, which is the case the migration's missing valu
+        # guard exists for.
+        await core.nodes('''
+            econ:bank:swift:bic=DEUTDEFFXXXXX
+
+            [ +#fork.only ]
+
+            $node.data.set(forkdata, yep)
+        ''', opts={'view': fork})
+
     s_backup.backup(tmpdir, modldir)
 
     # Remove the expanded working copy; only the compact backup should remain.
