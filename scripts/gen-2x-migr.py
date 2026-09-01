@@ -223,6 +223,44 @@ async def main():
                     :identities:ipv6s=("7::8",)
             ]''')
 
+            await core.nodes('''[
+                risk:leak=(coverleak00,)
+                    :public:url=https://raid.naxxramas.com/index.html
+                    :reporter:name=coverreporter00
+            ]''')
+
+            await core.nodes('''[
+                econ:receipt:item=(covereconitem00,)
+                    :product={[
+                        biz:product=*
+                           :price:retail=9.95
+                    ]}
+            ]''')
+
+            await core.nodes('''[
+                it:exec:reg:set=(coverregset,)
+                    :reg={[
+                        it:dev:regval=(coverregval,)
+                            :key="HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+                            :str="1.0.1.2.3.4.5.5"
+                    ]}
+            ]''')
+
+            await core.nodes('''[
+                ou:org=(coverorgtype,)
+                  :orgtype=maximum.over.business
+                  :type="lolnope"
+            ]''')
+
+            await core.nodes('''[
+                (it:av:scan:result=(coverscanipv6,)
+                    :target:ipv6="7::8")
+                (it:av:scan:result=(coverscanfile,)
+                    :target:file={[file:bytes=(targetfile00,)]})
+                (it:av:scan:result=(coverscanproc,)
+                    :target:proc={[it:exec:proc=(targetproc00,)]})
+            ]''')
+
             # A single 2.x property which became a member of a 3.x array.
             await core.nodes('[ pol:vitals=(covervitals00,) :currency=USD ]')
 
@@ -265,6 +303,16 @@ async def main():
 
             # A TTL counted in seconds, which 3.x stores as a duration.
             await core.nodes('[ inet:dns:answer=(coveranswer00,) :ttl=300 ]')
+
+            await core.nodes('[ inet:dns:a=(vertex.link, 1.2.3.4) ]')
+
+            await core.nodes('[ inet:whois:iprec=* :net4=142.11.192.0-142.11.255.255 :net4:min=142.11.192.0 :net4:max=142.11.255.255]')
+
+            await core.nodes('[ inet:dns:request=(coverrequest00,) :query:name:ipv6="2::3"]')
+
+            await core.nodes('[ inet:dns:query=(tcp://1.2.3.4, vertex.link, 12) :name:ipv4="8.8.8.4"]')
+
+            await core.nodes('[ ou:orgnet6=({[ou:org=(coverorgnet4,)]}, "2001:ac8:20::-2001:ac8:20:ffff:ffff:ffff:ffff:ffff") ]')
 
             # A comp form which became an edge between the two nodes it named.
             await core.nodes('''
