@@ -1,6 +1,7 @@
 import asyncio
 import shutil
 
+import synapse.exc as s_exc
 import synapse.common as s_common
 import synapse.cortex as s_cortex
 
